@@ -1,0 +1,73 @@
+.banner {
+  grid-row: header-start / header-end;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 1rem 0;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  background-color: $navy-2;
+  width: 100vw;
+
+  &__main {
+    transform: translateY(-3.5rem);
+    //animation: moveInLeft 1.5s ease-in-out;
+    margin-bottom: 2.4rem;
+    font-size: 6.2rem;
+    text-align: center;
+    letter-spacing: 3.5rem;
+    color: $grey-2;
+
+    @media only screen and (max-width: $bp-laptop) {
+      font-size: 4rem;
+      letter-spacing: 3rem;
+    }
+    @media only screen and (max-width: $bp-tablet) {
+      margin-bottom: 0;
+    }
+
+    &--part-1 {
+      @media only screen and (max-width: $bp-tablet) {
+        display: block;
+        padding: 1.5rem;
+        letter-spacing: 5.7rem;
+        transform: translateX(1.8rem);
+      }
+    }
+    &--part-2 {
+      @media only screen and (max-width: $bp-tablet) {
+        display: block;
+        padding: 1.5rem;
+      }
+    }
+  }
+
+  &__sub {
+    //animation: moveInRight 1.5s ease-in-out;
+    margin-bottom: 5.2rem;
+    font-size: $sub-header-font-size;
+    text-align: center;
+    letter-spacing: 1rem;
+    color: $grey-2;
+
+    @media only screen and (max-width: $bp-tablet) {
+      margin-bottom: 0rem;
+      transform: translateY(-3rem);
+    }
+
+    &--part-1 {
+      @media only screen and (max-width: $bp-tablet) {
+        display: block;
+        padding: 1rem;
+      }
+    }
+
+    &--part-2 {
+      @media only screen and (max-width: $bp-tablet) {
+        display: block;
+        padding: 1rem;
+        letter-spacing: 1.2rem;
+      }
+    }
+  }
+}

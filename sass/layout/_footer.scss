@@ -1,0 +1,22 @@
+.footer {
+  grid-row: footer-start / footer-end;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  background-color: $black-3;
+  font-size: $footer-font-size;
+  color: $white;
+
+  @media only screen and (max-width: $bp-mobile-s){
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  &__icon {
+    height: 1.6rem;
+    width: 2rem;
+    fill: red;
+  }
+}

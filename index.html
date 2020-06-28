@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Very important. This basically says that the website should be rendered using the width of the device -->
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="keywords" content="Jacob,Grisham,Jacob Grisham,engineer,software engineer,web developer,developer,full-stack,frontend,portfolio">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Jacob Grisham">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Jacob Grisham is a software engineer based in San Francisco and specializes in web development. View his skills, projects, and education in this portfolio.">
+    <meta property="og:site_name" content="Jacob Grisham">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat:wght@100;200;300&family=Nunito+Sans:wght@200;300;400&family=PT+Mono&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon_io/site.webmanifest">
+    
+    <title> Jacob Grisham | Portfolio</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="banner">
+      <h1 class="banner__main">
+        <span class="banner__main--part-1">Jacob </span>
+        <span class="banner__main--part-2">Grisham</span>
+      </h1>
+      <h2 class="banner__sub">
+        <span class="banner__sub--part-1">Software </span>
+        <span class="banner__sub--part-2">Engineer</span>
+      </h2>
+      <a href="#projects" class="btn btn--header btn--animated">See my projects</a>
+    </header>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+      <h4 class="skills__header">Skills</h4>
+      <!-- FRONT-END -->
+      <div class="skills-box">
+        <h4 class="skills-box__header">
+          <svg class="skills-box__header-icon">
+            <use xlink:href="img/sprite.svg#icon-embed2"></use>
+          </svg>
+          Front-End
+        </h4>
+        <ul class="skills-box__list" id="front-end__skills-box">
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-html5"></use>
+            </svg>
+            HTML5
+          </li>
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-css3"></use>
+            </svg>
+            CSS3
+          </li>
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-sass"></use>
+            </svg>
+            Sass
+          </li>
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-bootstrap"></use>
+            </svg>
+            Bootstrap
+          </li>
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-javascript"></use>
+            </svg>
+            Javascript
+          </li>
+          <!--
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-typescript"></use>
+            </svg>
+            Typescript
+          </li>
+          -->
+        </ul>
+      </div>
+      <!-- BACK-END -->
+      <div class="skills-box">
+        <h4 class="skills-box__header">
+          <svg class="skills-box__header-icon">
+            <use xlink:href="img/sprite.svg#icon-terminal"></use>
+          </svg>
+          Back-End
+        </h4>
+        <ul class="skills-box__list">
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-node-dot-js"></use>
+            </svg>
+            Node.js
+          </li>
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-react"></use>
+            </svg>
+            React
+          </li>
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-redux"></use>
+            </svg>
+            Redux
+          </li>
+          <!--
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-python"></use>
+            </svg>
+            Python
+          </li>
+          -->
+        </ul>
+      </div>
+      <!-- DATABASE -->
+      <div class="skills-box">
+        <h4 class="skills-box__header">
+          <svg class="skills-box__header-icon">
+            <use xlink:href="img/sprite.svg#icon-database"></use>
+          </svg>
+          Database
+        </h4>
+        <ul class="skills-box__list">
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-mongodb"></use>
+            </svg>
+            MongoDB
+          </li>
+          <!--
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-postgresql"></use>
+            </svg>
+            PostgreSQL
+          </li>
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-graphql"></use>
+            </svg>
+            GraphQL
+          </li>
+          -->
+        </ul>
+      </div>
+      <!-- DEPLOYMENT -->
+      <div class="skills-box">
+        <h4 class="skills-box__header">
+          <svg class="skills-box__header-icon">
+            <use xlink:href="img/sprite.svg#icon-cloud-upload"></use>
+          </svg>
+          Deployment
+        </h4>
+        <ul class="skills-box__list">
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-git"></use>
+            </svg>
+            Git
+          </li>
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-heroku"></use>
+            </svg>
+            Heroku
+          </li>
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-mongodb"></use>
+            </svg>
+            MongoDB Atlas
+          </li>
+          <!--
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-amazonaws"></use>
+            </svg>
+            AWS
+          </li>
+          <li class="skills-box__item">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-docker"></use>
+            </svg>
+            Docker
+          </li>
+          -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+      <h4 class="projects__header">Projects</h4>
+      <!-- PROJECT: YelpCamp -->
+      <div class="card">
+        <h4 class="card__heading">YelpCamp</h4>
+        <h3 class="card__sub-heading">Web application and forum for uploading and sharing information about campgrounds</h3>
+        <div class="card__video">
+          <video class="card__video__content" title="YelpCamp Project Demo" poster="img/YelpCamp Screenshot.png" controls width="250" muted>
+              <source src="img/YelpCamp Tutorial.mp4" type="video/mp4">
+              <source src="img/YelpCamp Tutorial.mp4.webm" type="video/webm">
+              Your web browser is not supported. Try another web browser.
+          </video>
+        </div>
+        <!-- STACK -->
+        <button type="button" class="card__button btn btn--stack active collapse">Stack</button>
+        <div class="card__stack">
+          <div>HTML, CSS, Bootstrap, Javascript, Node.js, ExpressJS, MongoDB</div>
+        </div>
+        <a href="#popup--card-1" class="card__popup btn btn--card">Info</a>
+        <a href="https://aqueous-reaches-28926.herokuapp.com/" class="card__link btn btn--card">Launch</a>
+      </div>
+      <!-- POPUP/INFO -->
+      <div class="popup" id="popup--card-1">
+        <div class="popup__content popup--learn-more">
+          <a href="#projects" class="popup__close">&times;</a>
+          <div class="popup--learn-more__about">
+            <h3 class="popup--learn-more__header">About</h3>
+            <p class="popup--learn-more__text">First full-stack web application. Fundamentally, it's Yelp for campsites. The main features are login, sign-up, Admin role, Google Maps API, and Create, Edit, Update, Delete (CRUD) for campgrounds, comments, and reviews. Create routes have authentication. Edit, Update, and Delete routes have authentication and authorization. The basic foundation was built in the capstone project from the Udemy course <i>The Web Developer Bootcamp</i>. Compared to the other projects, this one is meant to display proficiency with non-bleeding edge technologies.</p>
+          </div>
+          <div class="popup--learn-more__methodology">
+            <h3 class="popup--learn-more__header">Methodology</h3>
+            <p class="popup--learn-more__text">
+              <ul class="popup--learn-more__list">
+                <li>GoormIDE to gain exposure to cloud-based IDE</li>
+                <li>Bootstrap 4 as the CSS framework to keep the UI simple and quick to build</li>
+                <li>ExpressJS as the Node.js application framework for its basic functionality. Some companies still use ExpressJS so it was important to implement it.</li>
+                <li>PassportJs for the authentication and authorization</li>
+                <li>NoSQL database for the flexibility compared to a SQL database, MongoDB in particular because of its prevalence in the industry.</li>
+                <li>Git for version control</li>
+                <li>Site is hosted on Heroku</li>
+                <li>Database is hosted on MongoDB Atlas</li>
+              </ul> 
+          </div>
+          <div class="popup--learn-more__source">
+            <h3 class="popup--learn-more__header">Source Code</h3>
+            <p class="popup--learn-more__text">Click the Github icon below to see the source code and documentation<p>
+            <a href="https://github.com/JacobGrisham/YelpCamp" class="popup--learn-more__link"></a>
+              <svg class="popup--learn-more__icon">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+          </div>
+        </div> 
+      </div>
+      <!-- PROJECT: Portfolio -->
+      <div class="card">
+        <h4 class="card__heading">Portfolio</h4>
+        <h3 class="card__sub-heading">Personal website to showcase software engineerng projects to potential employers</h3>
+        <div class="card__video">
+          <video class="card__video__content" title="Portfolio Project Demo" poster="img/Portfoio Screenshot.png" controls width="250" muted>
+              <source src="img/Portfolio Tutorial.mp4" type="video/mp4">
+              <source src="img/Portfolio Tutorial.mp4.webm" type="video/webm">
+              Your web browser is not supported. Try another web browser.
+          </video>
+        </div>
+        <!-- STACK -->
+        <button type="button" class="card__button btn btn--stack active collapse">Stack</button>
+        <div class="card__stack">
+          <div>HTML, CSS, Sass, Javascript</div>
+        </div>
+        <a href="#popup--card-2" class="card__popup btn btn--card">Info</a>
+      </div>
+      <!-- POPUP/INFO -->
+      <div class="popup" id="popup--card-2">
+        <div class="popup__content popup--learn-more">
+          <a href="#projects" class="popup__close">&times;</a>
+          <div class="popup--learn-more__about">
+            <h3 class="popup--learn-more__header">About</h3>
+            <p class="popup--learn-more__text">The portfolio fundamentally revolves around my projects. Focused on showcasing a select few with high quality standards.</p>
+          </div>
+          <div class="popup--learn-more__methodology">
+            <h3 class="popup--learn-more__header">Methodology</h3>
+            <p class="popup--learn-more__text">
+              <ul class="popup--learn-more__list">
+                <li>VS Code since it's my main IDE</li>
+                <li>One-page layout to force creativity in front-end capabilities. Employed a combination of float, flex, and grid properties.</li>
+                <li>Instead of using a CSS framework, I created all the CSS features from scratch for greater control and customization</li>
+                <li>Sass as the CSS preprocessor to facilitate BEM notation</li>
+                <li>Built with responsive design and a desktop-first construction</li>
+              </ul>
+          </div>
+          <div class="popup--learn-more__source">
+            <h3 class="popup--learn-more__header">Source Code</h3>
+            <p class="popup--learn-more__text">Click the Github icon below to see the source code and documentation<p>
+            <a href="https://github.com/JacobGrisham?tab=projects" class="popup--learn-more__link"></a>
+              <svg class="popup--learn-more__icon">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+          </div>
+        </div> 
+      </div>
+      <!--
+      <a href="#popup--chart" class="projects__btn btn btn--chart active collapse" id="btn--chart">Tech stack comparison chart</a>
+      -->
+      <!-- CHART -->
+        <!--
+        <div id="popup--chart" class="popup">
+          <div class="popup__content">
+            <a href="#btn--chart" class="popup__close">&times;</a>
+            <table class="popup--chart">
+              <caption class="popup--chart__caption">Table of Projects vs. Programming Languages Used</caption>
+              <thead class="popup--chart__header">
+                <tr class="popup--chart__xaxis">
+                  <th></th>
+                  <th scope="col">YelpCamp</th>
+                  <th scope="col">CERS Consultant</th>
+                  <th scope="col">Portfolio</th>
+                  <th scope="col">Capstone Project</th>
+                </tr>
+              </thead>
+              <tbody class="popup--chart__body">
+                <tr>
+                  <th scope="row" class="popup--chart__yaxis">Bootstrap</th>
+                  <td class="popup--chart__data">
+                    <svg class="popup--chart__data__icon">
+                      <use xlink:href="img/sprite.svg#icon-checkbox-checked"></use>
+                    </svg>
+                  </td>
+                  <td class="popup--chart__data">
+                    <svg class="popup--chart__data__icon">
+                      <use xlink:href="img/sprite.svg#icon-checkbox-checked"></use>
+                    </svg>
+                  </td>
+                  <td colspan="2"></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="popup--chart__yaxis">Sass</th>
+                  <td colspan="2"></td>
+                  <td class="popup--chart__data">
+                    <svg class="popup--chart__data__icon">
+                      <use xlink:href="img/sprite.svg#icon-checkbox-checked"></use>
+                    </svg>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="popup--chart__yaxis">Typescript</th>
+                  <td colspan="4"></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="popup--chart__yaxis">Python</th>
+                  <td colspan="4"></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="popup--chart__yaxis">Node.js</th>
+                  <td colspan="4"></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="popup--chart__yaxis">React</th>
+                  <td colspan="4"></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="popup--chart__yaxis">Redux</th>
+                  <td colspan="4"></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="popup--chart__yaxis">MongoDB</th>
+                  <td colspan="4"></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="popup--chart__yaxis">PostgresSQL</th>
+                  <td colspan="4"></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="popup--chart__yaxis">GraphQL</th>
+                  <td colspan="4"></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="popup--chart__yaxis">Git</th>
+                  <td colspan="4"></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="popup--chart__yaxis">Heroku</th>
+                  <td colspan="4"></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="popup--chart__yaxis">AWS</th>
+                  <td colspan="4"></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="popup--chart__yaxis">Docker</th>
+                  <td colspan="4"></td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="popup--chart__footer">*All projects use HTML, CSS, and Javascript</p>
+          </div>
+        </div>
+      -->
+    </section>
+
+    <!-- BIO SECTION -->
+    <section class="bio" id="bio">
+    <h4 class="bio__header">Bio</h4>
+    <img src="img/Tech Account Profile Photo.jpg" alt="My photo" class="bio__img">
+    <!--
+    <cite class="bio__quote"><span class="bio__quote__text">"It takes half your life before you discover life is a do-it-yourself project."</span><p>- Napolean Hill</p></cite>
+    -->
+    <div class="bio__content">
+      <p class="bio__content__paragraph">I am a software engineer because I am passionate about solving problems and building things. I chose to focus on web development because it's a ubiquitous, accessible, and powerful platform.</p>
+      <p class="bio__content__paragraph">I've taken advantage of various, vetted resources to learn software engineering. My university education didn't include computer science, so I've taken the initiative to spearhead my education. I've learned most of my skills and knowledge from Massive Open Online Courses (MOOCs), a rapidly expanding supplement to traditional education. I've honed those skills through project-based learning. I've deepened my knowledge through incorporating university-required textbooks. I'm always learning, so check out the courses completed, in progress, and queued via the curriculum link below.</p>
+      <p class="bio__content__paragraph">My journey has cultivated and strengthened several personality traits that fuel my progress. Learning on my own,<em> while </em>working a full time job, I've exercised self-discipline to consistently make the time required to get stuff done. Being new to this industry, I've adopted the growth mindset to find the opportunity in knowledge gaps and to reap the benefits of learning from mistakes. Lastly, I've grown the grit mindset into the habit of never giving up, particularly when solving complex problems. For more context and information about who I am and my journey, please visit my Instagram. For more updates on my activity, please visit my Twitter.</p>
+    </div>
+    <button type="button" class="bio__button btn btn--curriculum active collapse">Curriculum</button>
+    <!-- CURRICULUM -->
+    <div class="curriculum">
+        <div class="curriculum__methodology">
+          <p><strong>Methodology</strong>: I aim for a well-rounded and thorough self-education. I've used <a href="https://roadmap.sh/frontend" class="curriculum__link" id="curriculum__link--white">this frontend roadmap</a> and <a href="https://roadmap.sh/backend" class="curriculum__link" id="curriculum__link--white">this backend roadmap</a> as syllabi to guide me on what topics to cover and the order in which to complete them. I used Udemy for jump-starting my journey by completing an online bootcamp. I now use Udemy for gaining skills in specific technologies. I use eDX and Coursera for learning computer science fundamentals. Lastly, I use books to expand upon or deepen my knowledge of specific subjects. I have chosen the specific courses and texbooks based on recommendations from numerous sources.</p>
+        </div>
+        <!-- LIST OF COURSES AND BOOKS -->
+        <ol class="curriculum__main">
+          <!-- COMPLETED -->
+          <span class="curriculum__main-completed curriculum__box">
+            <h3 class="curriculum__header">
+              <div class="curriculum__header-completed">
+                <svg class="curriculum__header__icon">
+                  <use xlink:href="img/sprite.svg#icon-checkmark"></use>
+                </svg>
+                Completed
+              </div>
+            </h3>
+            <div class="curriculum__list">
+              <li class="curriculum__item"><a href="https://www.udemy.com/course/the-web-developer-bootcamp/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Udemy Web Development Bootcamp</a></li>
+              <li class="curriculum__item"><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Udemy The Complete 2020 Web Development Bootcamp</a></li>
+              <li class="curriculum__item"><a href="https://www.udemy.com/course/advanced-css-and-sass/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Udemy Advanced CSS and Sass</a></li>
+            </div>
+          </span>
+          <!-- IN PROGRESS -->
+          <span class="curriculum__main-progress curriculum__box">
+            <h3 class="curriculum__header">
+              <div class="curriculum__header-progress">
+                <svg class="curriculum__header__icon">
+                  <use xlink:href="img/sprite.svg#icon-spinner6"></use>
+                </svg>
+                In Progress
+              </div>
+            </h3>
+            <div class="curriculum__list">
+              <li class="curriculum__item"><a href="https://www.edx.org/professional-certificate/harvardx-computer-science-for-web-programming" class="curriculum__link" target="_blank" rel="noopener noreferrer">eDX Harvard Computer Science for Web Programming</a></li>
+              <li class="curriculum__item"><a href="https://www.oreilly.com/library/view/design-patterns-elements/0201633612/" class="curriculum__link" target="_blank" rel="noopener noreferrer"><cite>Design Patterns: Elements of Reusable Object-Oriented Software</cite> by Gamma et al.</a></li>
+              <li class="curriculum__item"><a href="https://www.oreilly.com/library/view/the-pragmatic-programmer/020161622X/" class="curriculum__link" target="_blank" rel="noopener noreferrer"><cite>The Pragmatic Programmer: From Journeyman to Master</cite> by Hunt & Thomas</a></li>
+            </div>
+          </span>
+          <!-- QUEUED -->
+          <span class="curriculum__main-queue curriculum__box">
+            <h3 class="curriculum__header">
+              <div class="curriculum__header-queued">
+                <svg class="curriculum__header__icon">
+                  <use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+                </svg>
+                Queued
+              </div>
+            </h3>
+            <div class="curriculum__list">
+              <li class="curriculum__item"><a href="https://www.coursera.org/specializations/full-stack-react" class="curriculum__link" target="_blank" rel="noopener noreferrer">Coursera Hong Kong University of Science and Technology Full Stack Web Development with React Specialization</a></li>
+              <li class="curriculum__item"><a href="https://www.coursera.org/specializations/data-structures-algorithms" class="curriculum__link" target="_blank" rel="noopener noreferrer">Coursera UC San Diego Data Structures and Algorithms</a></li>
+              <li class="curriculum__item"><a href="https://mitpress.mit.edu/books/introduction-algorithms-third-edition" class="curriculum__link" target="_blank" rel="noopener noreferrer"><cite>Introduction to Algorithms, Third Edition</cite> by Cormen et al. </a></li>
+              <li class="curriculum__item"><a href="https://www.udemy.com/course/the-complete-nodejs-developer-course-2/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Udemy The Complete Node.js Developer Course</a></li>
+              <li class="curriculum__item"><a href="https://www.udemy.com/course/understanding-typescript/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Udemy Understanding Typescript</a></li>
+              <li class="curriculum__item"><a href="https://www.oreilly.com/library/view/clean-code/9780136083238/" class="curriculum__link" target="_blank" rel="noopener noreferrer"><cite>Clean Code: A Handbook of Agile Software Craftsmanship</cite> by Robert Martin</a></li>
+            </div>
+          </span>
+        </ol>
+      </div>
+    </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <h4 class="contact__header">Contact</h4>
+      <!-- ONLINE PROFILE -->
+      <figure class="online-profile">
+        <h5 class="online-profile__header">Online Profile</h5>
+        <div class="online-profile__icon-box">
+          <a href="https://github.com/JacobGrisham?tab=projects" class="online-profile__link">
+            <svg class="online-profile__icon">
+              <use xlink:href="img/sprite.svg#icon-github"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="online-profile__icon-box">
+          <a href="https://codepen.io/jacobgrisham?__cf_chl_jschl_tk__=70d4d48d9c22c4eb54f4d2f57c2429b618f17ebe-1590190959-0-AW_iR-FmL5t7_yMdD0gELuy8nwhIlmkIi3Cw8O9HlhaUSZsieUYDhGWt4cHfKHAMYhXiwcB5NWVKb3Mue6-kC5rrO6XilN3tpl3xH-qekOraOS4Q7ND50RwQ8xO0B_YRmFBbdZlaXhDYZRPYkWn54KS87BQa7SkoqePlKyMppUSpi9sZfgu7141OzHGFPBSAG1Cv_3EIu_6wuIMbmMNztfcmPWeH8MgA3rfbPCYeIpZqAePEpD-Orb8zBBRzfowj21VQkKHNdfk0zB-7x4QFykYXGuoB45I22GlehnxQX_hqnJPQm5yx4-n87qw3wndz9jLdC-7EpHkRmobL_DKqaHO5FY2vhA90DJQM5VH7y1m9" class="online-profile__link">
+            <svg class="online-profile__icon">
+              <use xlink:href="img/sprite.svg#icon-codepen"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="online-profile__icon-box">
+          <a href="https://www.linkedin.com/in/jacob-grisham-345285112/" class="online-profile__link">
+            <svg class="online-profile__icon">
+              <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="online-profile__icon-box">
+          <a href="https://angel.co/u/jacob-grisham" class="online-profile__link">
+            <svg class="online-profile__icon">
+              <use xlink:href="img/sprite.svg#icon-angellist"></use>
+            </svg>
+          </a>
+        </div>
+      </figure>
+      <!-- EMAIL -->
+      <figure class="email">
+        <h5 class="email__header">Email</h5>
+        <div class="email__icon-box">
+          <a href="mailto:jacob.d.grisham@gmail.com" class="email__link">
+            <svg class="email__icon">
+              <use xlink:href="img/sprite.svg#icon-gmail"></use>
+            </svg>
+          </a>
+        </div>
+      </figure>
+      <!-- SOCIAL MEDIA -->
+      <figure class="social-media">
+        <h5 class="social-media__header">Social Media</h5>
+        <div class="social-media__icon-box">
+          <a href="https://www.instagram.com/jacobdgrisham/" class="social-media__link">
+            <svg class="social-media__icon">
+              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="social-media__icon-box">
+          <a href="https://twitter.com/JacobDGrisham" class="social-media__link">
+            <svg class="social-media__icon">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="social-media__icon-box">
+          <a href="https://www.youtube.com/channel/UCMZ0FRVeMKaoxF7RWKLVSow?view_as=subscriber" class="social-media__link">
+            <svg class="social-media__icon">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </div>
+      </figure>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="footer__fun-note">Made with<svg class="footer__icon"><use xlink:href="img/sprite.svg#icon-heart"></use></svg>in SF</p>
+      <p>Copyright 2020 &copy; by Jacob Grisham</p>
+    </footer>
+
+  <!-- JAVASCRIPT -->
+  <!-- DROPDOWN FOR TECH STACK -->
+    <script>
+      var coll = document.getElementsByClassName("collapse");
+      var i;
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

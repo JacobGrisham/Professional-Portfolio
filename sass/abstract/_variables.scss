@@ -1,0 +1,42 @@
+// COLORS ordered lightest to darkest//
+// PRIMARY //
+$white: rgb(255,255,255);
+$white-2: rgb(245,245,245);
+$grey-1: rgb(234,234,234);
+$grey-2: rgb(220,220,220);
+$grey-3: rgb(213,213,213);
+$grey-4: rgb(192,192,192);
+$grey-5: rgb(173,173,173);
+
+// SECONDARY //
+$navy-2: rgb(34,45,58);
+
+// TERTIARY //
+$black-1: rgb(42,42,42);
+$black-2: rgb(25,25,25);
+$black-3: rgb(7,7,7);
+
+// ACCENT //
+$gold-1: rgb(226,181,109);
+$gold-2: rgb(223,172,93);
+$gold-3: rgb(200,155,83);
+
+// SHADOWS //
+$shadow-near: 0 .5rem 1rem rgba(0,0,0,.8);
+$shadow-middle: 0 1rem 2.5rem rgba(0,0,0,.4);
+$shadow-far: 0 1.5rem 4rem rgba(0,0,0,.2);
+
+// FONT-SIZES //
+$home-header-font-size: 3.2rem;
+$sub-header-font-size: 2.4rem;
+$button-font-size: 1.2rem;
+$footer-font-size: 1.2rem;
+
+// MEDIA QUERIES //
+$bp-4K: 160em;                   //  2560px/16px = 160    // 
+$bp-laptop-l: 90em;              //  1440px/16px = 90     //
+$bp-laptop: 64em;                //  1024px/16px = 64     // 
+$bp-tablet: 48em;                //  768px/16px = 48      // 
+$bp-mobile-l: 26.56em;           //  425px/16px = 26.56   //
+$bp-mobile-m: 17.19em;           //  275px/16px = 17.19   //
+$bp-mobile-s: 20em;              //  320px/16px = 20      //

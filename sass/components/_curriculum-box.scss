@@ -1,0 +1,90 @@
+.curriculum {
+// The rest of the code under this class is located in the curriculum section of _home.scss
+
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media only screen and (max-width: $bp-laptop-l){
+      padding: 1.6rem;
+      gap: 3.2rem;
+    }
+
+    @media only screen and (max-width: $bp-laptop){
+      padding: 0;
+      gap: 2.4rem;
+    }
+
+    @media only screen and (max-width: $bp-tablet){
+      padding: 0;
+      gap: 1.6rem;
+    }
+
+    &-completed {
+      grid-column: 1 / 2;
+
+      @media only screen and (max-width: $bp-tablet){
+        grid-column: 1 / -1;
+      }
+    }
+
+    &-progress {
+      grid-column: 2 / 3;
+
+        @media only screen and (max-width: $bp-tablet){
+        grid-column: 1 / -1;
+      }
+    }
+
+    &-queue {
+      grid-column: 3 / 4;
+
+      @media only screen and (max-width: $bp-tablet){
+        grid-column: 1 / -1;
+      }
+    }
+  }
+
+  &__box {
+
+  }
+
+  &__header {
+    background-color: $white;
+    text-align: center;
+    padding: 1.6rem;
+
+    &__icon {
+      height: 3.5rem;
+      width: 3.5rem;
+      margin-right: 5px;
+      fill: $navy-2;
+    }
+  }
+
+  &__list {
+    border-radius: 5px;
+    background-color: $grey-1;
+    padding-left: 3rem;
+    padding-right: 1rem;
+  }
+
+  &__item {
+    padding: 1.2rem 0;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $navy-2;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+      color: $gold-2;
+    }
+  }
+}

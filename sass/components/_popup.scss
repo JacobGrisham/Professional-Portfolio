@@ -1,0 +1,122 @@
+.popup {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 3000;
+  background-color: rgba($black-1, .97);
+  border-radius: 5px;
+  transition: all .5s;
+  // These two properties are to initially hide the popup //
+  opacity: 0;
+  visibility: hidden;
+  // This property is to add background blur //
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+  // The target pseudo-class refers to the target in the html. The target in this case is #popup in the html line <a href="#popup" class="btn btn--white">Learn more!</a> //
+
+  &:target &__content {
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+  }
+  // This creates the effect that the popup content comes from behind the page to full size //
+
+  &__close {
+    &:link,
+    &:visited {
+      height: 3rem;
+      width: 3rem;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      font-size: 3rem;
+      text-decoration: none;
+      transition: all .2s;
+    }
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: 70%;
+    overflow-y: scroll;
+    opacity: 0;
+    background-color: $grey-2;
+    border-radius: 5px;
+    transform: translate(-50%,-50%) scale(.25);
+    // We have to repeat this translate from our mixin. This is for two reasons. First, the cascade during the parsing phase uses this last transform. Secondly, you can only have one transform. //
+    // These two lines of code are used to set the initial conditions for the selector &:target &__content //
+    transition: all .5s .3s;
+    // This animates the popup content //
+
+    @media only screen and (max-width: $bp-laptop){
+      height: 80%;
+      width: 80%;
+    }
+      @media only screen and (max-width: $bp-tablet){
+        height: 90%;
+        width: 90%;
+    }
+  }
+
+  // PROJECT INFO POPUP //
+  &--learn-more {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(min-content, 1fr));
+    grid-template-columns: 1fr minmax(min-content, 64vw) 1fr;
+    gap: 1.6rem 0;
+    padding: 1.6rem;
+
+    @media only screen and (max-width: $bp-tablet){
+      grid-template-columns: 1fr minmax(min-content, 84vw) 1fr;
+    }
+
+    &__about {
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+      background-color: $white;
+      border-radius: 5px;
+      padding: 1.6rem;
+    }
+
+    &__methodology {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+      background-color: $white;
+      border-radius: 5px;
+      padding: 1.6rem;
+    }
+
+    &__source {
+      grid-row: 3 / 4;
+      grid-column: 2 / 3;
+      background-color: $white;
+      border-radius: 5px;
+      padding: 1.6rem;
+    }
+
+    &__header {
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    &__icon {
+      height: 4rem;
+      width: 4rem;
+      margin: 1rem;
+    }
+  }
+}

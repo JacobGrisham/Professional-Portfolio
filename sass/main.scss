@@ -1,0 +1,19 @@
+// IMPORTING PARTIAL FILES //
+@import "abstract/_functions.scss";
+@import "abstract/_mixins.scss";
+@import "abstract/_variables.scss";
+
+@import "base/_animations.scss";
+@import "base/_base.scss";
+@import "base/_typography.scss";
+
+@import "components/_curriculum-box.scss";
+@import "components/_card.scss";
+@import "components/_button.scss";
+@import "components/_skills-box.scss";
+@import "components/_popup.scss";
+
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+
+@import "pages/_home.scss";

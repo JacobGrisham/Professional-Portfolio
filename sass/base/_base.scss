@@ -1,0 +1,28 @@
+// GLOBAL RESET //
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px as font-size. 10px/16px = 62.5%. 1rem = 10px //
+
+  @media only screen and (max-width: $bp-mobile-l) {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box; // It's better practice to put box-sizing: border-box here and to delcare it as inherit under *. It's more maintainable //
+  display: grid;
+  grid-template-rows: [header-start] 100vh [header-end skills-start] minmax(min-content, max-content) [skills-end project-start] minmax(min-content, max-content) [project-end bio-start] minmax(min-content, max-content) [bio-end contact-start] minmax(min-content, max-content) [contact-end footer-start] max-content [footer-end];
+}
+
+::selection {
+  background-color: $navy-2;
+  color: $gold-2;
+}

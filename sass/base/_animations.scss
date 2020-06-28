@@ -1,0 +1,40 @@
+// @keyframes allows animation. The percentages represent what happens at certain points in time. Note that browsers are optimized for only two different properties //
+
+// HEADER ANIMATION //
+@keyframes moveInLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80%{
+    opacity: 1;
+    transform: translateX(1rem);
+  }
+  100%{
+    transform: translate(0)
+  }
+
+}
+@keyframes moveInRight {
+  0%{
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80%{
+    opacity: 1;
+    transform: translateX(-1rem);
+  }
+  100%{
+    transform: translate(0)
+  }
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,118 @@
+.btn {
+  justify-self: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+
+  &--header {
+
+    &:link,
+    &:visited {
+      padding: 2rem 7rem;
+      border: 2px solid $gold-2;
+      color: $gold-2;
+
+        @media only screen and (max-width: $bp-laptop) {
+          padding: 1.5rem 6.5rem;
+        }
+    }
+
+    &:active,
+    &:hover,
+    &:focus {
+      // We add the selector btn:focus to this section otherwise the button in the Booking section has a blue box outline. By putting it here, we're saying that the focus state will look the same as the active state. We don't simply delete the focus state due to accessibility reasons //
+      background-image: linear-gradient(to right, $gold-1, $gold-3);
+      color: $navy-2;
+    }
+  }
+
+  &--animated {
+    //animation: moveUp 1.5s ease-out 0.5s;
+    animation-fill-mode: backwards;
+    // animation-fill backwards automatically applies the animations settings before they start //
+  }
+
+  &--card {
+    &:link,
+    &:visited {
+      align-self: center;
+      padding: 1rem 6.4rem;
+      border-radius: 5px;
+      background-color: $white;
+
+      font-size: $button-font-size;
+      color: $black-1;
+
+      @media only screen and (max-width: $bp-tablet) {
+        padding: 1rem 30%;
+      }
+
+      @media only screen and (max-width: $bp-mobile-l) {
+        padding: 1rem 25%;
+      }
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $grey-2;
+    }
+  }
+
+  &--stack {
+    display: flex;
+    cursor: pointer;
+    border: none;
+
+    align-self: center;
+    padding: 1.4rem 7rem;
+    border-radius: 5px;
+    background-color: $white;
+
+    // -webkit breaks the Aqua appearance on MacOS browsers
+    -webkit-appearance: button;
+    font-size: $button-font-size;
+    color: $black-1;
+
+    @media only screen and (max-width: $bp-tablet) {
+      padding: 1.4rem 30%;
+    }
+
+    @media only screen and (max-width: $bp-mobile-l) {
+      padding: 1.4rem 25%;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $grey-2;
+    }
+  }
+
+  &--chart,
+  &--curriculum {
+    display: flex;
+    cursor: pointer;
+    border: none;
+
+    align-self: center;
+    padding: 1rem 7rem;
+    border-radius: 5px;
+    background-color: $white;
+
+    font-size: $button-font-size;
+    color: $black-1;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $grey-2;
+    }
+  }
+
+  &__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: $navy-2;
+  }
+}
