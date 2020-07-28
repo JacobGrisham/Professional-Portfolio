@@ -5,9 +5,8 @@ const express 				= require("express"),
 // Setting up Express
 app.use(express.static("public"));
 
-
-// Setting the port for the server
-const port = 3000;
-app.listen(port, () => {
-	console.log("Server is on")
-});
+// use port 3000 unless there exists a preconfigured port
+var port = process.env.PORT || 3000;
+app.listen(port, process.env.IP, () => {
+	console.log("Server is on");
+	});
