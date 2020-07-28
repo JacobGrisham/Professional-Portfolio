@@ -4,10 +4,6 @@
   "description": "Portfolio of web development projects to showcase to potential employers",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css",
     "start": "node app.js"
   },
   "author": "Jacob Grisham",
