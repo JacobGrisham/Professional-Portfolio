@@ -27,6 +27,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- JS -->
+    <script type="text/javascript" src="index.js"></script>
+
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
@@ -589,21 +592,6 @@
     </footer>
 
   <!-- JAVASCRIPT -->
-  <!-- INTERSECTION OBSERVER FOR YOUTUBE EMBED -->
-    <script>
-      // Create Intersection Observer
-      let options = {
-        root: document.querySelector('#projects'),
-        rootMargin: '0px',
-        threshold: 1.0
-      }
-
-      let observer = new IntersectionObserver(callback, options);
-
-      // Targeting an element to be observed
-      let target = document.querySelector('#target');
-      observer.observe(target);
-    </script>
   <!-- DROPDOWN FOR TECH STACK -->
     <script>
       var coll = document.getElementsByClassName("collapse");
