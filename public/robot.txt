@@ -1,0 +1,3 @@
+Sitemap: http://www.jacobgrisham.com/sitemap.xml
+User-agent: *
+Disallow:
