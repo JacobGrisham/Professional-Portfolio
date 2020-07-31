@@ -1,3 +1,6 @@
+// Lazy Loader
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
 
 // INTERSECTION OBSERVER FOR YOUTUBE EMBED
 // Create Intersection Observer
