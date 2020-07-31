@@ -14,6 +14,14 @@
   color: $navy-2;
 }
 
+// FORMATTING FOR PROJECT INFO POPUP
+@mixin popup-formatting{
+  grid-column: 2 / 3;
+  background-color: $white;
+  border-radius: 5px;
+  padding: 1.6rem;
+}
+
 // Initial conditions for hiding dropdown content //
 @mixin hide-content {
   display: none;

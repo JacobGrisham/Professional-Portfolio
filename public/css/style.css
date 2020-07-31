@@ -360,10 +360,10 @@ body {
         width: 90%; } }
   .popup--learn-more {
     display: grid;
-    grid-template-rows: repeat(3, minmax(min-content, 1fr));
+    grid-template-rows: repeat(4, minmax(min-content, 1fr));
     grid-template-columns: 1fr minmax(min-content, 64vw) 1fr;
-    gap: 1.6rem 0;
-    padding: 1.6rem; }
+    padding: 1.6rem;
+    gap: 1.6rem 0; }
     @media only screen and (max-width: 48em) {
       .popup--learn-more {
         grid-template-columns: 1fr minmax(min-content, 84vw) 1fr; } }
@@ -383,6 +383,12 @@ body {
       margin-left: 3rem; }
     .popup--learn-more__source {
       grid-row: 3 / 4;
+      grid-column: 2 / 3;
+      background-color: white;
+      border-radius: 5px;
+      padding: 1.6rem; }
+    .popup--learn-more__timesheet {
+      grid-row: 4 / 5;
       grid-column: 2 / 3;
       background-color: white;
       border-radius: 5px;
