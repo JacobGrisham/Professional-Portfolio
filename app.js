@@ -1,17 +1,22 @@
 // Calling dependencies in package.json
 const sslRedirect 		= require('heroku-ssl-redirect'),
 			express 				= require("express"),
-			app 						= express();
+			app 						= express(),
+			lozad 					= require('lozad');
 
 // Enable ssl redirect
 app.use(sslRedirect());
 
 // Setting up Express
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, 'public'))) // If you run the express app from another directory, it’s safer to use the absolute path of the directory that you want to serve
 
-//const publicPath = express.static(join(__dirname, "../public"));
-//app.use("public", publicPath);
+//app.use(express.static('public'));;
 
+// Lazy Loader
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+
+// Thumbnail url
 app.get("/thumbnail", function(req,res){        
 	res.send('<img src="/public/img/thumbnail.png" />');
 });

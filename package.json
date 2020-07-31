@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "heroku-ssl-redirect": "0.0.4"
+    "heroku-ssl-redirect": "0.0.4",
+    "lozad": "^1.15.0"
   }
 }
