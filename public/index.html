@@ -232,7 +232,7 @@
 
     <!-- PROJECTS SECTION -->
     <section class="projects" id="projects">
-      <h3 class="projects__header">Projects</h3>
+      <h3 class="projects__header" id="target">Projects</h3>
       <!-- PROJECT: YelpCamp -->
       <div class="card">
         <h4 class="card__heading">YelpCamp</h4>
@@ -589,6 +589,21 @@
     </footer>
 
   <!-- JAVASCRIPT -->
+  <!-- INTERSECTION OBSERVER FOR YOUTUBE EMBED -->
+    <script>
+      // Create Intersection Observer
+      let options = {
+        root: document.querySelector('#projects'),
+        rootMargin: '0px',
+        threshold: 1.0
+      }
+
+      let observer = new IntersectionObserver(callback, options);
+
+      // Targeting an element to be observed
+      let target = document.querySelector('#target');
+      observer.observe(target);
+    </script>
   <!-- DROPDOWN FOR TECH STACK -->
     <script>
       var coll = document.getElementsByClassName("collapse");
