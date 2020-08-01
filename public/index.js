@@ -12,3 +12,14 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+let options = {
+  root: document.querySelector('#projects'),
+  rootMargin: '0px',
+  threshold: 1.0
+}
+
+let observer = new IntersectionObserver(callback, options);
+
+let target = document.querySelector('#target');
+observer.observe(target);
