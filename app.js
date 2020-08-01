@@ -12,7 +12,7 @@ app.use(sslRedirect());
 app.use("/", express.static(path.join(__dirname, "public")))
 // If you run the express app from another directory, it’s safer to use the absolute path of the directory that you want to serve
 
-// Thumbnail url
+// Thumbnail image route
 app.get("/thumbnail", function(req,res){        
 	res.send('<img src="public/img/thumbnail.png">');
 });
