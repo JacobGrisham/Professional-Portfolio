@@ -1,5 +1,18 @@
 .curriculum {
-// The rest of the code under this class is located in the curriculum section of _home.scss
+// Associated code in _home.scss
+
+  &__methodology__link {
+    &:link,
+    &:visited {
+    text-decoration: underline;
+    color: $grey-1;
+  }
+    &:hover,
+    &:focus,
+    &:active {
+      color: $gold-2;
+    }
+  }
 
   &__main {
     display: grid;
@@ -45,9 +58,6 @@
     }
   }
 
-  &__box {
-
-  }
 
   &__header {
     background-color: $white;

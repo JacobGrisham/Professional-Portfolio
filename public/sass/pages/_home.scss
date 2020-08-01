@@ -216,19 +216,6 @@
   }
 }
 
-#curriculum__link--white {
-    &:link,
-    &:visited {
-    text-decoration: underline;
-    color: $grey-1;
-  }
-    &:hover,
-    &:focus,
-    &:active {
-      color: $gold-2;
-    }
-}
-
 // CONTACT SECTION //
 .contact {
   grid-row: contact-start / contact-end;

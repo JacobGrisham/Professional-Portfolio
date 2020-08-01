@@ -55,6 +55,13 @@ body {
   font-size: 1.6rem;
   line-height: 2.4rem; }
 
+.curriculum__methodology__link:link, .curriculum__methodology__link:visited {
+  text-decoration: underline;
+  color: #eaeaea; }
+
+.curriculum__methodology__link:hover, .curriculum__methodology__link:focus, .curriculum__methodology__link:active {
+  color: #dfac5d; }
+
 .curriculum__main {
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
@@ -662,13 +669,6 @@ body {
     color: #eaeaea;
     padding: 1.6rem;
     border-radius: 5px; }
-
-#curriculum__link--white:link, #curriculum__link--white:visited {
-  text-decoration: underline;
-  color: #eaeaea; }
-
-#curriculum__link--white:hover, #curriculum__link--white:focus, #curriculum__link--white:active {
-  color: #dfac5d; }
 
 .contact {
   grid-row: contact-start / contact-end;
