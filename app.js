@@ -1,12 +1,15 @@
 // Calling dependencies in package.json
-const sslRedirect 		= require('heroku-ssl-redirect'),
-			express 				= require("express"),
+const express 				= require("express"),
 			app 						= express(),
 			path 						= require('path'),
-			lozad 					= require('lozad');
+			sslRedirect 		= require('heroku-ssl-redirect'),
+			helmet 					= require("helmet");
 
 // Enable ssl redirect
 app.use(sslRedirect());
+
+// Helmet helps you secure your Express apps by setting various HTTP headers.
+app.use(helmet());
 
 // Setting up Express
 app.use("/", express.static(path.join(__dirname, "public")))
