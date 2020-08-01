@@ -16,8 +16,10 @@ app.use(sslRedirect());
 // Helmet helps you secure your Express apps by setting various HTTP headers.
 app.use(helmet());
 
+/*
 const observer = lozad(); // lazy loads elements with default selector as '.lozad'
 observer.observe();
+*/
 
 // Thumbnail image route
 app.get("/thumbnail", function(req,res){        
