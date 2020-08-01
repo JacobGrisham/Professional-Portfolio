@@ -1,19 +1,14 @@
-var lozad = require('lozad');
-
-// Lazy Loader
-const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-observer.observe();
-
-// INTERSECTION OBSERVER FOR YOUTUBE EMBED
-// Create Intersection Observer
-let options = {
-  root: document.querySelector('#projects'),
-  rootMargin: '0px',
-  threshold: 1.0
+// Drop down button
+var coll = document.getElementsByClassName("collapse");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
 }
-
-let observer = new IntersectionObserver(callback, options);
-
-// Targeting an element to be observed
-let target = document.querySelector('#target');
-observer.observe(target);
