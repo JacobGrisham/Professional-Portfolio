@@ -3,7 +3,11 @@ const express 				= require("express"),
 			app 						= express(),
 			path 						= require('path'),
 			sslRedirect 		= require('heroku-ssl-redirect'),
-			helmet 					= require("helmet");
+			helmet 					= require("helmet"),
+			compression = require('compression');
+
+// Compress Javascript
+app.use(compression());
 
 // Setting up Express
 app.use("/", express.static(path.join(__dirname, "public")))

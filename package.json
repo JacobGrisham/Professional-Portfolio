@@ -16,6 +16,7 @@
     "postcss-cli": "^7.1.0"
   },
   "dependencies": {
+    "compression": "^1.7.4",
     "express": "^4.17.1",
     "helmet": "^3.23.3",
     "heroku-ssl-redirect": "0.0.4",
