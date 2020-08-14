@@ -1,11 +1,1 @@
-{
-  "headers": {
-    "/**": {
-      "Content-Security-Policy": "default-src 'self'; font-src 'self' https://fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com; frame-ancestors 'none';",
-      "Strict-Transport-Security": "max-age=14400; includeSubDomains; preload",
-      "X-Content-Type-Options": "nosniff",
-      "X-Frame-Options": "DENY",
-      "X-XSS-Protection": "1; mode=block"
-    }
-  }
-}
+[{"appendMode":false,"backgroundColor":"#849d26","filters":[],"headers":[],"hideComment":true,"respHeaders":[{"comment":"","enabled":true,"name":"Strict-Transport-Security","value":"max-age=63072000; includeSubDomains; preload"},{"comment":"","enabled":true,"name":"X-Frame-Options","value":"DENY"},{"comment":"","enabled":true,"name":"Content-Security-Policy","value":"frame-ancestors 'none'"},{"comment":"","enabled":true,"name":"X-XSS-Protection","value":"1; mode=block"},{"comment":"","enabled":true,"name":"X-Content-Type-Options","value":"nosniff"},{"comment":"","enabled":true,"name":"","value":""}],"shortTitle":"1","textColor":"#ffffff","title":"Profile 1","urlReplacements":[]}]
