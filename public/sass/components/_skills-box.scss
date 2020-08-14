@@ -1,6 +1,6 @@
 .fade-in {
   opacity: 0;
-  transition: opacity 400ms ease-in;
+  transition: opacity 1s ease-in;
 }
 
 .fade-in.appear {
@@ -9,20 +9,32 @@
 
 .from-left {
   transform: translateX(-50%);
+
+  @media only screen and (max-width: $bp-laptop) {
+    transform: translateY(50%);
+  }
 }
 
 .from-right {
   transform: translateX(50%);
+
+  @media only screen and (max-width: $bp-laptop) {
+    transform: translateY(50%);
+  }
 }
 
 .from-left,
 .from-right {
-  transition: transform 800ms ease-in;
+  transition: transform 500ms ease-in;
 }
 
 .from-left.appear,
 .from-right.appear {
   transform: translateX(0);
+
+  @media only screen and (max-width: $bp-laptop) {
+    transform: translateY(0);
+  }
 }
 
 
