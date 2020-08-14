@@ -19,6 +19,6 @@
     "express": "^4.17.1",
     "helmet": "^3.23.3",
     "heroku-ssl-redirect": "0.0.4",
-    "lozad": "^1.15.0"
+    "lax.js": "^1.2.5"
   }
 }

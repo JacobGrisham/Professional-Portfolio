@@ -1,3 +1,8 @@
+.popup.active {
+  opacity: 1;
+  transform: translate(-50%,-50%) scale(1);
+}
+
 .popup {
   height: 100vh;
   width: 100vw;
@@ -56,7 +61,7 @@
     opacity: 0;
     background-color: $grey-2;
     border-radius: 5px;
-    transform: translate(-50%,-50%) scale(.25);
+    transform: translate(-50%,-50%) scale(0);
     // We have to repeat this translate from our mixin. This is for two reasons. First, the cascade during the parsing phase uses this last transform. Secondly, you can only have one transform. //
     // These two lines of code are used to set the initial conditions for the selector &:target &__content //
     transition: all .5s .3s;

@@ -3,8 +3,7 @@ const express 				= require("express"),
 			app 						= express(),
 			path 						= require('path'),
 			sslRedirect 		= require('heroku-ssl-redirect'),
-			helmet 					= require("helmet"),
-			lozad           = require('lozad');
+			helmet 					= require("helmet");
 
 // Setting up Express
 app.use("/", express.static(path.join(__dirname, "public")))

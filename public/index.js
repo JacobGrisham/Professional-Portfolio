@@ -1,3 +1,50 @@
+// Parallax with lax.js
+window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}
+
+// Popup for Project Info
+/*const openPopupButton = document.querySelectorAll("[data-popup-target]");
+const closePopupButton = document.querySelectorAll("[data-close-button]");
+
+openPopupButton.forEach(button => {
+  button.addEventListener("click", () => {
+    const popup = document.querySelector(button.dataset.popupTarget);
+    openPopup(popup);
+  })
+})
+
+closePopupButton.forEach(button => {
+  button.addEventListener("click", () => {
+    const popup = button.closest(".popup");
+    closePopup(popup);
+  })
+})
+
+function openPopup(popup) {
+  if (popup == null) {
+    return;
+  } else {
+    popup.classList.add("active");
+  }
+}
+
+function closePopup(popup) {
+  if (popup == null) {
+    return;
+  } else {
+    popup.classList.remove("active");
+  }
+}
+*/
+
 // Drop down button
 var coll = document.getElementsByClassName("collapse");
 var i;
@@ -13,13 +60,60 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-let options = {
-  root: document.querySelector('#projects'),
-  rootMargin: '0px',
-  threshold: 1.0
+
+// More Info button
+
+
+// Skill box fade-in
+const faders = document.querySelectorAll(".fade-in");
+
+const appearOptions = {
+  threshold: .10,
+};
+
+const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  })
+}, appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+
+
+// Lazyloading Videos and Images
+const media = document.querySelectorAll("[data-src]")
+
+function preloadMedia(iframe) {
+  const src = iframe.getAttribute("data-src");
+  if(!src) {
+    return;
+  }
+  iframe.src = src;
 }
 
-let observer = new IntersectionObserver(callback, options);
+const mediaOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px 500px 0px"
+};
 
-let target = document.querySelector('#target');
-observer.observe(target);
+const mediaObserver = new IntersectionObserver((entries, mediaObserver) => {
+  entries.forEach (entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      preloadMedia(entry.target);
+      mediaObserver.unobserve(entry.target);
+    }
+  });
+}, mediaOptions);
+
+media.forEach(video => {
+  mediaObserver.observe(video);
+})

@@ -27,33 +27,36 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Javacript Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="img/favicon_io/site.webmanifest">
     
-    <title> Jacob Grisham | Portfolio</title>
+    <title>Jacob Grisham</title>
   </head>
   <body>
     <!-- HEADER -->
     <header class="banner">
-      <h1 class="banner__main">
+      <h1 class="banner__main lax" data-lax-translate-y="0 0, 400 200">
         <span class="banner__main--part-1">Jacob </span>
         <span class="banner__main--part-2">Grisham</span>
       </h1>
-      <h2 class="banner__sub">
+      <h2 class="banner__sub lax" data-lax-translate-y="0 0, 400 200>
         <span class="banner__sub--part-1">Software </span>
         <span class="banner__sub--part-2">Engineer</span>
       </h2>
-      <a href="#projects" class="btn btn--header btn--animated">See my projects</a>
+      <a href="#projects" class="btn btn--header btn--animated lax" data-lax-translate-y="0 0, 400 200">See my projects</a>
     </header>
 
     <!-- SKILLS SECTION -->
     <section class="skills" id="skills">
       <h3 class="skills__header">Skills</h3>
       <!-- FRONT-END -->
-      <div class="skills-box">
+      <div class="skills-box fade-in from-left">
         <h4 class="skills-box__header">
           <svg class="skills-box__header-icon">
             <use xlink:href="img/sprite.svg#icon-embed2"></use>
@@ -102,7 +105,7 @@
         </ul>
       </div>
       <!-- BACK-END -->
-      <div class="skills-box">
+      <div class="skills-box fade-in from-left">
         <h4 class="skills-box__header">
           <svg class="skills-box__header-icon">
             <use xlink:href="img/sprite.svg#icon-terminal"></use>
@@ -155,7 +158,7 @@
         </ul>
       </div>
       <!-- DATABASE -->
-      <div class="skills-box">
+      <div class="skills-box fade-in from-right">
         <h4 class="skills-box__header">
           <svg class="skills-box__header-icon">
             <use xlink:href="img/sprite.svg#icon-database"></use>
@@ -186,7 +189,7 @@
         </ul>
       </div>
       <!-- DEPLOYMENT -->
-      <div class="skills-box">
+      <div class="skills-box fade-in from-right">
         <h4 class="skills-box__header">
           <svg class="skills-box__header-icon">
             <use xlink:href="img/sprite.svg#icon-cloud-upload"></use>
@@ -238,7 +241,7 @@
         <h4 class="card__heading">YelpCamp</h4>
         <h5 class="card__sub-heading">Web application and forum for uploading and sharing information about campgrounds</h5>
         <div class="card__video">
-          <iframe title="YelpCamp video demonstration and tutorial" data-src="https://www.youtube.com/embed/9IqcgAHhJ8k" src="https://www.youtube.com/embed/9IqcgAHhJ8k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card__video-content lozad"></iframe>
+          <iframe title="YelpCamp video demonstration and tutorial" data-src="//www.youtube.com/embed/9IqcgAHhJ8k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card__video-content"></iframe>
         </div>
         <!-- STACK -->
         <button type="button" class="card__button btn btn--stack active collapse">Stack</button>
@@ -246,12 +249,14 @@
           <div>HTML, CSS, Bootstrap, Javascript, Node.js, Express.js, MongoDB</div>
         </div>
         <a href="#popup--card-1" class="card__popup btn btn--card">Info</a>
+        <!--<button data-popup-target="#popup--card-1" class="card__popup btn btn--card">Info</button>-->
         <a href="https://aqueous-reaches-28926.herokuapp.com/" class="card__link btn btn--card">Launch</a>
       </div>
       <!-- POPUP/INFO -->
       <div class="popup" id="popup--card-1">
         <div class="popup__content popup--learn-more">
           <a href="#projects" class="popup__close">&times;</a>
+          <!--<button data-close-button class="popup__close">&times;</button>-->
           <div class="popup--learn-more__about">
             <h4 class="popup--learn-more__header">About</h4>
             <p class="popup--learn-more__text">First full-stack web application. Fundamentally, it's Yelp for campsites. The main features are login, sign-up, Admin role, Google Maps API, and Create, Edit, Update, Delete (CRUD) for campgrounds, comments, and reviews. Create routes have authentication. Edit, Update, and Delete routes have authentication and authorization. The basic foundation was built in the capstone project from the Udemy course <i>The Web Developer Bootcamp</i>.<a href="https://gentle-forest-96635.herokuapp.com/"> The Udemy course brought me up to this point</a>, and everything after that was done through research and original work. Compared to the other projects, this one is meant to display proficiency with middle-ground technologies.</p>
@@ -285,9 +290,9 @@
       <!-- PROJECT: Portfolio -->
       <div class="card">
         <h4 class="card__heading">Portfolio</h4>
-        <h5 class="card__sub-heading">Professional portfolio website to showcase software engineering projects to potential employers</h5>
+        <h5 class="card__sub-heading">Professional portfolio website to showcase software engineering projects</h5>
         <div class="card__video">
-          <iframe title="Portfolio video demonstration and tutorial" data-src="https://www.youtube.com/embed/hcrmmneYZkc" src="https://www.youtube.com/embed/hcrmmneYZkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card__video-content lozad"></iframe>
+          <iframe title="Portfolio video demonstration and tutorial" data-src="//www.youtube.com/embed/hcrmmneYZkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card__video-content"></iframe>
         </div>
         <!-- STACK -->
         <button type="button" class="card__button btn btn--stack active collapse">Stack</button>
@@ -434,7 +439,7 @@
     <!-- BIO SECTION -->
     <section class="bio" id="bio">
     <h3 class="bio__header">Bio</h3>
-    <img data-src="img/Tech Account Profile Photo medium.jpg" src="img/Tech Account Profile Photo medium.jpg" alt="My photo" class="bio__img lozad">
+    <img data-src="img/Tech Account Profile Photo medium.jpg" src="img/Tech Account Profile Photo small.jpg" alt="My photo" class="bio__img">
     <div class="bio__content">
       <p class="bio__content__paragraph">I am a software engineer because I am passionate about solving problems and building things. I chose to focus on web development because it's a ubiquitous, accessible, and powerful platform.</p>
       <p class="bio__content__paragraph">I've taken advantage of various, vetted resources to learn software engineering. My university education didn't include computer science, so I've taken the initiative to spearhead my education. I've learned most of my skills and knowledge from Massive Open Online Courses (MOOCs), a rapidly expanding supplement to traditional education. I've honed those skills through project-based learning. I've deepened my knowledge through incorporating university-required textbooks. I'm always learning, so check out the courses completed, in progress, and queued via the curriculum link below.</p>
@@ -529,7 +534,7 @@
           </a>
         </div>
         <div class="online-profile__icon-box">
-          <a href="https://www.linkedin.com/in/jacob-grisham-345285112/" class="online-profile__link">
+          <a href="https://www.linkedin.com/in/jacobgrisham/" class="online-profile__link">
             <svg class="online-profile__icon" aria-label="link to my LinkedIn account">
               <use xlink:href="img/sprite.svg#icon-linkedin"></use>
             </svg>

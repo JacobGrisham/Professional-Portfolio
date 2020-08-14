@@ -20,6 +20,8 @@ body {
   box-sizing: border-box; // It's better practice to put box-sizing: border-box here and to delcare it as inherit under *. It's more maintainable //
   display: grid;
   grid-template-rows: [header-start] 100vh [header-end skills-start] minmax(min-content, max-content) [skills-end project-start] minmax(min-content, max-content) [project-end bio-start] minmax(min-content, max-content) [bio-end contact-start] minmax(min-content, max-content) [contact-end footer-start] max-content [footer-end];
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
 }
 
 ::selection {
