@@ -2,9 +2,9 @@
 document.onreadystatechange = () => { 
   if (document.readyState !== "complete") { 
       document.querySelector("body").style.visibility = "hidden"; 
-      document.querySelector("#loader").style.visibility = "visible"; 
+      document.querySelector(".loader").style.visibility = "visible"; 
   } else { 
-      document.querySelector("#loader").style.display = "none"; 
+      document.querySelector(".loader").style.display = "none"; 
       document.querySelector("body").style.visibility = "visible"; 
   } 
 }; 
@@ -22,64 +22,28 @@ window.onload = function() {
 }
 
 // Popup for Project Info
-/*const openPopupButton = document.querySelectorAll("[data-popup-target]");
-const closePopupButton = document.querySelectorAll("[data-close-button]");
-
-openPopupButton.forEach(button => {
-  button.addEventListener("click", () => {
-    const popup = document.querySelector(button.dataset.popupTarget);
-    openPopup(popup);
-  })
-})
-
-closePopupButton.forEach(button => {
-  button.addEventListener("click", () => {
-    const popup = button.closest(".popup");
-    closePopup(popup);
-  })
-})
-
-function openPopup(popup) {
-  if (popup == null) {
-    return;
-  } else {
-    popup.classList.add("active");
-  }
-}
-
-function closePopup(popup) {
-  if (popup == null) {
-    return;
-  } else {
-    popup.classList.remove("active");
-  }
-}
-*/
 
 // Drop down button
-var coll = document.getElementsByClassName("collapse");
-var i;
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+$(".btn--stack").click(function(){
+  var id = $(this).attr("id");
+  console.log(id);
+  $(".card__stack").slideToggle(150);
+});
+
+$(".btn--curriculum").click(function(){
+  $(".curriculum").slideToggle(1000);
+});
+
 
 
 // More Info button
 
 
-// Skill box fade-in
+// Skill SVGs fade-in
 const faders = document.querySelectorAll(".fade-in");
 
 const appearOptions = {
-  threshold: .10,
+  threshold: 0,
 };
 
 const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
@@ -128,3 +92,9 @@ const mediaObserver = new IntersectionObserver((entries, mediaObserver) => {
 media.forEach(video => {
   mediaObserver.observe(video);
 })
+
+// Copyright Date
+var date = new Date();
+var year = date.getFullYear();
+
+document.getElementById("date").innerHTML = year;

@@ -1,31 +1,3 @@
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  80% {
-    opacity: 1;
-    transform: translateX(1rem); }
-  100% {
-    transform: translate(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  80% {
-    opacity: 1;
-    transform: translateX(-1rem); }
-  100% {
-    transform: translate(0); } }
-
-@keyframes moveUp {
-  0% {
-    transform: translateY(3rem);
-    opacity: 0; }
-  100% {
-    transform: translate(0);
-    opacity: 1; } }
-
 *,
 *::before,
 *::after {
@@ -45,7 +17,8 @@ body {
   display: grid;
   grid-template-rows: [header-start] 100vh [header-end skills-start] minmax(min-content, max-content) [skills-end project-start] minmax(min-content, max-content) [project-end bio-start] minmax(min-content, max-content) [bio-end contact-start] minmax(min-content, max-content) [contact-end footer-start] max-content [footer-end];
   overflow-x: hidden;
-  overscroll-behavior-y: none; }
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none; }
 
 ::selection {
   background-color: #222d3a;
@@ -128,6 +101,7 @@ body {
   gap: 1.5rem 0;
   padding: 2.4rem;
   border-radius: 5px;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.4);
   background-color: whitesmoke; }
   @media only screen and (max-width: 90em) {
     .card {
@@ -135,9 +109,6 @@ body {
   @media only screen and (max-width: 64em) {
     .card {
       grid-template-columns: repeat(3, 24vw); } }
-  .card:hover {
-    transition: box-shadow 0.5s ease-out;
-    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.4); }
   .card__heading {
     grid-column: 1 / -1;
     justify-self: center;
@@ -244,35 +215,10 @@ body {
       background-color: gainsboro; }
 
 .fade-in {
-  opacity: 0;
-  transition: opacity 1s ease-in; }
+  display: none; }
 
 .fade-in.appear {
-  opacity: 1; }
-
-.from-left {
-  transform: translateX(-50%); }
-  @media only screen and (max-width: 64em) {
-    .from-left {
-      transform: translateY(50%); } }
-
-.from-right {
-  transform: translateX(50%); }
-  @media only screen and (max-width: 64em) {
-    .from-right {
-      transform: translateY(50%); } }
-
-.from-left,
-.from-right {
-  transition: transform 500ms ease-in; }
-
-.from-left.appear,
-.from-right.appear {
-  transform: translateX(0); }
-  @media only screen and (max-width: 64em) {
-    .from-left.appear,
-    .from-right.appear {
-      transform: translateY(0); } }
+  transition: display 500ms ease-in; }
 
 .skills-box {
   display: grid;
@@ -281,7 +227,8 @@ body {
   padding: 2.4rem;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.8);
-  text-align: center; }
+  text-align: center;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.4); }
   @media only screen and (max-width: 64em) {
     .skills-box {
       grid-template-rows: 5rem 1fr;
@@ -291,9 +238,6 @@ body {
     .skills-box {
       grid-template-rows: 4rem min-content;
       padding: 1.6rem; } }
-  .skills-box:hover {
-    transition: box-shadow 0.5s ease-out;
-    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.4); }
   .skills-box__header-icon {
     height: 3.5rem;
     width: 3.5rem;
@@ -502,7 +446,7 @@ body {
   text-align: center;
   padding-top: 4.8rem;
   padding-bottom: 4.8rem;
-  background-color: #070707;
+  background-color: #191919;
   font-size: 1.2rem;
   color: white; }
   @media only screen and (max-width: 20em) {
@@ -521,7 +465,8 @@ body {
   grid-template-rows: repeat(2, min-content);
   gap: 2rem 1vw;
   padding: 4.8rem;
-  background-color: gainsboro; }
+  background-color: gainsboro;
+  background-image: url("/public/img/arches.png"); }
   @media only screen and (max-width: 64em) {
     .skills {
       grid-template-columns: min-content;
@@ -553,7 +498,8 @@ body {
   gap: 3rem 0;
   padding: 4.8rem;
   justify-items: center;
-  background-color: #eaeaea; }
+  background-color: #eaeaea;
+  background-image: url("/public/img/cubes.png"); }
   @media only screen and (max-width: 160em) {
     .projects {
       grid-template-columns: repeat(2, 1fr);
@@ -646,7 +592,8 @@ body {
   gap: 2rem 0;
   justify-items: center;
   padding: 4.8rem;
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  background-image: url("/public/img/gplay.png"); }
   @media only screen and (max-width: 48em) {
     .bio {
       padding: 3.2rem; } }
@@ -710,9 +657,10 @@ body {
   grid-template-rows: repeat(2, max-content);
   gap: 1.6rem 1.6rem;
   justify-items: center;
-  background-color: gainsboro;
   padding-top: 4.8rem;
-  padding-bottom: 4.8rem; }
+  padding-bottom: 4.8rem;
+  background-color: gainsboro;
+  background-image: url("/public/img/arches.png"); }
   @media only screen and (max-width: 48em) {
     .contact {
       grid-template-rows: repeat(3, max-content);
@@ -818,33 +766,17 @@ body {
       grid-column: 3 / 4;
       grid-row: 3 / 4; } }
 
-#loader {
-  border: 6px solid #eaeaea;
-  border-radius: 50%;
-  border-top: 6px solid #e2b56d;
-  width: 5rem;
-  height: 5rem;
-  animation: spin 1s linear infinite;
-  background-color: #222d3a; }
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg); } }
-
-.center {
-  position: absolute;
+.loader {
+  height: 100vh;
+  width: 100vw;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  margin: auto; }
-
-/*.loader-background {
   position: fixed;
-  top: 0;
-  width: 51%;
-  height: 100%;
-  background: $navy-2;
-  z-index: 1;
-}
-*/
+  z-index: 3000;
+  background-color: #2a2a2a; }
+
+.laptop__svg {
+  display: block;
+  margin: auto;
+  height: 60rem;
+  width: 60rem; }

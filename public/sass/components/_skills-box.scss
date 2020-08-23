@@ -1,42 +1,10 @@
 .fade-in {
-  opacity: 0;
-  transition: opacity 1s ease-in;
+  display: none;
 }
 
 .fade-in.appear {
-  opacity: 1;
+  transition: display 500ms ease-in;
 }
-
-.from-left {
-  transform: translateX(-50%);
-
-  @media only screen and (max-width: $bp-laptop) {
-    transform: translateY(50%);
-  }
-}
-
-.from-right {
-  transform: translateX(50%);
-
-  @media only screen and (max-width: $bp-laptop) {
-    transform: translateY(50%);
-  }
-}
-
-.from-left,
-.from-right {
-  transition: transform 500ms ease-in;
-}
-
-.from-left.appear,
-.from-right.appear {
-  transform: translateX(0);
-
-  @media only screen and (max-width: $bp-laptop) {
-    transform: translateY(0);
-  }
-}
-
 
 .skills-box {
   display: grid;
@@ -46,6 +14,7 @@
   border-radius: 5px;
   background-color: rgba($white, .8);
   text-align: center;
+  box-shadow: $shadow-middle;
 
   @media only screen and (max-width: $bp-laptop) {
     grid-template-rows: 5rem 1fr;
@@ -56,11 +25,6 @@
   @media only screen and (max-width: $bp-tablet) {
     grid-template-rows: 4rem min-content;
     padding: 1.6rem;
-  }
-
-  &:hover {
-    transition: box-shadow 0.5s ease-out;
-    box-shadow: $shadow-middle;
   }
 
   &__header-icon {
