@@ -17,3 +17,125 @@
     width: 60rem;
   }
 }
+
+#code-1 {
+	animation: code-1 0.5s linear 3.5s running;
+}
+#code-2 {
+	animation: code-2 0.5s linear 3s running;
+}
+#code-3 {
+	animation: code-3 0.5s linear 2.5s running;
+}
+#code-4 {
+	animation: code-4 0.5s linear 2s running;
+}
+#code-5 {
+	animation: code-5 0.5s linear 1.5s running;
+}
+#code-6 {
+	animation: code-6 0.5s linear 1s running;
+}
+#code-7 {
+	animation: code-7 0.5s linear 0.5s running;
+}
+#code-8 {
+	animation: code-8 0.5s linear 0s running;
+}
+
+@keyframes code-1 {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 7px;
+	}
+}
+@keyframes code-2 {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 4px;
+	}
+}
+@keyframes code-3 {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 6px;
+	}
+}
+
+@keyframes code-4 {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 3px;
+	}
+}
+@keyframes code-5 {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 3px;
+	}
+}
+@keyframes code-6 {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 4px;
+	}
+}
+@keyframes code-7 {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 9.5px;
+	}
+}
+@keyframes code-8 {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 6px;
+	}
+}
+
+.progress {
+	width: 400px;
+	max-width: 85vw;
+	height: 4px;
+	position: absolute;
+	bottom: 5vh;
+	left: 50%;
+	border-radius: 4px;
+	background: rgba(white, 0.5);
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 3001;
+}
+.progress::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 4px;
+	background: white;
+  animation: load 2s linear;
+  // Animation should be 9s for slow 3G
+}
+@keyframes load {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
