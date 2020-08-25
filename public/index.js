@@ -102,10 +102,10 @@ document.getElementById("date").innerHTML = year;
 // Facebook Analytics
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '{2733409333567092}',
+      appId      : '2733409333567092',
       cookie     : true,
       xfbml      : true,
-      version    : '{v8.0}'
+      version    : 'v8.0'
     });
       
     FB.AppEvents.logPageView();   

@@ -1,32 +1,24 @@
 // Calling dependencies in package.json
 const express 				= require("express"),
 			app 						= express(),
-			path 						= require('path'),
-			sslRedirect 		= require('heroku-ssl-redirect'),
+			path 						= require("path"),
+			sslRedirect 		= require("heroku-ssl-redirect"),
 			helmet 					= require("helmet"),
-			compression = require('compression');
-
-// Compress Javascript
-app.use(compression());
+			compression 		= require("compression");
 
 // Setting up Express
-app.use("/", express.static(path.join(__dirname, "public")))
-// If you run the express app from another directory, it’s safer to use the absolute path of the directory that you want to serve
+// app.use("/", express.static(path.join(__dirname, "public")))
+app.use(express.static(__dirname + "/public")); // Using __dirname + is a better way to navigate to the file
+app.set('view engine', 'ejs');
 
-// Enable ssl redirect
-app.use(sslRedirect());
+app.use(compression()); // Compress Javascript
 
-// Helmet helps you secure your Express apps by setting various HTTP headers.
-app.use(helmet());
+app.use(sslRedirect()); // Enable ssl redirect
 
-/*
-const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-observer.observe();
-*/
+app.use(helmet()); // Helmet helps you secure your Express apps by setting various HTTP headers.
 
-// Thumbnail image route
-app.get("/thumbnail", function(req,res){        
-	res.send('<img src="public/img/thumbnail.png">');
+app.get("/", function(req,res){
+	res.render("index");
 });
 
 // Use port 3000 unless there exists a preconfigured port

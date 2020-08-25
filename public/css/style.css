@@ -465,8 +465,7 @@ body {
   grid-template-rows: repeat(2, min-content);
   gap: 2rem 1vw;
   padding: 4.8rem;
-  background-color: gainsboro;
-  background-image: url("/public/img/arches.png"); }
+  background-color: gainsboro; }
   @media only screen and (max-width: 64em) {
     .skills {
       grid-template-columns: min-content;
@@ -498,8 +497,7 @@ body {
   gap: 3rem 0;
   padding: 4.8rem;
   justify-items: center;
-  background-color: #eaeaea;
-  background-image: url("/public/img/cubes.png"); }
+  background-color: #eaeaea; }
   @media only screen and (max-width: 160em) {
     .projects {
       grid-template-columns: repeat(2, 1fr);
@@ -592,8 +590,7 @@ body {
   gap: 2rem 0;
   justify-items: center;
   padding: 4.8rem;
-  background-color: whitesmoke;
-  background-image: url("/public/img/gplay.png"); }
+  background-color: whitesmoke; }
   @media only screen and (max-width: 48em) {
     .bio {
       padding: 3.2rem; } }
@@ -659,8 +656,7 @@ body {
   justify-items: center;
   padding-top: 4.8rem;
   padding-bottom: 4.8rem;
-  background-color: gainsboro;
-  background-image: url("/public/img/arches.png"); }
+  background-color: gainsboro; }
   @media only screen and (max-width: 48em) {
     .contact {
       grid-template-rows: repeat(3, max-content);

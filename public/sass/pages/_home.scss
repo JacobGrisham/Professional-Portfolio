@@ -7,7 +7,6 @@
   gap: 2rem 1vw;
   padding: 4.8rem;
   background-color: $grey-2;
-  background-image: url("/public/img/arches.png");
 
   @media only screen and (max-width: $bp-laptop) {
     grid-template-columns: min-content;
@@ -43,7 +42,6 @@
   padding: 4.8rem;
   justify-items: center;
   background-color: $grey-1;
-  background-image: url("/public/img/cubes.png");
 
   @media only screen and (max-width: $bp-4K) {
     grid-template-columns: repeat(2, 1fr);
@@ -145,7 +143,6 @@
   justify-items: center;
   padding: 4.8rem;
   background-color: $white-2;
-  background-image: url("/public/img/gplay.png");
 
   @media only screen and (max-width: $bp-tablet) {
     padding: 3.2rem;
@@ -230,7 +227,6 @@
   padding-top: 4.8rem;
   padding-bottom: 4.8rem;
   background-color: $grey-2;
-  background-image: url("/public/img/arches.png");
 
   @media only screen and (max-width: $bp-tablet) {
     grid-template-rows: repeat(3, max-content);
