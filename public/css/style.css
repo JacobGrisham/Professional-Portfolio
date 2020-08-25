@@ -769,11 +769,16 @@ body {
   left: 0;
   position: fixed;
   z-index: 3000;
-  background-color: #2a2a2a; }
+  background-color: #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.code {
+  visibility: hidden; }
 
 .laptop__svg {
-  display: block;
-  margin: auto;
   height: 60rem;
   width: 60rem; }
 
