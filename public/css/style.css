@@ -781,6 +781,10 @@ body {
 .laptop__svg {
   height: 60rem;
   width: 60rem; }
+  @media only screen and (max-width: 26.56em) {
+    .laptop__svg {
+      height: 40rem;
+      width: 40rem; } }
 
 #code-1 {
   animation: code-1 0.5s linear 3.5s running; }

@@ -20,7 +20,12 @@
 
   &__svg {
     height: 60rem;
-    width: 60rem;
+		width: 60rem;
+		
+		@media only screen and (max-width: $bp-mobile-l){
+			height: 40rem;
+			width: 40rem;
+		}
   }
 }
 
