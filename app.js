@@ -3,13 +3,16 @@ const express 				= require("express");
 const	app 						= express();
 const	helmet 					= require("helmet");
 const	compression 		= require("compression");
+import sslRedirect from "heroku-ssl-redirect";
 
 // Setting up Express
 // app.use("/", express.static(path.join(__dirname, "public")))
 app.use(express.static(__dirname + "/public")); // Using __dirname + is a better way to navigate to the file
 app.set('view engine', 'ejs');
 
-app.use(compression()); // Compress Javascript
+app.use(compression()); // Compress all responses
+
+app.use(sslRedirect()); // Redirect users to the SSL version of your app. For ExpressJS running on Heroku.
 
 app.use(helmet()); // Helmet helps you secure your Express apps by setting various HTTP headers.
 app.use(
