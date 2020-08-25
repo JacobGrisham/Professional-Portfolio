@@ -26,6 +26,13 @@ app.use(
     },
   })
 );
+app.use(
+  helmet.strictTransportSecurity({
+		maxAge: 31536000,
+		includeSubDomains: true,
+    preload: true
+  })
+);
 
 app.get("/", function(req,res){
 	res.render("index");
