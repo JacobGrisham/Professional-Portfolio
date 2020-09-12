@@ -35,6 +35,7 @@ app.use(
 );
 
 app.get("/", function(req,res){
+	res.header("Cache-control", "public, max-age=86400")
 	res.render("index");
 });
 
