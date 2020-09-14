@@ -7,7 +7,7 @@ const	compression 		= require("compression");
 // Setting up Express
 // app.use("/", express.static(path.join(__dirname, "public")))
 app.use(express.static(__dirname + "/public")); // Using __dirname + is a better way to navigate to the file
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
 
 app.use(compression()); // Compress all responses
 
