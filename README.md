@@ -3,8 +3,6 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/6272d48144774479b06e9b4b2caea0d6)](https://www.codacy.com/manual/JacobGrisham/YelpCamp?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JacobGrisham/YelpCamp&amp;utm_campaign=Badge_Grade)
 [![JacobGrisham](https://circleci.com/gh/JacobGrisham/YelpCamp.svg?style=svg)](https://app.circleci.com/pipelines/github/JacobGrisham/YelpCamp)
 
-This is the main framework for showcasing my projects, self-education, and bio. Compared to the other projects, this one is meant to display proficiency with relatively more advanced technologies listed in the table below.
-
 ## ▶️ Walkthrough on Youtube
 [<img src="public/img/youtube-thumbnail.png" width="100%">](https://youtu.be/hcrmmneYZkc)
 
