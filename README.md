@@ -1,7 +1,7 @@
 # [Portfolio](https://www.jacobgrisham.com/)
-[![Maintainability](https://api.codeclimate.com/v1/badges/5db672c308be3e556462/maintainability)](https://codeclimate.com/github/JacobGrisham/YelpCamp/maintainability)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6272d48144774479b06e9b4b2caea0d6)](https://www.codacy.com/manual/JacobGrisham/YelpCamp?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JacobGrisham/YelpCamp&amp;utm_campaign=Badge_Grade)
-[![JacobGrisham](https://circleci.com/gh/JacobGrisham/YelpCamp.svg?style=svg)](https://app.circleci.com/pipelines/github/JacobGrisham/YelpCamp)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ebf5d81dbf5eb3a6318c/maintainability)](https://codeclimate.com/github/JacobGrisham/Professional-Portfolio/maintainability)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/f4ceb1f87f274625ad7369bc30246eec)](https://www.codacy.com/gh/JacobGrisham/Professional-Portfolio/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JacobGrisham/Professional-Portfolio&amp;utm_campaign=Badge_Grade)
+[![JacobGrisham](https://circleci.com/gh/JacobGrisham/Professional-Portfolio.svg?style=svg)](https://app.circleci.com/pipelines/github/JacobGrisham/Professional-Portfolio)
 
 ## ▶️ Walkthrough on Youtube
 [<img src="public/img/youtube-thumbnail.png" width="100%">](https://youtu.be/hcrmmneYZkc)
