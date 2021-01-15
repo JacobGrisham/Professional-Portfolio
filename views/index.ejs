@@ -236,7 +236,6 @@
             <svg class="skills-box__icon">
               <use xlink:href="img/sprite.svg#icon-c"></use>
             </svg>
-            C (programming language)
           </li>
         </ul>
       </div>
@@ -327,28 +326,120 @@
     <!-- PROJECTS SECTION -->
     <section class="projects" id="projects">
       <h3 class="projects__header" id="target">Projects</h3>
+      <!-- PROJECT: Data Structures and Algorithms -->
+      <div class="card">
+        <h4 class="card__heading">Data Structures and Algorithms Visualization</h4>
+        <h5 class="card__sub-heading">Full-stack web application to visualize searching and sorting algorithms.</h5>
+        <div class="card__video">
+          <iframe title="Data Structures and Algorithms video demonstration and tutorial" data-src="//www.youtube.com/embed/rSeSffuw4Tg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card__video-content"></iframe>
+        </div>
+        <!-- STACK -->
+        <button type="button" class="card__button btn btn--stack">Stack</button>
+        <div class="card__stack" id="yelpcamp-button">HTML, CSS, Bootstrap, Javascript, D3, Python, Flask</div>
+        <a href="#popup--card-4" class="card__popup btn btn--card">Info</a>
+        <!--<button data-popup-target="#popup--card-1" class="card__popup btn btn--card">Info</button>-->
+        <a href="https://dsa-visualization.herokuapp.com/" class="card__link btn btn--card">Launch</a>
+      </div>
+      <!-- POPUP/INFO -->
+      <div class="popup" id="popup--card-4">
+        <div class="popup__content popup--learn-more">
+          <a href="#projects" class="popup__close">&times;</a>
+          <!--<button data-close-button class="popup__close">&times;</button>-->
+          <div class="popup--learn-more__about">
+            <h4 class="popup--learn-more__header">About</h4>
+            <p class="popup--learn-more__text">Visualize Linear Search, Binary Search, Bubble Sort, Selection Sort, Merge Sort, and Insertion Sort. Random numbers in an array are graphed as a bar chart. The values of the array are displayed and updated in an HTML table below the bar chart. They are also accessible through a tooltip that displays the value when hovered over. The Javascript Execution times are logged in Bootstrap 4 cards to allow comparison of different algorithm runtimes and for further information on the Big-O.</p>
+          </div>
+          <div class="popup--learn-more__methodology">
+            <h4 class="popup--learn-more__header">Methodology</h4>
+            <p class="popup--learn-more__text">
+              <ul class="popup--learn-more__list">
+                <li>D3 Library for data visualization to both challenge myself with learning a new framework and because D3 is the ideal solution for data visualization problems</li>
+                <li>Bootstrap 4 for increasing my experience working with it and to shift focus towards spending more time on the data visualization and underlying algorithms</li>
+                <li>Site is hosted on Heroku</li>
+              </ul>
+            </p>
+          </div>
+          <div class="popup--learn-more__source">
+            <h4 class="popup--learn-more__header">Source Code</h4>
+            <p class="popup--learn-more__text">Click the Github icon below to see the source code and documentation</p>
+            <a href="https://github.com/JacobGrisham/Data-Structures-and-Algorithms-Visualizer" class="popup--learn-more__link" aria-label="link to my GitHub account">
+              <svg class="popup--learn-more__icon">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+          </div>
+        </div> 
+      </div>
+      <!-- PROJECT: Finance -->
+      <div class="card">
+        <h4 class="card__heading">Robynhood</h4>
+        <h5 class="card__sub-heading">Full-stack web application for managing an investment portfolio by buying and selling stocks based on their actual prices.</h5>
+        <div class="card__video">
+          <iframe title="Robynhood video demonstration and tutorial" data-src="//www.youtube.com/embed/T3U_HInY8kg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card__video-content"></iframe>
+        </div>
+        <!-- STACK -->
+        <button type="button" class="card__button btn btn--stack">Stack</button>
+        <div class="card__stack" id="yelpcamp-button">HTML, CSS, Bootstrap 4, Javascript, Python, Flask, Jinja, SQL Alchemy, SQLite, MySQL</div>
+        <a href="#popup--card-3" class="card__popup btn btn--card">Info</a>
+        <!--<button data-popup-target="#popup--card-1" class="card__popup btn btn--card">Info</button>-->
+        <a href="http://flask-env.eba-z6mwdiua.us-west-2.elasticbeanstalk.com/" class="card__link btn btn--card">Launch</a>
+      </div>
+      <!-- POPUP/INFO -->
+      <div class="popup" id="popup--card-3">
+        <div class="popup__content popup--learn-more">
+          <a href="#projects" class="popup__close">&times;</a>
+          <!--<button data-close-button class="popup__close">&times;</button>-->
+          <div class="popup--learn-more__about">
+            <h4 class="popup--learn-more__header">About</h4>
+            <p class="popup--learn-more__text">The main features are login, sign-up, IEX API, and updating stock data in a SQL database.</p>
+          </div>
+          <div class="popup--learn-more__methodology">
+            <h4 class="popup--learn-more__header">Methodology</h4>
+            <p class="popup--learn-more__text">
+              <ul class="popup--learn-more__list">
+                <li>Database design and Create, Read, Update in SQL</li>
+                <li>Rewrote the entire application to use Flask SQL Alchemy</li>
+                <li>Used Flask as a server-side framework</li>
+                <li>Used password hashing using Werkzeug/li>
+                <li>Continous integration and continuous deployment with Travis CI</li>
+                <li>Developed MVP of application with SQLite locally and Deployed with MySQL on RDS instance</li>
+                <li>Site is hosted on Amazon Web Services on an Elastic Beanstalk instance</li>
+              </ul>
+            </p>
+          </div>
+          <div class="popup--learn-more__source">
+            <h4 class="popup--learn-more__header">Source Code</h4>
+            <p class="popup--learn-more__text">Click the Github icon below to see the source code and documentation</p>
+            <a href="https://github.com/JacobGrisham/Finance-Full-Stack-Web-App-using-Flask-and-SQL" class="popup--learn-more__link" aria-label="link to my GitHub account">
+              <svg class="popup--learn-more__icon">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+          </div>
+        </div> 
+      </div>
       <!-- PROJECT: YelpCamp -->
       <div class="card">
         <h4 class="card__heading">YelpCamp</h4>
-        <h5 class="card__sub-heading">Web application and forum for uploading and sharing information about campgrounds</h5>
+        <h5 class="card__sub-heading">Full-stack web application for uploading and sharing information about campgrounds</h5>
         <div class="card__video">
           <iframe title="YelpCamp video demonstration and tutorial" data-src="//www.youtube.com/embed/9IqcgAHhJ8k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card__video-content"></iframe>
         </div>
         <!-- STACK -->
         <button type="button" class="card__button btn btn--stack">Stack</button>
         <div class="card__stack" id="yelpcamp-button">HTML, CSS, Bootstrap, Javascript, Node.js, Express.js, MongoDB</div>
-        <a href="#popup--card-1" class="card__popup btn btn--card">Info</a>
+        <a href="#popup--card-2" class="card__popup btn btn--card">Info</a>
         <!--<button data-popup-target="#popup--card-1" class="card__popup btn btn--card">Info</button>-->
         <a href="https://aqueous-reaches-28926.herokuapp.com/" class="card__link btn btn--card">Launch</a>
       </div>
       <!-- POPUP/INFO -->
-      <div class="popup" id="popup--card-1">
+      <div class="popup" id="popup--card-2">
         <div class="popup__content popup--learn-more">
           <a href="#projects" class="popup__close">&times;</a>
           <!--<button data-close-button class="popup__close">&times;</button>-->
           <div class="popup--learn-more__about">
             <h4 class="popup--learn-more__header">About</h4>
-            <p class="popup--learn-more__text">First full-stack web application. Fundamentally, it's Yelp for campsites. The main features are login, sign-up, Admin role, Google Maps API, and Create, Edit, Update, Delete (CRUD) for campgrounds, comments, and reviews. Create routes have authentication. Edit, Update, and Delete routes have authentication and authorization. The basic foundation was built in the capstone project from the Udemy course <i>The Web Developer Bootcamp</i>.<a href="https://gentle-forest-96635.herokuapp.com/"> The Udemy course brought me up to this point</a>, and everything after that was done through research and original work. Compared to the other projects, this one is meant to display proficiency with middle-ground technologies.</p>
+            <p class="popup--learn-more__text">First full-stack web application. Fundamentally, it's Yelp for campsites. The main features are login, sign-up, Admin role, Google Maps API, and Create, Edit, Update, Delete (CRUD) for campgrounds, comments, and reviews. Create routes have authentication. Edit, Update, and Delete routes have authentication and authorization. The basic foundation was built in the capstone project from the Udemy course <i>The Web Developer Bootcamp</i>.</p>
           </div>
           <div class="popup--learn-more__methodology">
             <h4 class="popup--learn-more__header">Methodology</h4>
@@ -386,10 +477,10 @@
         <!-- STACK -->
         <button type="button" class="card__button btn btn--stack">Stack</button>
         <div class="card__stack" id="portfolio-button">HTML, CSS, Sass, Javascript</div>
-        <a href="#popup--card-2" class="card__popup btn btn--card">Info</a>
+        <a href="#popup--card-1" class="card__popup btn btn--card">Info</a>
       </div>
       <!-- POPUP/INFO -->
-      <div class="popup" id="popup--card-2">
+      <div class="popup" id="popup--card-1">
         <div class="popup__content popup--learn-more">
           <a href="#projects" class="popup__close">&times;</a>
           <div class="popup--learn-more__about">
@@ -411,7 +502,7 @@
           <div class="popup--learn-more__source">
             <h4 class="popup--learn-more__header">Source Code</h4>
             <p class="popup--learn-more__text">Click the Github icon to see the source code and documentation</p>
-            <a href="https://github.com/JacobGrisham?tab=projects" class="popup--learn-more__link" aria-label="link to my GitHub account">
+            <a href="https://github.com/JacobGrisham/Professional-Portfolio" class="popup--learn-more__link" aria-label="link to my GitHub account">
               <svg class="popup--learn-more__icon">
                 <use xlink:href="img/sprite.svg#icon-github"></use>
               </svg>
@@ -423,104 +514,6 @@
           </div>
         </div> 
       </div>
-      <!--
-      <a href="#popup--chart" class="projects__btn btn btn--chart active collapse" id="btn--chart">Tech stack comparison chart</a>
-      -->
-      <!-- CHART -->
-        <!--
-        <div id="popup--chart" class="popup">
-          <div class="popup__content">
-            <a href="#btn--chart" class="popup__close">&times;</a>
-            <table class="popup--chart">
-              <caption class="popup--chart__caption">Table of Projects vs. Programming Languages Used</caption>
-              <thead class="popup--chart__header">
-                <tr class="popup--chart__xaxis">
-                  <th></th>
-                  <th scope="col">YelpCamp</th>
-                  <th scope="col">CERS Consultant</th>
-                  <th scope="col">Portfolio</th>
-                  <th scope="col">Capstone Project</th>
-                </tr>
-              </thead>
-              <tbody class="popup--chart__body">
-                <tr>
-                  <th scope="row" class="popup--chart__yaxis">Bootstrap</th>
-                  <td class="popup--chart__data">
-                    <svg class="popup--chart__data__icon">
-                      <use xlink:href="img/sprite.svg#icon-checkbox-checked"></use>
-                    </svg>
-                  </td>
-                  <td class="popup--chart__data">
-                    <svg class="popup--chart__data__icon">
-                      <use xlink:href="img/sprite.svg#icon-checkbox-checked"></use>
-                    </svg>
-                  </td>
-                  <td colspan="2"></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="popup--chart__yaxis">Sass</th>
-                  <td colspan="2"></td>
-                  <td class="popup--chart__data">
-                    <svg class="popup--chart__data__icon">
-                      <use xlink:href="img/sprite.svg#icon-checkbox-checked"></use>
-                    </svg>
-                  </td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="popup--chart__yaxis">Typescript</th>
-                  <td colspan="4"></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="popup--chart__yaxis">Python</th>
-                  <td colspan="4"></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="popup--chart__yaxis">Node.js</th>
-                  <td colspan="4"></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="popup--chart__yaxis">React</th>
-                  <td colspan="4"></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="popup--chart__yaxis">Redux</th>
-                  <td colspan="4"></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="popup--chart__yaxis">MongoDB</th>
-                  <td colspan="4"></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="popup--chart__yaxis">PostgresSQL</th>
-                  <td colspan="4"></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="popup--chart__yaxis">GraphQL</th>
-                  <td colspan="4"></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="popup--chart__yaxis">Git</th>
-                  <td colspan="4"></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="popup--chart__yaxis">Heroku</th>
-                  <td colspan="4"></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="popup--chart__yaxis">AWS</th>
-                  <td colspan="4"></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="popup--chart__yaxis">Docker</th>
-                  <td colspan="4"></td>
-                </tr>
-              </tbody>
-            </table>
-            <p class="popup--chart__footer">*All projects use HTML, CSS, and Javascript</p>
-          </div>
-        </div>
-      -->
     </section>
 
     <!-- BIO SECTION -->
@@ -555,6 +548,8 @@
             <li class="curriculum__item"><a href="https://www.udemy.com/course/the-web-developer-bootcamp/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Udemy Web Development Bootcamp</a></li>
             <li class="curriculum__item"><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Udemy The Complete 2020 Web Development Bootcamp</a></li>
             <li class="curriculum__item"><a href="https://www.udemy.com/course/advanced-css-and-sass/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Udemy Advanced CSS and Sass</a></li>
+            <li class="curriculum__item"><a href="https://www.udemy.com/course/the-complete-junior-to-senior-web-developer-roadmap/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Udemy The Complete Junior to Senior Web Developer Roadmap</a></li>
+            <li class="curriculum__item"><a href="https://www.edx.org/course/cs50s-introduction-to-computer-science" class="curriculum__link" target="_blank" rel="noopener noreferrer">eDX Harvard's CS50 Introduction to Computer Science</a></li>
           </div>
         </span>
         <!-- IN PROGRESS -->
@@ -568,7 +563,7 @@
             </div>
           </h4>
           <div class="curriculum__list">
-            <li class="curriculum__item"><a href="https://www.edx.org/professional-certificate/harvardx-computer-science-for-web-programming" class="curriculum__link" target="_blank" rel="noopener noreferrer">eDX Harvard Computer Science for Web Programming</a></li>
+            <li class="curriculum__item"><a href="https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript" class="curriculum__link" target="_blank" rel="noopener noreferrer">eDX Harvard's CS50W Web Programming with Python and JavaScript</a></li>
             <li class="curriculum__item"><a href="https://www.oreilly.com/library/view/the-pragmatic-programmer/020161622X/" class="curriculum__link" target="_blank" rel="noopener noreferrer"><cite>The Pragmatic Programmer: From Journeyman to Master</cite> by Hunt and Thomas</a></li>
             <li class="curriculum__item"><a href="https://www.oreilly.com/library/view/clean-code/9780136083238/" class="curriculum__link" target="_blank" rel="noopener noreferrer"><cite>Clean Code: A Handbook of Agile Software Craftsmanship</cite> by Robert Martin</a></li>
             <li class="curriculum__item"><a href="https://www.oreilly.com/library/view/code-complete-second/0735619670/" class="curriculum__link" target="_blank" rel="noopener noreferrer"><cite>Code Complete</cite> by Steve McConnell</a></li>
@@ -585,15 +580,12 @@
             </div>
           </h4>
           <div class="curriculum__list">
-            <li class="curriculum__item"><a href="https://www.udemy.com/course/the-complete-nodejs-developer-course-2/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Udemy The Complete Node.js Developer Course</a></li>
-            <li class="curriculum__item"><a href="https://www.udemy.com/course/understanding-typescript/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Udemy Understanding Typescript</a></li>
             <li class="curriculum__item"><a href="https://www.udemy.com/course/complete-react-developer-zero-to-mastery/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Complete React Developer in 2020</a></li>
-            <li class="curriculum__item"><a href="https://www.udemy.com/course/the-complete-junior-to-senior-web-developer-roadmap/" class="curriculum__link" target="_blank" rel="noopener noreferrer">The Complete Junior to Senior Web Developer Roadmap</a></li>
             <li class="curriculum__item"><a href="https://www.coursera.org/specializations/data-structures-algorithms" class="curriculum__link" target="_blank" rel="noopener noreferrer">Coursera UC San Diego Data Structures and Algorithms</a></li>
-            <li class="curriculum__item"><a href="https://www.edx.org/micromasters/ubcx-software-development" class="curriculum__link" target="_blank" rel="noopener noreferrer">MicroMasters® Program in
-              Software Development</a></li>
-            <li class="curriculum__item"><a href="https://www.oreilly.com/library/view/design-patterns-elements/0201633612/" class="curriculum__link" target="_blank" rel="noopener noreferrer"><cite>Design Patterns: Elements of Reusable Object-Oriented Software</cite> by Gamma et al.</a></li>
             <li class="curriculum__item"><a href="https://mitpress.mit.edu/books/introduction-algorithms-third-edition" class="curriculum__link" target="_blank" rel="noopener noreferrer"><cite>Introduction to Algorithms, Third Edition</cite> by Cormen et al. </a></li>
+            <li class="curriculum__item"><a href="https://www.oreilly.com/library/view/design-patterns-elements/0201633612/" class="curriculum__link" target="_blank" rel="noopener noreferrer"><cite>Design Patterns: Elements of Reusable Object-Oriented Software</cite> by Gamma et al.</a></li>
+            <li class="curriculum__item"><a href="https://www.edx.org/professional-certificate/pennx-computer-science-essentials-for-software-development" class="curriculum__link" target="_blank" rel="noopener noreferrer">eDX UPenn's Professional Certificate in
+              Computer Science Essentials for Software Development</a></li>
           </div>
         </span>
       </ol>

@@ -9,6 +9,7 @@
 ## 🖥 [Live Application](https://www.jacobgrisham.com/)
 
 ## 💡Lessons Learned
+-   One page application
 -   Performance, Security, Accessibility, and SEO optimization with [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 -   File compression with [Parcel](https://parceljs.org/)
 -   Intersection observer and lazy loading images and videos
