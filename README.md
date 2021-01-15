@@ -17,6 +17,7 @@
 -   Open Graph Meta Properties (og:image, etc.)
 -   Routing application to a domain name
 -   Parallax scrolling
+-   CSS Grid and Flexbox
 
 ## Table of Contents
 -   [Technologies](#technologies)
