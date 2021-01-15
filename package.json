@@ -11,19 +11,19 @@
   "author": "Jacob Grisham",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.7.6",
+    "autoprefixer": "^9.8.6",
     "concat": "^1.0.3",
-    "jest": "^26.4.2",
+    "jest": "^26.6.3",
     "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.4",
-    "postcss-cli": "^7.1.0"
+    "postcss-cli": "^7.1.2"
   },
   "dependencies": {
     "compression": "^1.7.4",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "helmet": "^3.23.3",
-    "lax.js": "^1.2.5"
+    "lax.js": "^2.0.3"
   }
 }

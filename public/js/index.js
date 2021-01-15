@@ -37,14 +37,25 @@ document.onreadystatechange = () => {
 
 // Parallax with lax.js
 window.onload = function() {
-	lax.setup() // init
+	lax.init()
 
-	const updateLax = () => {
-		lax.update(window.scrollY)
-		window.requestAnimationFrame(updateLax)
-	}
+    // Add a driver that we use to control our animations
+    lax.addDriver('scrollY', function () {
+      return window.scrollY
+    })
 
-	window.requestAnimationFrame(updateLax)
+    // Add animation bindings to elements
+    lax.addElements('.lax', {
+      scrollY: {
+        translateY: [
+          ["elInY", "elCenterY", "elOutY"],
+          {
+            500: [100, 0, 350], // Screen width < 500
+            900: [100, 0, 250], // Screen width > 900
+          },
+        ]
+      }
+    })
 }
 
 // Popup for Project Info
