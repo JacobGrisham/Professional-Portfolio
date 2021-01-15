@@ -20,8 +20,8 @@ app.use(
 			objectSrc: ["'none'"],
 			fontSrc: ["https://fonts.gstatic.com"],
 			imgSrc: ["'self'", "https://www.facebook.com/", "data:"],
-			styleSrc: ["'self'", "https://fonts.googleapis.com", "'sha256-tsYFq5pUcggQKFXnvmlvUrk8MgTJLL1Gjnqenv201b8='"],
-			manifestSrc: ["https://www.jacobgrisham.com/site.webmanifest"],
+			styleSrc: ["'self'", "https://fonts.googleapis.com", "'unsafe-inline'"],
+			manifestSrc: ["https://www.jacobgrisham.com/site.webmanifest", "http://localhost:3000/site.webmanifest"],
 			frameSrc: ["http://www.youtube.com/"]
     },
   })
