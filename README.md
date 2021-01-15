@@ -8,6 +8,16 @@
 
 ## 🖥 [Live Application](https://www.jacobgrisham.com/)
 
+## 💡Lessons Learned
+-   Performance, Security, Accessibility, and SEO optimization with [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+-   File compression with [Parcel](https://parceljs.org/)
+-   Intersection observer and lazy loading images and videos
+-   Loading page and SVG animation
+-   HTTP Headers, HSTS, Content Security Policy
+-   Open Graph Meta Properties (og:image, etc.)
+-   Routing application to a domain name
+-   Parallax scrolling
+
 ## Table of Contents
 -   [Technologies](#technologies)
 -   [Methodology](#methodology)
