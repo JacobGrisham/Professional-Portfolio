@@ -11,14 +11,14 @@
 ## 💡Lessons Learned
 -   One page application
 -   Performance, Security, Accessibility, and SEO optimization with [Lighthouse](https://developers.google.com/web/tools/lighthouse)
--   File compression with [Parcel](https://parceljs.org/)
+-   Web application bundling with [Parcel](https://parceljs.org/)
 -   Intersection observer and lazy loading images and videos
 -   Loading page and SVG animation
 -   HTTP Headers, HSTS, Content Security Policy
 -   Open Graph Meta Properties (og:image, etc.)
 -   Routing application to a domain name
 -   Parallax scrolling
--   CSS Grid and Flexbox
+-   CSS float, flex, and grid properties
 
 ## Table of Contents
 -   [Technologies](#technologies)
@@ -40,20 +40,20 @@
 -   [ExpressJS](https://expressjs.com/) as the Node.js application framework for its basic functionality. Some companies still use ExpressJS so it was important to implement it.
 -   [Heroku](https://www.heroku.com/) due to the simplicity of the website
 
-To Do:
--   Create version 2.0 with React and Gatsby
-
 ## ✅ Project Status
 -   Complete
 
 ## 🚀 Getting Started
-To run this project, install it locally using npm:
+To run this project, install it locally using npm
 
 ```
 $ npm install
-$ npm start
 ```
-Copy and paste into browser: localhost:3000
+Then run parcel in development mode to make any changes
+```
+$ npm run-script dev
+```
+Copy and paste this address into the browser: http://localhost:3000 
 
 ## 📐 Tests
 -   Add test
