@@ -71,16 +71,13 @@ $(".btn--curriculum").click(function(){
   $(".curriculum").slideToggle(1000);
 });
 
-
-
-// More Info button
-
-
 // Skill SVGs fade-in
 const faders = document.querySelectorAll(".fade-in");
 
 const appearOptions = {
-  threshold: 0,
+  root: null,
+  threshold: 0.25,
+  rootMargin: "-150px"
 };
 
 const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
@@ -88,6 +85,7 @@ const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
     if (!entry.isIntersecting) {
       return;
     } else {
+      console.log(entry);
       entry.target.classList.add("appear");
       appearOnScroll.unobserve(entry.target);
     }
