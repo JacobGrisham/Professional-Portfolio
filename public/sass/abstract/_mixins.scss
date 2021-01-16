@@ -1,4 +1,4 @@
-// // MAIN HEADER FORMATTING FOR HOME PAGE // //
+// MAIN HEADER FORMATTING FOR HOME PAGE //
 @mixin home-header-formatting {
   padding: 1rem 4rem;
   border: 2px solid $navy-2;
@@ -14,7 +14,7 @@
   color: $navy-2;
 }
 
-// FORMATTING FOR PROJECT INFO POPUP
+// FORMATTING FOR PROJECT INFO POPUP //
 @mixin popup-formatting{
   grid-column: 2 / 3;
   background-color: $white;

@@ -1,17 +1,22 @@
 .banner {
   grid-row: header-start / header-end;
+  background-color: $navy-2;
+  width: 100vw;
   display: grid;
   justify-items: center;
   align-content: center;
-  gap: 1rem 0;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  background-color: $navy-2;
-  width: 100vw;
+
+  &__content {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 1rem 0;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+  }
 
   &__main {
     transform: translateY(-3.5rem);
-    //animation: moveInLeft 1.5s ease-in-out;
     margin-bottom: 2.4rem;
     font-size: 6.2rem;
     text-align: center;
@@ -43,7 +48,6 @@
   }
 
   &__sub {
-    //animation: moveInRight 1.5s ease-in-out;
     margin-bottom: 5.2rem;
     font-size: $sub-header-font-size;
     text-align: center;

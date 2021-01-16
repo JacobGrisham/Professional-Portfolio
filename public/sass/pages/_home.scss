@@ -73,66 +73,6 @@
   }
 }
 
-  // TECH STACK COMPARISON CHART POPUP //
-  /*
-  &--chart {
-  margin: 0 auto;
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: separate; 
-  border-spacing: 0 2px; 
-  box-shadow: $shadow-middle;
-  font-family: 'PT Mono', monospace;
-
-    &__caption {
-      font-size: $sub-header-font-size;
-      padding: 2rem;
-    }
-
-    &__body tr:nth-child(odd) {
-      background-color: $grey-2;
-    }
-
-    &__body tr:nth-child(even) {
-      background-color: $grey-3;
-    }
-
-    &__body tr:hover {
-      background-color: $grey-1;
-      }
-
-    &__xaxis {
-      height: 6rem;
-      background-color: $navy-2;
-      color: $grey-3;
-    }
-
-    //&__xaxis:not(:first-of-type) {background-color: $navy-2;}
-
-    &__yaxis {
-      clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
-      padding: 1rem;
-      background-color: $navy-2;
-      color: $grey-3;
-    }
-
-    &__data {
-      text-align: center;
-
-      &__icon {
-        height: 2rem;
-        width: 2rem;
-        fill: $gold-2;
-      }
-    }
-
-    &__footer {
-      text-align: center;
-      padding: 1rem;
-    }
-  }
-  */
-
 // BIO SECTION //  
 .bio {
   grid-row: bio-start / bio-end;

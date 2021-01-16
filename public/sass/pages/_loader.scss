@@ -119,34 +119,3 @@
 		width: 6px;
 	}
 }
-
-.progress {
-	width: 400px;
-	max-width: 85vw;
-	height: 4px;
-	position: absolute;
-	bottom: 5vh;
-	left: 50%;
-	border-radius: 4px;
-	background: rgba(white, 0.5);
-	transform: translate(-50%, -50%);
-	overflow: hidden;
-	z-index: 3001;
-}
-.progress::after {
-	content: "";
-	display: block;
-	width: 100%;
-	height: 4px;
-	background: white;
-  animation: load 2s linear;
-  // Animation should be 9s for slow 3G
-}
-@keyframes load {
-	0% {
-		width: 0%;
-	}
-	100% {
-		width: 100%;
-	}
-}

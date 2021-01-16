@@ -29,3 +29,14 @@ body {
   background-color: $navy-2;
   color: $gold-2;
 }
+
+// SVG Icons //
+svg use {
+  fill: $navy-2;
+
+  &:active,
+  &:hover,
+  &:focus {
+    fill: $gold-3;
+  }
+}

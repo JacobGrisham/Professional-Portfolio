@@ -31,8 +31,8 @@
 ## 🛠 Technologies
 |Graphic Design|Front-End|Back-End|Database|Deployment|Testing |
 |------------- | ------- | ------ | ------ | -------- | -------|
-|Inkscape	     |HTML5	   |Node.js |.       |CircleCI	|Jest    |
-|.			       |CSS3		 |ExpressJS|.      |Git       |Lighthouse |
+|Inkscape	     |HTML5	   |Node.js |.       |CircleCI	|[LambdaTest](https://www.lambdatest.com/)    |
+|.			       |CSS3		 |ExpressJS|.      |Git       |[Lighthouse](https://developers.google.com/web/tools/lighthouse) |
 |.			       |Sass     |EJS	    |.		   |Heroku    |.       |
 |.			       |Javascript|.		  |.		   |.		      |.       |
 
@@ -44,19 +44,18 @@
 -   Complete
 
 ## 🚀 Getting Started
-To run this project, install it locally using npm
-
+To run this project locally, install dependencies using npm
 ```
 $ npm install
 ```
-Then run parcel in development mode to make any changes
+Then run parcel in development mode and node-sass in watch mode to make any changes
 ```
-$ npm run-script dev
+$ npm run-script start:dev
 ```
 Copy and paste this address into the browser: http://localhost:3000 
 
 ## 📐 Tests
--   Add test
+-   LambdaTest cross browser testing
 
 ## 🔒 License
 Copyright Notice and Statement: currently not offering any license. Permission only to view and download.
