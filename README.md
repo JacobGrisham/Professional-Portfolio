@@ -6,17 +6,16 @@
 ## ▶️ Walkthrough on Youtube
 [<img src="public/img/youtube-thumbnail.png" width="100%">](https://youtu.be/hcrmmneYZkc)
 
-## 🖥 [Live Application](https://www.jacobgrisham.com/)
+## 🖥 [Live Website](https://www.jacobgrisham.com/)
 
 ## 💡Lessons Learned
--   One page application
+-   One page website
 -   Performance, Security, Accessibility, and SEO optimization with [Lighthouse](https://developers.google.com/web/tools/lighthouse)
--   Web application bundling with [Parcel](https://parceljs.org/)
 -   Intersection observer and lazy loading images and videos
 -   Loading page and SVG animation
 -   HTTP Headers, HSTS, Content Security Policy
 -   Open Graph Meta Properties (og:image, etc.)
--   Routing application to a domain name
+-   Routing website to a domain name
 -   Parallax scrolling
 -   CSS float, flex, and grid properties
 
@@ -29,19 +28,17 @@
 -   [License](#license)
 
 ## 🛠 Technologies
-|Graphic Design|Front-End|Back-End|Database|Deployment|Testing |
-|------------- | ------- | ------ | ------ | -------- | -------|
-|Inkscape	     |HTML5	   |Node.js |.       |CircleCI	|[LambdaTest](https://www.lambdatest.com/)    |
-|.			       |CSS3		 |ExpressJS|.      |Git       |[Lighthouse](https://developers.google.com/web/tools/lighthouse) |
-|.			       |Sass     |EJS	    |.		   |Heroku    |.       |
-|.			       |Javascript|.		  |.		   |.		      |.       |
+|Graphic Design|Front-End|Back-End|Deployment |Testing |
+|------------- | ------- | ------ | --------  | -------|
+|Inkscape	     |HTML5	   |Node.js |CircleCI	  |[LambdaTest](https://www.lambdatest.com/)    |
+|.			       |CSS3		 |ExpressJS|Git       |[Lighthouse](https://developers.google.com/web/tools/lighthouse) |
+|.			       |Sass     |EJS	    |Heroku     |.       |
+|.			       |Javascript|.		  |.		      |.       |
+|.             |jQuery   |.       |.          |.       |
 
 ## ⚖️ Methodology
 -   [ExpressJS](https://expressjs.com/) as the Node.js application framework for its basic functionality. Some companies still use ExpressJS so it was important to implement it.
 -   [Heroku](https://www.heroku.com/) due to the simplicity of the website
-
-## ✅ Project Status
--   Complete
 
 ## 🚀 Getting Started
 To run this project locally, install dependencies using npm
@@ -52,7 +49,7 @@ Then run parcel in development mode and node-sass in watch mode to make any chan
 ```
 $ npm run-script start
 ```
-Run parcel and sass in production mode before pushing to production
+Run sass in production mode before pushing to production
 ```
 $ npm run-script build
 ```
