@@ -50,9 +50,12 @@ $ npm install
 ```
 Then run parcel in development mode and node-sass in watch mode to make any changes
 ```
-$ npm run-script start:dev
+$ npm run-script start
 ```
-Copy and paste this address into the browser: http://localhost:3000 
+Run parcel and sass in production mode before pushing to production
+```
+$ npm run-script build
+```
 
 ## 📐 Tests
 -   LambdaTest cross browser testing
