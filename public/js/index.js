@@ -62,13 +62,11 @@ window.onload = function() {
 
 // Drop down button
 $(".btn--stack").click(function(){
-  var id = $(this).attr("id");
-  console.log(id);
   $(".card__stack").slideToggle(150);
 });
 
-$(".btn--curriculum").click(function(){
-  $(".curriculum").slideToggle(1000);
+$(".target").click(function(){
+  $(".open-target").slideToggle(1000);
 });
 
 // Skill SVGs fade-in
@@ -85,7 +83,6 @@ const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
     if (!entry.isIntersecting) {
       return;
     } else {
-      console.log(entry);
       entry.target.classList.add("appear");
       appearOnScroll.unobserve(entry.target);
     }

@@ -67,9 +67,8 @@
     grid-column: 1 / -1;
   }
 
-  &__btn {
-    grid-row: 4 / 5;
-    grid-column: 1 / -1;
+  &__extras {
+    @include hide-content;
   }
 }
 
@@ -124,11 +123,6 @@
       margin-bottom: 1.6rem;
     }
   }
-
-  &__button {
-    grid-column: 1 / -1;
-  }
-
 }
 
 // CURRICULUM LIST DROPDOWN //

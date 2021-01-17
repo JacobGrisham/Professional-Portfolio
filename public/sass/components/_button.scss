@@ -27,8 +27,7 @@
   }
 
   &--card {
-    &:link,
-    &:visited {
+    &:link {
       align-self: center;
       padding: 1rem 6.4rem;
       border-radius: 5px;
@@ -83,18 +82,18 @@
     }
   }
 
-  &--chart,
-  &--curriculum {
+  &--slideToggle {
+    grid-column: 1 / -1;
     display: flex;
     cursor: pointer;
     border: none;
 
     align-self: center;
-    padding: 1rem 7rem;
+    padding: 2rem 8rem;
     border-radius: 5px;
     background-color: $white;
 
-    font-size: $button-font-size;
+    font-size: 1.5rem;
     color: $black-1;
 
     &:hover,

@@ -150,8 +150,6 @@ body {
     grid-row: 5 / 6;
     grid-column: 1 / -1;
     padding: 1.6rem;
-    background-color: #191919;
-    color: gainsboro;
     display: none;
     overflow: hidden; }
 
@@ -170,7 +168,7 @@ body {
   .btn--header:active, .btn--header:hover, .btn--header:focus {
     background-image: linear-gradient(to right, #e2b56d, #c89b53);
     color: #21374b; }
-  .btn--card:link, .btn--card:visited {
+  .btn--card:link {
     align-self: center;
     padding: 1rem 6.4rem;
     border-radius: 5px;
@@ -178,10 +176,10 @@ body {
     font-size: 1.2rem;
     color: #2a2a2a; }
     @media only screen and (max-width: 48em) {
-      .btn--card:link, .btn--card:visited {
+      .btn--card:link {
         padding: 1rem 30%; } }
     @media only screen and (max-width: 26.56em) {
-      .btn--card:link, .btn--card:visited {
+      .btn--card:link {
         padding: 1rem 25%; } }
   .btn--card:hover, .btn--card:active, .btn--card:focus {
     background-color: gainsboro; }
@@ -204,17 +202,18 @@ body {
         padding: 1.4rem 25%; } }
     .btn--stack:hover, .btn--stack:active, .btn--stack:focus {
       background-color: gainsboro; }
-  .btn--chart, .btn--curriculum {
+  .btn--slideToggle {
+    grid-column: 1 / -1;
     display: flex;
     cursor: pointer;
     border: none;
     align-self: center;
-    padding: 1rem 7rem;
+    padding: 2rem 8rem;
     border-radius: 5px;
     background-color: white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #2a2a2a; }
-    .btn--chart:hover, .btn--chart:active, .btn--chart:focus, .btn--curriculum:hover, .btn--curriculum:active, .btn--curriculum:focus {
+    .btn--slideToggle:hover, .btn--slideToggle:active, .btn--slideToggle:focus {
       background-color: gainsboro; }
 
 .fade-in {
@@ -528,9 +527,9 @@ body {
     color: #21374b;
     grid-row: 1 / 2;
     grid-column: 1 / -1; }
-  .projects__btn {
-    grid-row: 4 / 5;
-    grid-column: 1 / -1; }
+  .projects__extras {
+    display: none;
+    overflow: hidden; }
 
 .bio {
   grid-row: bio-start / bio-end;
@@ -574,8 +573,6 @@ body {
         grid-column: 1 / -1; } }
     .bio__content__paragraph:not(:last-child) {
       margin-bottom: 1.6rem; }
-  .bio__button {
-    grid-column: 1 / -1; }
 
 .curriculum {
   display: none;
