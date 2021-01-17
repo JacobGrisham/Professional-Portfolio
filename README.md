@@ -45,9 +45,9 @@ To run this project locally, install dependencies using npm
 ```
 $ npm install
 ```
-Then run parcel in development mode and node-sass in watch mode to make any changes
+Start the server and run node-sass in watch mode to make any changes
 ```
-$ npm run-script start
+$ npm run-script dev
 ```
 Run sass in production mode before pushing to production
 ```
