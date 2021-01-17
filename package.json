@@ -9,7 +9,7 @@
     "compile:sass": "node-sass public/sass/main.scss public/css/style.compile.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/css/style.compile.css -o public/css/style.prefix.css",
     "compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
-    "dev": "npm-run-all --parallel app watch:sass",
+    "dev": "npm-run-all --parallel start watch:sass",
     "build": "npm-run-all compile:sass prefix:css compress:css"
   },
   "author": "Jacob Grisham",

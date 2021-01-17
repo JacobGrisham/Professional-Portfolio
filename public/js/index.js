@@ -50,7 +50,7 @@ window.onload = function() {
         translateY: [
           ["elInY", "elCenterY", "elOutY"],
           {
-            500: [100, 0, 350], // Screen width < 500
+            500: [100, 0, 200], // Screen width < 500
             900: [100, 0, 250], // Screen width > 900
           },
         ]
