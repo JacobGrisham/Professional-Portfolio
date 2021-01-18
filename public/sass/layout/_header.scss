@@ -6,6 +6,10 @@
   justify-items: center;
   align-content: center;
 
+  @media only screen and (max-width: $bp-mobile-l) {
+    width: auto;
+  }
+
   &__content {
     display: grid;
     justify-items: center;
@@ -28,21 +32,30 @@
       letter-spacing: 3rem;
     }
     @media only screen and (max-width: $bp-tablet) {
+      font-size: 3rem;
       margin-bottom: 0;
+    }
+    @media only screen and (max-width: $bp-mobile-l) {
+      font-size: 2rem;
+      letter-spacing: 2.5rem;
     }
 
     &--part-1 {
       @media only screen and (max-width: $bp-tablet) {
         display: block;
-        padding: 1.5rem;
-        letter-spacing: 5.7rem;
-        transform: translateX(1.8rem);
+        padding-bottom: 1.5rem;
+        letter-spacing: 5.3rem;
+        transform: translateX(1.4rem);
+      }
+      @media only screen and (max-width: $bp-mobile-l) {
+        letter-spacing: 3.5rem;
+        transform: translateX(1.1rem);
       }
     }
     &--part-2 {
       @media only screen and (max-width: $bp-tablet) {
         display: block;
-        padding: 1.5rem;
+        padding-bottom: 1.5rem;
       }
     }
   }
@@ -56,6 +69,7 @@
 
     @media only screen and (max-width: $bp-tablet) {
       margin-bottom: 0rem;
+      font-size: 1.6rem;
       transform: translateY(-3rem);
     }
 

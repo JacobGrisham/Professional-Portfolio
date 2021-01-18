@@ -50,7 +50,8 @@ window.onload = function() {
         translateY: [
           ["elInY", "elCenterY", "elOutY"],
           {
-            500: [100, 0, 200], // Screen width < 500
+            375: [100, 0, 125], // Screen width < 375
+            500: [100, 0, 200], // Screen width > 375 and < 500
             900: [100, 0, 250], // Screen width > 900
           },
         ]
@@ -74,8 +75,8 @@ const faders = document.querySelectorAll(".fade-in");
 
 const appearOptions = {
   root: null,
-  threshold: 0.25,
-  rootMargin: "-150px"
+  threshold: 0.05,
+  rootMargin: "-50px"
 };
 
 const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
