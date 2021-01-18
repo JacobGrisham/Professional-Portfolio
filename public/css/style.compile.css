@@ -8,9 +8,6 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
-  @media only screen and (max-width: 26.56em) {
-    html {
-      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
@@ -273,7 +270,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         padding: 2.4rem .8rem; } }
-    @media only screen and (max-width: 17.19em) {
+    @media only screen and (max-width: 20em) {
       .skills-box__list {
         padding: .8rem .8rem; } }
   .skills-box__item {
@@ -395,6 +392,9 @@ body {
   display: grid;
   justify-items: center;
   align-content: center; }
+  @media only screen and (max-width: 26.56em) {
+    .banner {
+      width: auto; } }
   .banner__content {
     display: grid;
     justify-items: center;
@@ -415,17 +415,26 @@ body {
         letter-spacing: 3rem; } }
     @media only screen and (max-width: 48em) {
       .banner__main {
+        font-size: 3rem;
         margin-bottom: 0; } }
+    @media only screen and (max-width: 26.56em) {
+      .banner__main {
+        font-size: 2rem;
+        letter-spacing: 2.5rem; } }
     @media only screen and (max-width: 48em) {
       .banner__main--part-1 {
         display: block;
-        padding: 1.5rem;
-        letter-spacing: 5.7rem;
-        transform: translateX(1.8rem); } }
+        padding-bottom: 1.5rem;
+        letter-spacing: 5.3rem;
+        transform: translateX(1.4rem); } }
+    @media only screen and (max-width: 26.56em) {
+      .banner__main--part-1 {
+        letter-spacing: 3.5rem;
+        transform: translateX(1.1rem); } }
     @media only screen and (max-width: 48em) {
       .banner__main--part-2 {
         display: block;
-        padding: 1.5rem; } }
+        padding-bottom: 1.5rem; } }
   .banner__sub {
     margin-bottom: 5.2rem;
     font-size: 2.4rem;
@@ -435,6 +444,7 @@ body {
     @media only screen and (max-width: 48em) {
       .banner__sub {
         margin-bottom: 0rem;
+        font-size: 1.6rem;
         transform: translateY(-3rem); } }
     @media only screen and (max-width: 48em) {
       .banner__sub--part-1 {
@@ -456,7 +466,7 @@ body {
   background-color: #191919;
   font-size: 1.2rem;
   color: white; }
-  @media only screen and (max-width: 20em) {
+  @media only screen and (max-width: 17.19em) {
     .footer {
       padding-top: 2.4rem;
       padding-bottom: 2.4rem; } }
@@ -478,7 +488,7 @@ body {
       grid-template-columns: min-content;
       grid-template-rows: min-content repeat(4, 1fr);
       justify-content: center;
-      gap: 1vw 0; } }
+      gap: 2rem 0; } }
   @media only screen and (max-width: 48em) {
     .skills {
       grid-template-columns: 1fr;
@@ -730,8 +740,8 @@ body {
   width: 60rem; }
   @media only screen and (max-width: 26.56em) {
     .laptop__svg {
-      height: 40rem;
-      width: 40rem; } }
+      height: 30rem;
+      width: 30rem; } }
 
 #code-1 {
   animation: code-1 0.5s linear 3.5s running; }
