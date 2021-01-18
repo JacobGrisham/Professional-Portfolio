@@ -63,18 +63,17 @@ window.onload = function() {
 
 // Drop Down Button
 $(".btn--stack").click(function(){
-  $(".card__stack").slideToggle(150);
+  $(this).next().slideToggle(150);
 });
 
-$(".target").click(function(){
-  $(".open-target").slideToggle(1000);
+$(".btn--slideToggle").click(function(){
+  $(this).next().toggle(1000);
 });
 
 // Hide/Show Links
 $("#technologies-link").click(function(){
   $("#technologies").toggle();
 });
-
 $("#background-link").click(function(){
   $("#background").toggle();
 });

@@ -34,7 +34,7 @@
       background-color: $white;
 
       font-size: $button-font-size;
-      color: $black-1;
+      color: $navy-2;
 
       @media only screen and (max-width: $bp-tablet) {
         padding: 1rem 30%;
@@ -65,7 +65,7 @@
     // -webkit breaks the Aqua appearance on MacOS browsers
     -webkit-appearance: button;
     font-size: $button-font-size;
-    color: $black-1;
+    color: $navy-2;
 
     @media only screen and (max-width: $bp-tablet) {
       padding: 1.4rem 30%;
@@ -94,7 +94,7 @@
     background-color: $white;
 
     font-size: 1.5rem;
-    color: $black-1;
+    color: $navy-2;
 
     &:hover,
     &:active,
