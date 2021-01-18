@@ -89,13 +89,22 @@ body {
 .curriculum__item {
   padding: 1.2rem 0; }
 
-.curriculum__link:link, .curriculum__link:visited {
-  text-decoration: none;
-  color: #21374b; }
-
-.curriculum__link:hover, .curriculum__link:focus, .curriculum__link:active {
+.curriculum__link {
   text-decoration: underline;
-  color: #dfac5d; }
+  cursor: pointer; }
+  .curriculum__link:link, .curriculum__link:visited {
+    color: #21374b; }
+  .curriculum__link:hover, .curriculum__link:focus, .curriculum__link:active {
+    color: #dfac5d; }
+
+#technologies {
+  display: none;
+  margin-left: 4rem;
+  margin-bottom: 1.6rem; }
+
+#background {
+  display: none;
+  margin-top: 1.6rem; }
 
 .card {
   display: grid;

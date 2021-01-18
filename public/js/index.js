@@ -61,13 +61,22 @@ window.onload = function() {
 
 // Popup for Project Info
 
-// Drop down button
+// Drop Down Button
 $(".btn--stack").click(function(){
   $(".card__stack").slideToggle(150);
 });
 
 $(".target").click(function(){
   $(".open-target").slideToggle(1000);
+});
+
+// Hide/Show Links
+$("#technologies-link").click(function(){
+  $("#technologies").toggle();
+});
+
+$("#background-link").click(function(){
+  $("#background").toggle();
 });
 
 // Skill SVGs fade-in

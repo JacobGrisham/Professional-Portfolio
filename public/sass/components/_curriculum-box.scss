@@ -84,17 +84,29 @@
   }
 
   &__link {
+    text-decoration: underline;
+    cursor: pointer;
+
     &:link,
     &:visited {
-      text-decoration: none;
       color: $navy-2;
     }
 
     &:hover,
     &:focus,
     &:active {
-      text-decoration: underline;
       color: $gold-2;
     }
   }
+}
+
+#technologies {
+  display: none;
+  margin-left: 4rem;
+  margin-bottom: 1.6rem;
+}
+
+#background {
+  display: none;
+  margin-top: 1.6rem;
 }
