@@ -1,6 +1,8 @@
 .banner {
   grid-row: header-start / header-end;
-  background-color: $navy-2;
+  background-image: linear-gradient(to right bottom, rgba(13, 35, 55, 0.99), rgba(23, 45, 65, 0.8)),url(../../img/banner-image.jpg);
+  background-size: cover;
+  background-position: bottom;
   width: 100vw;
   display: grid;
   justify-items: center;
