@@ -232,15 +232,21 @@
           </li>
           <li class="skills-box__item fade-in">
             <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-django"></use>
+            </svg>
+            Django
+          </li>
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
               <use xlink:href="img/sprite.svg#icon-flask"></use>
             </svg>
             Flask
           </li>
           <li class="skills-box__item fade-in">
             <svg class="skills-box__icon">
-              <use xlink:href="img/sprite.svg#icon-django"></use>
+              <use xlink:href="img/sprite.svg#icon-jest"></use>
             </svg>
-            Django
+            Jest
           </li>
           <li class="skills-box__item fade-in">
             <svg class="skills-box__icon">
@@ -273,6 +279,12 @@
           </li>
           <li class="skills-box__item fade-in">
             <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-postgresql"></use>
+            </svg>
+            PostgreSQL
+          </li>
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
               <use xlink:href="img/sprite.svg#icon-graphql"></use>
             </svg>
             GraphQL
@@ -302,6 +314,24 @@
           </li>
           <li class="skills-box__item fade-in">
             <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-circleci"></use>
+            </svg>
+            CircleCI
+          </li>
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-codacy"></use>
+            </svg>
+            Codacy
+          </li>
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
+              <use xlink:href="img/sprite.svg#icon-docker"></use>
+            </svg>
+            Docker
+          </li>
+          <li class="skills-box__item fade-in">
+            <svg class="skills-box__icon">
               <use xlink:href="img/sprite.svg#icon-amazonaws"></use>
             </svg>
             AWS
@@ -324,12 +354,6 @@
             </svg>
             MongoDB Atlas
           </li>
-          <li class="skills-box__item fade-in">
-            <svg class="skills-box__icon">
-              <use xlink:href="img/sprite.svg#icon-docker"></use>
-            </svg>
-            Docker
-          </li>
         </ul>
       </div>
     </section>
@@ -342,7 +366,7 @@
       <!-- PROJECT: Data Structures and Algorithms -->
       <div class="card">
         <h4 class="card__heading">Data Structures and Algorithms Visualization</h4>
-        <h5 class="card__sub-heading">Full-stack web application to visualize searching and sorting algorithms.</h5>
+        <h5 class="card__sub-heading">Full-stack web application to visualize search and sort algorithms</h5>
         <div class="card__video">
           <iframe title="Data Structures and Algorithms video demonstration and tutorial" data-src="//www.youtube.com/embed/rSeSffuw4Tg?modestbranding=1&rel=0&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen color="white" class="card__video-content"></iframe>
         </div>
@@ -386,7 +410,7 @@
       <!-- PROJECT: Finance -->
       <div class="card">
         <h4 class="card__heading">Robynhood</h4>
-        <h5 class="card__sub-heading">Full-stack web application for managing an investment portfolio by buying and selling stocks based on their actual prices.</h5>
+        <h5 class="card__sub-heading">Full-stack web application for managing an investment portfolio by buying and selling stocks based on their actual prices</h5>
         <div class="card__video">
           <iframe title="Robynhood video demonstration and tutorial" data-src="//www.youtube.com/embed/T3U_HInY8kg?modestbranding=1&rel=0&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card__video-content"></iframe>
         </div>
@@ -652,7 +676,7 @@
       <p class="bio__content__paragraph">I'm a software engineer because I'm passionate about solving problems and building solutions. I chose to focus on web development because it's a ubiquitous, accessible, and powerful platform. I specialize in full-stack web development and most frequently use the MERN stack: MongoDB, Express.js, React, and Node.js. To see the full list of technologies I work with, please click this <a id="technologies-link" class="curriculum__link">link</a></p>
       <ul id="technologies">
         <li>Graphic Design & Prototyping - Inkscape, AdobeXD</li>
-        <li>Front-End - HTML5, CSS3, Sass, Bootstrap 4, Javascript (ES6+), JQuery, Typescript, React.js, Redux</li>
+        <li>Front-End - HTML5, CSS3, Sass, Bootstrap 4, Javascript (ES6+), jQuery, Typescript, React.js, Redux</li>
         <li>Back-End - Node.js, Express.js 4.x, Embedded Javascript Template (EJS), Python, Flask, Django</li>
         <li>Testing - Jest, Jasmine</li>
         <li>Database - MongoDB, MySQL, PostgreSQL, Redis</li>
@@ -668,10 +692,6 @@
     <button type="button" class="btn btn--slideToggle" onclick='FB.AppEvents.logEvent("buttonClicked")'>Curriculum</button>
     <!-- CURRICULUM -->
     <div class="curriculum">
-      <div class="curriculum__methodology">
-        <p><strong>Methodology</strong>: I aim for a well-rounded and thorough self-education. I reference <a href="https://roadmap.sh/frontend" class="curriculum__methodology__link" target="_blank" rel="noopener noreferrer">this frontend roadmap</a>, <a href="https://roadmap.sh/backend" class="curriculum__methodology__link" target="_blank" rel="noopener noreferrer">this backend roadmap</a>, and <a href="https://cdn.cs50.net/guide/guide-18.pdf" class="curriculum__methodology__link"  target="_blank" rel="noopener noreferrer">Harvard's Unofficial Guide to CS</a> as syllabi to guide me on what topics to cover and the order in which to complete them.</p>
-        <p>Among the various educational resources, each fulfills a purpose based on its strength. I use Udemy for learning the basics of full-stack web development, eDX and Coursera for learning computer science fundamentals and advanced software engineering, and books to deepen my knowledge in specific subjects. I have chosen the specific courses and texbooks based on recommendations from numerous sources.</p>
-      </div>
       <!-- LIST OF COURSES AND BOOKS -->
       <ol class="curriculum__main">
         <!-- COMPLETED -->
@@ -729,6 +749,10 @@
           </div>
         </span>
       </ol>
+      <div class="curriculum__methodology">
+        <p><strong>Methodology</strong>: I aim for a well-rounded and thorough self-education. I reference <a href="https://roadmap.sh/frontend" class="curriculum__methodology__link" target="_blank" rel="noopener noreferrer">this frontend roadmap</a>, <a href="https://roadmap.sh/backend" class="curriculum__methodology__link" target="_blank" rel="noopener noreferrer">this backend roadmap</a>, and <a href="https://cdn.cs50.net/guide/guide-18.pdf" class="curriculum__methodology__link"  target="_blank" rel="noopener noreferrer">Harvard's Unofficial Guide to CS</a> as syllabi to guide me on what topics to cover and the order in which to complete them.</p>
+        <p>Among the various educational resources, each fulfills a purpose based on its strength. I use Udemy for learning the basics of full-stack web development, eDX and Coursera for learning computer science fundamentals and advanced software engineering, and books to deepen my knowledge in specific subjects. I have chosen the specific courses and texbooks based on recommendations from numerous sources.</p>
+      </div>
     </div>
     </section>
 
