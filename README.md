@@ -19,14 +19,6 @@
 -   Parallax scrolling
 -   CSS float, flex, and grid properties
 
-## Table of Contents
--   [Technologies](#technologies)
--   [Methodology](#methodology)
--   [Project Status](#project-status)
--   [Getting Started](#getting-started)
--   [Tests](#tests)
--   [License](#license)
-
 ## 🛠 Technologies
 |Graphic Design|Front-End|Back-End|Deployment |Testing |
 |------------- | ------- | ------ | --------  | -------|
