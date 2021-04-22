@@ -4,10 +4,10 @@
 ![Security Headers](https://img.shields.io/security-headers?url=https%3A%2F%2Fwww.jacobgrisham.com)
 [![Maintainability](https://api.codeclimate.com/v1/badges/ebf5d81dbf5eb3a6318c/maintainability)](https://codeclimate.com/github/JacobGrisham/Professional-Portfolio/maintainability)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/f4ceb1f87f274625ad7369bc30246eec)](https://www.codacy.com/gh/JacobGrisham/Professional-Portfolio/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JacobGrisham/Professional-Portfolio&amp;utm_campaign=Badge_Grade)
-[![JacobGrisham](https://circleci.com/gh/JacobGrisham/Professional-Portfolio.svg?style=svg)](https://app.circleci.com/pipelines/github/JacobGrisham/Professional-Portfolio)
+[![CircleCI](https://img.shields.io/circleci/build/github/JacobGrisham/Professional-Portfolio)](https://app.circleci.com/pipelines/github/JacobGrisham/Professional-Portfolio)
 ![David](https://img.shields.io/david/jacobgrisham/professional-portfolio)
 
-## ▶️ Walkthrough on Youtube
+## 🎥 Walkthrough on Youtube
 [<img src="public/img/youtube-thumbnail.png" width="100%">](https://youtu.be/hcrmmneYZkc)
 
 ## 💡Lessons Learned
