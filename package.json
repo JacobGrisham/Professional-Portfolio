@@ -13,7 +13,12 @@
     "build": "npm-run-all compile:sass prefix:css compress:css"
   },
   "author": "Jacob Grisham",
-  "license": "Copyright Notice and Statement: currently not offering any license. Permission only to view and download.",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JacobGrisham/Professional-Portfolio.git"
+  },
+  "private": true,
   "devDependencies": {
     "autoprefixer": "^9.8.6",
     "jest": "^26.6.3",
