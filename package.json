@@ -4,12 +4,13 @@
   "description": "Portfolio of web development projects",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
+    "dev:start": "ndoemon app.js",
     "watch:sass": "node-sass public/sass/main.scss public/css/style.css -w",
     "compile:sass": "node-sass public/sass/main.scss public/css/style.compile.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/css/style.compile.css -o public/css/style.prefix.css",
     "compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
-    "dev": "npm-run-all --parallel start watch:sass",
+    "dev": "npm-run-all --parallel dev:start watch:sass",
     "build": "npm-run-all compile:sass prefix:css compress:css"
   },
   "author": "Jacob Grisham",
