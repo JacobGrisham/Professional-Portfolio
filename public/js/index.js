@@ -33,7 +33,14 @@ document.onreadystatechange = () => {
       document.querySelector(".loader").style.display = "none"; 
       document.querySelector("body").style.visibility = "visible"; 
   } 
-}; 
+};
+
+// Global site tag (gtag.js) - Google Analytics
+window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SV51NLJS21');
 
 // Parallax with lax.js
 window.onload = function() {
