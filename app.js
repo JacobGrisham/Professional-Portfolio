@@ -15,8 +15,8 @@ app.use(helmet()); // Helmet helps you secure your Express apps by setting vario
 app.use(
   helmet.contentSecurityPolicy({
     directives: {
-      defaultSrc: ["https://www.jacobgrisham.com/", "https://www.jacobgrisham.com/img/sprite.svg"],
-      scriptSrc: ["'self'", "https://www.npmjs.com/package/lax.js", "https://cdn.jsdelivr.net/npm/lax.js", "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js", "https://connect.facebook.net/en_US/sdk.js"],
+      defaultSrc: ["https://www.jacobgrisham.com/", "https://www.jacobgrisham.com/img/sprite.svg", "https://www.google-analytics.com/"],
+      scriptSrc: ["'self'", "https://www.npmjs.com/package/lax.js", "https://cdn.jsdelivr.net/npm/lax.js", "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js", "https://www.googletagmanager.com/"],
 			objectSrc: ["'none'"],
 			fontSrc: ["https://fonts.gstatic.com"],
 			imgSrc: ["'self'", "https://www.facebook.com/", "data:"],
