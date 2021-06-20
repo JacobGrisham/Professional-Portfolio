@@ -24,22 +24,29 @@ jobs:
           name: Ensure App Builds
           command: npm run-script build
 
+  deploy:
+    executor: heroku/default
+    steps:
+      - checkout
+      - heroku/install
+      - run:
+          command: >
+      - run:
+          command: |
+              changes=`git show --name-only ${CIRCLE_SHA1} | tail -n +7`
+
+              if [ "$changes" = ".circleci/config.yml" ] || [ "$changes" = "README.md" ]; then
+                echo "Only found a configuration or documentation change. Stopping build"
+                circleci-agent step halt
+              fi
+      - heroku/deploy-via-git
+
 workflows:
   version: 2
   build_and_deploy:
     jobs:
       - build
-      - heroku/deploy-via-git:
-          pre-steps:
-            - run:
-                name: Avoid Non-Deployment Changes
-                command: |
-                    changes=`git show --name-only ${CIRCLE_SHA1} | tail -n +7`
-
-                    if [ "$changes" = ".circleci/config.yml" ] || [ "$changes" = "README.md" ]; then
-                      echo "Only found a configuration or documentation change. Stopping build"
-                      circleci-agent step halt
-                    fi
+      - deploy:
           requires:
             - build # only run deploy-via-git job if the build job has completed
           filters:
