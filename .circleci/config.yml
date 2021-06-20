@@ -9,6 +9,14 @@ jobs:
       - image: circleci/node:14-buster
     steps:
       - checkout
+      # Reference: https://support.circleci.com/hc/en-us/articles/360052092532-Conditionally-stop-job-when-only-change-was-to-config-yml-file
+      - run: |
+          changes=`git show --name-only ${CIRCLE_SHA1} | tail -n +7`
+
+          if [ "$changes" = ".circleci/config.yml" || "README.md" ]; then 
+            echo "Only found a configuration or documentation change. Stopping build" 
+            circleci-agent step halt
+          fi
       - restore_cache:
           keys:
             - portfolio-dependency-cache-v1-{{ checksum "package-lock.json" }}
@@ -26,6 +34,7 @@ jobs:
       - run:
           name: Ensure App Starts
           command: npm start
+          no_output_timeout: 3s
 
 workflows:
   version: 2
