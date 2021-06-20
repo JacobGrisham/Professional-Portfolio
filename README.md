@@ -20,6 +20,7 @@
 -   Routing website to a domain name
 -   Parallax scrolling
 -   CSS float, flex, and grid properties
+-   Google Analytics
 
 ## 🛠 Technologies
 |Graphic Design|Front-End|Back-End|Deployment |Testing |
