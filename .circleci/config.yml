@@ -9,14 +9,6 @@ jobs:
       - image: circleci/node:14-buster
     steps:
       - checkout
-      # Reference: https://support.circleci.com/hc/en-us/articles/360052092532-Conditionally-stop-job-when-only-change-was-to-config-yml-file
-      - run: |
-          changes=`git show --name-only ${CIRCLE_SHA1} | tail -n +7`
-
-          if [ "$changes" = ".circleci/config.yml" ] || [ "$changes" = "README.md" ]; then
-            echo "Only found a configuration or documentation change. Stopping build"
-            circleci-agent step halt
-          fi
       - restore_cache:
           keys:
             - portfolio-dependency-cache-v1-{{ checksum "package-lock.json" }}
@@ -37,29 +29,23 @@ jobs:
       - run:
           name: Bring Down Server
           command: circleci-agent step halt
-  deploy:
-    executor: heroku/default
-    steps:
-      - checkout
-      # Halt CircleCI job if this is not a deployment change
-      - run: |
-          changes=`git show --name-only ${CIRCLE_SHA1} | tail -n +7`
-
-          if [ "$changes" = ".circleci/config.yml" ] || [ "$changes" = "README.md" ]; then
-            echo "Only found a configuration or documentation change. Stopping build"
-            circleci-agent step halt
-          fi
-      - heroku/install
-      - run:
-          command: > # installs Heroku
-      - heroku/deploy-via-git
 
 workflows:
   version: 2
   build_and_deploy:
     jobs:
       - build
-      - deploy:
+      - heroku/deploy-via-git:
+          pre-steps:
+            - run:
+                name: Avoid Non-Deployment Changes
+                command: |
+                    changes=`git show --name-only ${CIRCLE_SHA1} | tail -n +7`
+
+                    if [ "$changes" = ".circleci/config.yml" ] || [ "$changes" = "README.md" ]; then
+                      echo "Only found a configuration or documentation change. Stopping build"
+                      circleci-agent step halt
+                    fi
           requires:
             - build # only run deploy-via-git job if the build job has completed
           filters:
