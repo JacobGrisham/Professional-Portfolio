@@ -25,10 +25,9 @@ jobs:
           command: npm run-script build
       - run:
           name: Ensure App Starts
-          command: npm start
-      - run:
-          name: Bring Down Server
-          command: circleci-agent step halt
+          command: | 
+              npm start
+              circleci-agent step halt
 
 workflows:
   version: 2
