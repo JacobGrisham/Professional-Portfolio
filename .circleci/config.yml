@@ -31,14 +31,13 @@ jobs:
       - heroku/install
       - run:
           command: >
-      - run:
-          command: |
-              changes=`git show --name-only ${CIRCLE_SHA1} | tail -n +7`
+      - run: |
+          changes=`git show --name-only ${CIRCLE_SHA1} | tail -n +7`
 
-              if [ "$changes" = ".circleci/config.yml" ] || [ "$changes" = "README.md" ]; then
-                echo "Only found a configuration or documentation change. Stopping build"
-                circleci-agent step halt
-              fi
+          if [ "$changes" = ".circleci/config.yml" ] || [ "$changes" = "README.md" ]; then
+            echo "Only found a configuration or documentation change. Stopping build"
+            circleci-agent step halt
+          fi
       - heroku/deploy-via-git
 
 workflows:
