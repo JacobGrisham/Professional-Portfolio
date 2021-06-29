@@ -6,18 +6,16 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/f4ceb1f87f274625ad7369bc30246eec)](https://www.codacy.com/gh/JacobGrisham/Professional-Portfolio/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JacobGrisham/Professional-Portfolio&amp;utm_campaign=Badge_Grade)
 
 ## 🎥 Walkthrough on Youtube
-[<img src="public/img/youtube-thumbnail.png" width="100%">](https://youtu.be/hcrmmneYZkc)
+[<img src="img/youtube-thumbnail.png" width="100%">](https://youtu.be/hcrmmneYZkc)
 
 ## 💡Lessons Learned
 -   Performance, Security, Accessibility, and SEO optimization with [Lighthouse](https://developers.google.com/web/tools/lighthouse). Increased Google Lighthouse performance score from 12 to 88 .
 -   Decreased **average** DOM Content Loaded time from 10s  to 2s using intersection observer and lazy loading for images and video. Further decreased **first visit** DOM Content Loaded time from 7s to 1s 	by refactoring website from using an express.js server to a static site with no web server.
--   HTTP Headers and Content Security Policy
 -   Increased SEO to achieve Google PageRank #1 for the search term “jacob grisham”. Used Open Graph Meta Properties (og:image, etc.) to help increase ranking.
--   First time routing website to a domain name
 -   User Experience optimization with loading page and SVG animation, parallax scrolling, fade-in images
 -   Optimized responsive design for 8 screen sizes (desktop, tablet, and mobile) using Sass to implement floats, flexbox, grid, and media queries
 -   Increased cross-browser compatibility using LambdaTest
--   First time using Google Analytics
+-   First time using Google Analytics and first time routing website to a domain name
 
 ## 🛠 Technologies
 |Graphic Design|Front-End|Deployment |Testing |
