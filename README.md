@@ -1,7 +1,6 @@
 # [Portfolio](https://www.jacobgrisham.com/)
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://www.jacobgrisham.com/)
 ![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade/jacobgrisham.com)
-![Security Headers](https://img.shields.io/security-headers?url=https%3A%2F%2Fwww.jacobgrisham.com)
 [![Maintainability](https://api.codeclimate.com/v1/badges/ebf5d81dbf5eb3a6318c/maintainability)](https://codeclimate.com/github/JacobGrisham/Professional-Portfolio/maintainability)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/f4ceb1f87f274625ad7369bc30246eec)](https://www.codacy.com/gh/JacobGrisham/Professional-Portfolio/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JacobGrisham/Professional-Portfolio&amp;utm_campaign=Badge_Grade)
 
