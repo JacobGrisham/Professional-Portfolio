@@ -396,13 +396,11 @@ body {
 
 .banner {
   grid-row: header-start / header-end;
-  background-image: linear-gradient(to right bottom, rgba(13, 35, 55, 0.99), rgba(23, 45, 65, 0.8)), url(../../img/banner-image.jpg);
-  background-size: cover;
-  background-position: bottom;
   width: 100vw;
   display: grid;
   justify-items: center;
-  align-content: center; }
+  align-content: center;
+  background: linear-gradient(to right bottom, rgba(13, 35, 55, 0.99), rgba(23, 45, 65, 0.8)); }
   @media only screen and (max-width: 26.56em) {
     .banner {
       width: auto; } }
@@ -413,6 +411,14 @@ body {
     gap: 1rem 0;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase; }
+  .banner__image {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    position: absolute; }
   .banner__main {
     transform: translateY(-3.5rem);
     margin-bottom: 2.4rem;
