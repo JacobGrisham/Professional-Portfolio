@@ -101,14 +101,12 @@ const popup_contents = document.getElementsByClassName('popup__content');
 [...btns].forEach((btn, i) => {
   btn.onclick = () => {
     popups[i].classList.add("active")
-    // popup_contents[i].classList.add("active");
   }
 });
 
 [...closebtns].forEach((closebtn, i) => {
   closebtn.onclick = () => {
     popups[i].classList.remove("active")
-    // popup_contents[i].classList.add("active");
   }
 });
 
