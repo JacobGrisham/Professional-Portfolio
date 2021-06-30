@@ -1,4 +1,6 @@
+// --------------------------------------
 // Loading screen Animation
+// --------------------------------------
 setTimeout(function () {
 	document.getElementById("code-8").style.visibility = "visible";
 }, 0);
@@ -24,7 +26,9 @@ setTimeout(function () {
 	document.getElementById("code-1").style.visibility = "visible";
 }, 3500);
 
+// --------------------------------------
 // Loading screen logic
+// --------------------------------------
 document.onreadystatechange = () => { 
   if (document.readyState !== "complete") { 
       document.querySelector("body").style.visibility = "hidden"; 
@@ -35,14 +39,18 @@ document.onreadystatechange = () => {
   } 
 };
 
+// --------------------------------------
 // Global site tag (gtag.js) - Google Analytics
+// --------------------------------------
 window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-SV51NLJS21');
 
+// --------------------------------------
 // Parallax with lax.js
+// --------------------------------------
 window.onload = function() {
 	lax.init()
 
@@ -66,7 +74,9 @@ window.onload = function() {
     })
 }
 
+// --------------------------------------
 // Fade Out Banner Image when Scrolling Down
+// --------------------------------------
 $(window).scroll(() => {
   var scrollTop = $(this).scrollTop();
 
@@ -79,26 +89,61 @@ $(window).scroll(() => {
   );
 });
 
-// Popup for Project Info
 
+// --------------------------------------
+// Popup For Each Project Info Description
+// --------------------------------------
+const btns = document.getElementsByClassName('card__popup');
+const closebtns = document.getElementsByClassName('popup__close');
+const popups = document.getElementsByClassName('popup');
+const popup_contents = document.getElementsByClassName('popup__content');
+
+[...btns].forEach((btn, i) => {
+  btn.onclick = () => {
+    popups[i].classList.add("active")
+    // popup_contents[i].classList.add("active");
+  }
+});
+
+[...closebtns].forEach((closebtn, i) => {
+  closebtn.onclick = () => {
+    popups[i].classList.remove("active")
+    // popup_contents[i].classList.add("active");
+  }
+});
+
+window.onclick = (e) => {
+  [...popups].forEach((modal) => {
+    if (e.target === modal) {
+      modal.classList.remove("active");
+    }
+  });
+};  
+
+// --------------------------------------
 // Drop Down Button
-$(".btn--stack").click(function(){
+// --------------------------------------
+$(".btn--stack").click(function() {
   $(this).next().slideToggle(150);
 });
 
-$(".btn--slideToggle").click(function(){
+$(".btn--slideToggle").click(function() {
   $(this).next().toggle(1000);
 });
 
+// --------------------------------------
 // Hide/Show Links
-$("#technologies-link").click(function(){
+// --------------------------------------
+$("#technologies-link").click(function() {
   $("#technologies").toggle();
 });
-$("#background-link").click(function(){
+$("#background-link").click(function() {
   $("#background").toggle();
 });
 
+// --------------------------------------
 // Skill SVGs fade-in
+// --------------------------------------
 const faders = document.querySelectorAll(".fade-in");
 
 const appearOptions = {
@@ -123,7 +168,9 @@ faders.forEach(fader => {
 });
 
 
+// --------------------------------------
 // Lazyloading Videos and Images
+// --------------------------------------
 const media = document.querySelectorAll("[data-src]")
 
 function preloadMedia(iframe) {
@@ -154,7 +201,9 @@ media.forEach(video => {
   mediaObserver.observe(video);
 })
 
+// --------------------------------------
 // Copyright Date
+// --------------------------------------
 var date = new Date();
 var year = date.getFullYear();
 
