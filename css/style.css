@@ -23,8 +23,11 @@ body {
 
 svg use {
   fill: #21374b; }
-  svg use:active, svg use:hover, svg use:focus {
-    fill: #c89b53; }
+
+svg:active use,
+svg:hover use,
+svg:focus use {
+  fill: #c89b53; }
 
 body {
   font-family: 'Nunito Sans', sans-serif;
@@ -174,51 +177,54 @@ body {
   .btn--header:active, .btn--header:hover, .btn--header:focus {
     background-image: linear-gradient(to right, #e2b56d, #c89b53);
     color: #21374b; }
-  .btn--card:link {
+  .btn--card {
     align-self: center;
-    padding: 1rem 6.4rem;
+    cursor: pointer;
+    border: none;
     border-radius: 5px;
     background-color: white;
     font-size: 1.2rem;
-    color: #21374b; }
+    color: #21374b;
+    padding: 1rem 6.4rem; }
+    .btn--card:hover, .btn--card:active, .btn--card:focus {
+      background-color: gainsboro; }
     @media only screen and (max-width: 48em) {
       .btn--card:link {
         padding: 1rem 30%; } }
     @media only screen and (max-width: 26.56em) {
       .btn--card:link {
         padding: 1rem 25%; } }
-  .btn--card:hover, .btn--card:active, .btn--card:focus {
-    background-color: gainsboro; }
   .btn--stack {
     display: flex;
+    align-self: center;
     cursor: pointer;
     border: none;
-    align-self: center;
-    padding: 1.4rem 7rem;
     border-radius: 5px;
     background-color: white;
-    -webkit-appearance: button;
     font-size: 1.2rem;
-    color: #21374b; }
+    color: #21374b;
+    padding: 1.4rem 7rem;
+    -webkit-appearance: button; }
+    .btn--stack:hover, .btn--stack:active, .btn--stack:focus {
+      background-color: gainsboro; }
     @media only screen and (max-width: 48em) {
       .btn--stack {
         padding: 1.4rem 30%; } }
     @media only screen and (max-width: 26.56em) {
       .btn--stack {
         padding: 1.4rem 25%; } }
-    .btn--stack:hover, .btn--stack:active, .btn--stack:focus {
-      background-color: gainsboro; }
   .btn--slideToggle {
     grid-column: 1 / -1;
     display: flex;
+    align-self: center;
     cursor: pointer;
     border: none;
-    align-self: center;
-    padding: 2rem 8rem;
     border-radius: 5px;
     background-color: white;
-    font-size: 1.5rem;
-    color: #21374b; }
+    font-size: 1.2rem;
+    color: #21374b;
+    padding: 2rem 8rem;
+    font-size: 1.5rem; }
     .btn--slideToggle:hover, .btn--slideToggle:active, .btn--slideToggle:focus {
       background-color: gainsboro; }
 
@@ -295,9 +301,9 @@ body {
         height: 3.5rem;
         width: 3.5rem; } }
 
-.popup.active {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1); }
+.active {
+  opacity: 1 !important;
+  visibility: visible !important; }
 
 .popup {
   height: 100vh;
@@ -308,17 +314,10 @@ body {
   z-index: 3000;
   background-color: rgba(33, 55, 75, 0.9);
   border-radius: 5px;
-  transition: all .5s;
   opacity: 0;
   visibility: hidden;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); }
-  .popup:target {
-    opacity: 1;
-    visibility: visible; }
-  .popup:target .popup__content {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1); }
   .popup__close:link, .popup__close:visited {
     height: 3rem;
     width: 3rem;
@@ -326,23 +325,19 @@ body {
     top: 2rem;
     right: 2rem;
     font-size: 3rem;
-    text-decoration: none;
-    transition: all .2s; }
+    text-decoration: none; }
   .popup__close:hover {
     color: red; }
   .popup__content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     height: 70%;
     width: 70%;
     overflow-y: scroll;
-    opacity: 0;
     background-color: gainsboro;
     border-radius: 5px;
-    transform: translate(-50%, -50%) scale(0);
-    transition: all .5s .3s; }
+    transform: translate(-50%, -50%); }
     @media only screen and (max-width: 64em) {
       .popup__content {
         height: 80%;
