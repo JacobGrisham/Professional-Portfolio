@@ -22,10 +22,27 @@
   padding: 1.6rem;
 }
 
-// Initial conditions for hiding dropdown content //
+// INITIAL CONDITIONS FOR HIDING DROPDOWN CONTENT //
 @mixin hide-content {
   display: none;
   overflow: hidden;
+}
+
+// STYLING BUTTON APPEARANCE
+@mixin btn-styling {
+  align-self: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: $white;
+  font-size: $button-font-size;
+  color: $navy-2;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $grey-2;
+  }
 }
 
 // ONLINE PROFILE, EMAIL, AND SOCIAL MEDIA FORMATTING //
