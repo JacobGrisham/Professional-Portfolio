@@ -1,6 +1,6 @@
-.popup.active {
-  opacity: 1;
-  transform: translate(-50%,-50%) scale(1);
+.active {
+  opacity: 1!important;
+  visibility: visible!important;
 }
 
 .popup {
@@ -12,25 +12,12 @@
   z-index: 3000;
   background-color: rgba($navy-2, .9);
   border-radius: 5px;
-  transition: all .5s;
   // These two properties are to initially hide the popup //
   opacity: 0;
   visibility: hidden;
   // This property is to add background blur //
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-
-  &:target {
-    opacity: 1;
-    visibility: visible;
-  }
-  // The target pseudo-class refers to the target in the html. The target in this case is #popup in the html line <a href="#popup" class="btn btn--white">Learn more!</a> //
-
-  &:target &__content {
-    opacity: 1;
-    transform: translate(-50%,-50%) scale(1);
-  }
-  // This creates the effect that the popup content comes from behind the page to full size //
 
   &__close {
     &:link,
@@ -42,7 +29,6 @@
       right: 2rem;
       font-size: 3rem;
       text-decoration: none;
-      transition: all .2s;
     }
 
     &:hover {
@@ -54,18 +40,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     height: 70%;
     width: 70%;
     overflow-y: scroll;
-    opacity: 0;
     background-color: $grey-2;
     border-radius: 5px;
-    transform: translate(-50%,-50%) scale(0);
-    // We have to repeat this translate from our mixin. This is for two reasons. First, the cascade during the parsing phase uses this last transform. Secondly, you can only have one transform. //
-    // These two lines of code are used to set the initial conditions for the selector &:target &__content //
-    transition: all .5s .3s;
-    // This animates the popup content //
+    transform: translate(-50%,-50%);
 
     @media only screen and (max-width: $bp-laptop){
       height: 80%;
