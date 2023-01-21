@@ -19,7 +19,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.jacobgrisham.com/">
     <meta property="og:title" content="Jacob Grisham">
-    <meta property="og:site_name" content="Jacob Grisham">
+    <meta property="og:site_name" content="Jacob Grisham Professional Portfolio">
     <meta property="og:image" content="https://www.jacobgrisham.com/img/thumbnail.png">
     <meta property="og:image:secure_url" content="https://www.jacobgrisham.com/img/thumbnail.png">
     <meta property="og:image:type" content="image/png">
@@ -58,7 +58,7 @@
 
 
 
-  <body>
+  <body id="index">
     <!-- Loader -->
     <div class="laptop loader">
       <svg class="laptop__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.375 79.375" height="300" width="300">
@@ -332,13 +332,13 @@
           </li>
         </ul>
       </div>
-      <!-- DEPLOYMENT -->
+      <!-- PRODUCTION -->
       <div class="skills-box">
         <h4 class="skills-box__header">
           <svg class="skills-box__header-icon">
             <use xlink:href="img/sprite.svg#icon-cloud-upload"></use>
           </svg>
-          Deployment
+          Production
         </h4>
         <ul class="skills-box__list">
           <li class="skills-box__item fade-in">
@@ -415,37 +415,7 @@
         <button type="button" class="card__button btn btn--stack">Stack</button>
         <div class="card__stack">D3, React.js, Typescript, Bootstrap 4, CSS</div>
         <a href="https://www.big-o.app/" class="card__link btn btn--card" target="_blank" rel="noopener noreferrer">Launch</a>
-        <button class="card__popup btn btn--stack">Info</button>
-      </div>
-      <!-- POPUP/INFO -->
-      <div class="popup">
-        <div class="popup__content popup--learn-more">
-          <div class="popup__close">&times;</div>
-          <div class="popup--learn-more__about">
-            <h4 class="popup--learn-more__header">About</h4>
-            <p class="popup--learn-more__text">Visualize Linear Search, Binary Search, Bubble Sort, Selection Sort, Merge Sort, and Insertion Sort. Random numbers in an array are graphed as a bar chart. The values of the array are displayed and updated in an HTML table below the bar chart. They are also accessible through a tooltip that displays the value when hovered over. The Javascript Execution times are logged in Bootstrap 4 cards to allow comparison of different algorithm runtimes and for further information on the Big-O.</p>
-          </div>
-          <div class="popup--learn-more__methodology">
-            <h4 class="popup--learn-more__header">Methodology</h4>
-            <p class="popup--learn-more__text">
-              <ul class="popup--learn-more__list">
-                <li>Chose to create an application based on algorithms and data structures to solidify understanding of Big-O notation and the design of algorithms</li>
-                <li>D3 Library for data visualization to both challenge myself with learning a new framework and because D3 is the ideal solution for data visualization problems</li>
-                <li>Bootstrap 4 for increasing my experience working with it and to shift focus towards spending more time on the data visualization and underlying algorithms</li>
-                <li>Site is hosted on Heroku because the application server-side logic is very simple</li>
-              </ul>
-            </p>
-          </div>
-          <div class="popup--learn-more__source">
-            <h4 class="popup--learn-more__header">Source Code</h4>
-            <p class="popup--learn-more__text">Click the Github icon below to see the source code and documentation</p>
-            <a href="https://github.com/JacobGrisham/Data-Structures-and-Algorithms-Visualizer" class="popup--learn-more__link" aria-label="link to my GitHub account" target="_blank" rel="noopener noreferrer">
-              <svg class="popup--learn-more__icon">
-                <use xlink:href="img/sprite.svg#icon-github"></use>
-              </svg>
-            </a>
-          </div>
-        </div> 
+        <a href="pages/projects/data-structures-and-algorithms-visualization.html" class="card__link btn btn--card">Info</a>
       </div>
 
       <!-- PROJECT: Finance -->
@@ -459,41 +429,7 @@
         <button type="button" class="card__button btn btn--stack">Stack</button>
         <div class="card__stack">Flask, Python, SQL Alchemy, MySQL, Jinja, Bootstrap 4, CSS</div>
         <a href="http://www.robynhood.app/" class="card__link btn btn--card" target="_blank" rel="noopener noreferrer">Launch</a>
-        <button class="card__popup btn btn--stack">Info</button>
-      </div>
-      <!-- POPUP/INFO -->
-      <div class="popup">
-        <div class="popup__content popup--learn-more">
-          <div class="popup__close">&times;</div>
-          <div class="popup--learn-more__about">
-            <h4 class="popup--learn-more__header">About</h4>
-            <p class="popup--learn-more__text">The main features are login, sign-up, stock price API, and portfolio, bought, sold, and history tables in a SQL database (create, read, and update).</p>
-          </div>
-          <div class="popup--learn-more__methodology">
-            <h4 class="popup--learn-more__header">Methodology</h4>
-            <p class="popup--learn-more__text">
-              <ul class="popup--learn-more__list">
-                <li>Database designed in SQL to leverage tables and relational queries</li>
-                <li>Rewrote the entire application to use Flask SQL Alchemy to learn SQL in python and about object-relational mappers</li>
-                <li>Used Flask as a server-side framework to gain exposure to Python programming and a framework other than express.js</li>
-                <li>Used jinja templating to gain exposure to frameworks other than embedded javascript templates (EJS)</li>
-                <li>Password hashing using Werkzeug, a flask plugin</li>
-                <li>Continuous integration and continuous deployment (CI/CD) with Travis CI to gain exposure to a CI/CD tool other than CircleCI</li>
-                <li>Developed minimum viable product (MVP) of application with SQLite locally to test it and deployed with MySQL on RDS instance for production</li>
-                <li>Site is hosted on Amazon Web Services (AWS) on an Elastic Beanstalk instance. Chose AWS to gain skills and knowledge about this infrastructure as a service (IaaS). Chose Elastic Beanstalk since it's most similar to Heroku and it would ease me into the complexity of AWS.</li>
-              </ul>
-            </p>
-          </div>
-          <div class="popup--learn-more__source">
-            <h4 class="popup--learn-more__header">Source Code</h4>
-            <p class="popup--learn-more__text">Click the Github icon below to see the source code and documentation</p>
-            <a href="https://github.com/JacobGrisham/Finance-Full-Stack-Web-App-using-Flask-and-SQL" class="popup--learn-more__link" aria-label="link to my GitHub account" target="_blank" rel="noopener noreferrer">
-              <svg class="popup--learn-more__icon">
-                <use xlink:href="img/sprite.svg#icon-github"></use>
-              </svg>
-            </a>
-          </div>
-        </div> 
+        <a href="pages/projects/robynhood.html" class="card__link btn btn--card">Info</a>
       </div>
 
       <!-- PROJECT: YelpCamp -->
@@ -507,41 +443,20 @@
         <button type="button" class="card__button btn btn--stack">Stack</button>
         <div class="card__stack">Node.js, Express.js, Javascript, EJS, Bootstrap, CSS</div>
         <a href="https://www.yelpcamp.app/" class="card__link btn btn--card" target="_blank" rel="noopener noreferrer">Launch</a>
-        <button class="card__popup btn btn--stack">Info</button>
+        <a href="pages/projects/yelpcamp.html" class="card__link btn btn--card">Info</a>
       </div>
-      <!-- POPUP/INFO -->
-      <div class="popup">
-        <div class="popup__content popup--learn-more">
-          <div class="popup__close">&times;</div>
-          <div class="popup--learn-more__about">
-            <h4 class="popup--learn-more__header">About</h4>
-            <p class="popup--learn-more__text">First full-stack web application. Fundamentally, it's Yelp for campsites. The main features are login, sign-up, Admin role, Google Maps API, and Create, Edit, Update, Delete (CRUD) for campgrounds, comments, and reviews. Create routes have authentication. Edit, Update, and Delete routes have authentication and authorization. The basic foundation was built in the capstone project from the Udemy course <i>The Web Developer Bootcamp</i>.</p>
-          </div>
-          <div class="popup--learn-more__methodology">
-            <h4 class="popup--learn-more__header">Methodology</h4>
-            <p class="popup--learn-more__text">
-              <ul class="popup--learn-more__list">
-                <li>GoormIDE to gain exposure to cloud-based IDE</li>
-                <li>Bootstrap 4 as the CSS framework to learn Bootstrap for the first time</li>
-                <li>Express.js as the Node.js application framework for its basic functionality. Some companies still use Express.js so it was important to implement it.</li>
-                <li>PassportJs for the authentication and authorization</li>
-                <li>NoSQL database for the flexibility compared to a SQL database, MongoDB in particular because of its prevalence in the industry.</li>
-                <li>Git for version control to learn version control</li>
-                <li>Site is hosted on Heroku to learn how to deploy applications</li>
-                <li>Database is hosted on MongoDB Atlas for production</li>
-              </ul>
-            </p>
-          </div>
-          <div class="popup--learn-more__source">
-            <h4 class="popup--learn-more__header">Source Code</h4>
-            <p class="popup--learn-more__text">Click the Github icon below to see the source code and documentation</p>
-            <a href="https://github.com/JacobGrisham/YelpCamp" class="popup--learn-more__link" aria-label="link to my GitHub account" target="_blank" rel="noopener noreferrer">
-              <svg class="popup--learn-more__icon">
-                <use xlink:href="img/sprite.svg#icon-github"></use>
-              </svg>
-            </a>
-          </div>
-        </div> 
+
+      <!-- PROJECT: Star Wars -->
+      <div class="card">
+        <h4 class="card__heading">Star Wars 3D Models and Blueprints</h4>
+        <h5 class="card__sub-heading">Professional portfolio website to showcase software engineering projects</h5>
+        <div class="card__video">
+          <img data-src="img/Star Wars.png" src="img/project-placeholder.png" alt="Star Wars website" class="card__video-content">
+        </div>
+        <button type="button" class="card__button btn btn--stack">Stack</button>
+        <div class="card__stack" id="portfolio-button">Gatsby.js, React.js, GraphQL, Styled Components</div>
+        <a href="https://starwars-spaceships.netlify.app/" class="card__link btn btn--card" target="_blank" rel="noopener noreferrer">Launch</a>
+        <a href="pages/projects/star-wars-3d-models-and-blueprints.html" class="card__link btn btn--card">Info</a>
       </div>
 
       <!-- PROJECT: Portfolio -->
@@ -554,59 +469,12 @@
         <!-- STACK -->
         <button type="button" class="card__button btn btn--stack">Stack</button>
         <div class="card__stack" id="portfolio-button">HTML, Sass, Javascript, jQuery</div>
-        <button class="card__popup btn btn--stack">Info</button>
-      </div>
-      <!-- POPUP/INFO -->
-      <div class="popup">
-        <div class="popup__content popup--learn-more">
-          <div class="popup__close">&times;</div>
-          <div class="popup--learn-more__about">
-            <h4 class="popup--learn-more__header">About</h4>
-            <p class="popup--learn-more__text">The portfolio fundamentally revolves around my projects. Focused on showcasing a select few with high-quality standards.</p>
-          </div>
-          <div class="popup--learn-more__methodology">
-            <h4 class="popup--learn-more__header">Methodology</h4>
-            <p class="popup--learn-more__text">
-              <ul class="popup--learn-more__list">
-                <li>VS Code since it's my main IDE</li>
-                <li>One-page layout to force creativity in front-end capabilities. Employed a combination of float, flex, and grid properties.</li>
-                <li>Instead of using a CSS framework, I created all the CSS features from scratch for greater control and customization</li>
-                <li>Sass as the CSS preprocessor to facilitate BEM notation</li>
-                <li>Built with responsive design and a desktop-first construction</li>
-              </ul>
-            </p>
-          </div>
-          <div class="popup--learn-more__source">
-            <h4 class="popup--learn-more__header">Source Code</h4>
-            <p class="popup--learn-more__text">Click the Github icon to see the source code and documentation</p>
-            <a href="https://github.com/JacobGrisham/Professional-Portfolio" class="popup--learn-more__link" aria-label="link to my GitHub account" target="_blank" rel="noopener noreferrer">
-              <svg class="popup--learn-more__icon">
-                <use xlink:href="img/sprite.svg#icon-github"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="popup--learn-more__timesheet">
-            <h4 class="popup--learn-more__header">Timesheet</h4>
-            <p class="popup--learn-more__text">Primarily worked on this project from May 17, 2020 to July 31, 2020. Total time: 60 hours. Please keep in mind that part of this time was spent reading and learning about new topics. The timesheet is downloadable in csv format: <a href="data/Portfolio Timesheet.csv">Portfolio Timesheet</a></p>
-          </div>
-        </div> 
+        <a href="pages/projects/professional-portfolio.html" class="card__link btn btn--card">Info</a>
       </div>
 
       <!-- Additional Projects -->
       <button type="button" class="btn btn--slideToggle">Additional Projects</button>
       <div class="projects__extras">
-
-        <!-- Star Wars -->
-        <div class="card">
-          <h4 class="card__heading">Star Wars 3D Models and Blueprints</h4>
-          <div class="card__video">
-            <img data-src="img/Star Wars.png" src="img/project-placeholder.png" alt="Star Wars website" class="card__video-content">
-          </div>
-          <button type="button" class="card__button btn btn--stack">Stack</button>
-          <div class="card__stack" id="portfolio-button">Gatsby.js, React.js, GraphQL, Styled Components</div>
-          <a href="https://github.com/JacobGrisham/Gatsby.js-and-Styled-Components" class="card__link btn btn--card" target="_blank" rel="noopener noreferrer">Github</a>
-          <a href="https://starwars-spaceships.netlify.app/" class="card__link btn btn--card" target="_blank" rel="noopener noreferrer">Launch</a>
-        </div>
 
         <!-- Google Homepage -->
         <div class="card">
@@ -714,7 +582,7 @@
     <h3 class="bio__header">Bio</h3>
     <img data-src="img/Tech Account Profile Photo medium.jpg" src="img/profile-placeholder.jpg" alt="My photo" class="bio__img">
     <div class="bio__content">
-      <p class="bio__content__paragraph">I'm a software engineer because I'm passionate about solving problems and building solutions. I chose to focus on web development because it's a ubiquitous, accessible, and powerful platform. I specialize in full-stack web development. To see the full list of technologies I work with, please click this <a id="technologies-link" class="curriculum__link">link</a></p>
+      <p class="bio__content__paragraph">I'm a software engineer because I'm passionate about solving problems and building solutions. I chose to focus on web development because it's a ubiquitous, accessible, and powerful platform. I specialize in full-stack web development. <a id="technologies-link" class="curriculum__link">Expand</a> to see the full list of technologies I work with:</p>
       <ul id="technologies">
         <li>Front-End - React.js, Redux, Typescript, Javascript (ES6+), D3.js, Gatsby.js, Styled Components, Material UI, Sass, CSS3, HTML</li>
         <li>Back-End - Node.js, AWS Cloud Development Kit (CDK), Express.js, Python, Django, Flask, GraphQL, C</li>
@@ -722,7 +590,7 @@
         <li>Database - MySQL, PostgreSQL, MongoDB, Elasticsearch, Kibana, Redis</li>
         <li>Architecture - Monolithic Multi-Page Model View Controller (MVC), Service Oriented Architecture (SOA), Microservices Architecture, Single-Page Application, Serverless, Infrastructure as Code</li>
         <li>DevOps - Docker, Kubernetes, Circle CI/CD, Codefresh, Code Climate, Codacy, Git, Github</li>
-        <li>Deployment - AWS (Lambda, API Gateway, DynamoDB, SQS, SNS, EC2, S3, RDS), Elasticache, Netlify, Heroku, MongoDB Atlas, Cloudflare</li>
+        <li>Production - AWS (Lambda, API Gateway, DynamoDB, SQS, SNS, EC2, S3, RDS), Elasticache, Netlify, Heroku, MongoDB Atlas, Cloudflare</li>
         <li>Monitoring - New Relic, Datadog, Splunk, Devo, Sentry, AWS Cloudwatch</li>
         <li>Servers - Ubuntu, Nginx, Gunicorn</li>
         <li>Project Management - Jira, Confluence</li>
@@ -730,8 +598,7 @@
         <li>Software Design: UML</li>
       </ul>
       <p class="bio__content__paragraph">My university education didn't include computer science, so I've spearheaded my autodidactic education by taking online courses. I've learned most of my skills and knowledge from Massive Open Online Courses (MOOCs), a rapidly expanding supplement to traditional education. I'm always learning, so check out the courses I've completed, courses that are still in progress, and courses that are in queue via the curriculum button below.</p>
-      <a id="background-link" class="curriculum__link">More Background</a>
-      <p id="background" class="bio__content__paragraph">During the span of my career as an environmental scientist, I've consciously developed five traits: effectively communicating with a diverse audience, working cohesively in a team, analyzing data, learning new material constantly, and solving problems. However, during my career, something important was missing from my day to day work-life... Building. With software engineering, I get to enjoy building <em>and</em> use all the strengths I've developed over the years. With an empathetic communication style, I can converse with non-technical colleagues. With refined collaboration skills, I can work cohesively across the software development lifecycle team. With quick analytical skills, I can deliver results under tight deadlines while maintaining attention to detail and thoroughness. With systematic problem solving, I can debug code and resolve technical errors.</p>
+      <a href="pages/blog/bio/bio-list.html" class="curriculum__link">Read More in My Blog</a>
     </div>
     <button type="button" class="btn btn--slideToggle">Curriculum</button>
     <!-- CURRICULUM -->
@@ -772,7 +639,6 @@
           </h4>
           <div class="curriculum__list">
             <li class="curriculum__item"><a href="https://www.coursera.org/specializations/algorithms" class="curriculum__link" target="_blank" rel="noopener noreferrer">Coursera Standford's Algorithms Specialization</a></li>
-            <li class="curriculum__item"><a href="https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript" class="curriculum__link" target="_blank" rel="noopener noreferrer">eDX Harvard's CS50W Web Programming with Python and JavaScript</a></li>
           </div>
         </span>
         <!-- QUEUED -->
