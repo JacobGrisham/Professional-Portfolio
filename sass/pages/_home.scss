@@ -1,3 +1,8 @@
+#index {
+  display: grid;
+  grid-template-rows: [header-start] 100vh [header-end skills-start] minmax(min-content, max-content) [skills-end project-start] minmax(min-content, max-content) [project-end bio-start] minmax(min-content, max-content) [bio-end contact-start] minmax(min-content, max-content) [contact-end footer-start] max-content [footer-end];
+}
+
 // SKILLS SECTION //
 .skills {
   grid-row: skills-start / skills-end;
@@ -69,6 +74,22 @@
 
   &__extras {
     @include hide-content;
+    display: grid;
+    gap: 2rem 1vw;
+    padding: 4.8rem;
+
+    @media only screen and (max-width: $bp-laptop) {
+      gap: 2rem 0;
+    }
+
+    @media only screen and (max-width: $bp-tablet) {
+      padding: 3.2rem;
+    }
+  
+    @media only screen and (max-width: $bp-mobile-l){
+      padding-top: 2.4rem;
+      padding-bottom: 2.4rem;
+    }
   }
 }
 
@@ -131,8 +152,6 @@
   grid-column: 1 / -1;
   grid-row: 5 / 6;
   padding: 3.2rem;
-  background-color: $white;
-
   @media only screen and (max-width: $bp-tablet){
     padding: 1.6rem;
   }

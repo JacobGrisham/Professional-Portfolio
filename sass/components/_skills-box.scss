@@ -17,6 +17,10 @@
   text-align: center;
   box-shadow: $shadow-middle;
 
+  &__no-shadow {
+    box-shadow: none;
+  }
+
   @media only screen and (max-width: $bp-laptop) {
     grid-template-rows: 5rem 1fr;
     gap: .5rem 0;
