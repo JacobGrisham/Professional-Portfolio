@@ -40,15 +40,6 @@ document.onreadystatechange = () => {
 };
 
 // --------------------------------------
-// Global site tag (gtag.js) - Google Analytics
-// --------------------------------------
-window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-SV51NLJS21');
-
-// --------------------------------------
 // Parallax with lax.js
 // --------------------------------------
 window.onload = function() {
@@ -89,35 +80,6 @@ $(window).scroll(() => {
   );
 });
 
-
-// --------------------------------------
-// Popup For Each Project Info Description
-// --------------------------------------
-const btns = document.getElementsByClassName('card__popup');
-const closebtns = document.getElementsByClassName('popup__close');
-const popups = document.getElementsByClassName('popup');
-const popup_contents = document.getElementsByClassName('popup__content');
-
-[...btns].forEach((btn, i) => {
-  btn.onclick = () => {
-    popups[i].classList.add("active")
-  }
-});
-
-[...closebtns].forEach((closebtn, i) => {
-  closebtn.onclick = () => {
-    popups[i].classList.remove("active")
-  }
-});
-
-window.onclick = (e) => {
-  [...popups].forEach((modal) => {
-    if (e.target === modal) {
-      modal.classList.remove("active");
-    }
-  });
-};  
-
 // --------------------------------------
 // Drop Down Button
 // --------------------------------------
@@ -134,9 +96,6 @@ $(".btn--slideToggle").click(function() {
 // --------------------------------------
 $("#technologies-link").click(function() {
   $("#technologies").toggle();
-});
-$("#background-link").click(function() {
-  $("#background").toggle();
 });
 
 // --------------------------------------
@@ -164,45 +123,3 @@ const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
 faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
-
-
-// --------------------------------------
-// Lazyloading Videos and Images
-// --------------------------------------
-const media = document.querySelectorAll("[data-src]")
-
-function preloadMedia(iframe) {
-  const src = iframe.getAttribute("data-src");
-  if(!src) {
-    return;
-  }
-  iframe.src = src;
-}
-
-const mediaOptions = {
-  threshold: 0,
-  rootMargin: "0px 0px 500px 0px"
-};
-
-const mediaObserver = new IntersectionObserver((entries, mediaObserver) => {
-  entries.forEach (entry => {
-    if (!entry.isIntersecting) {
-      return;
-    } else {
-      preloadMedia(entry.target);
-      mediaObserver.unobserve(entry.target);
-    }
-  });
-}, mediaOptions);
-
-media.forEach(video => {
-  mediaObserver.observe(video);
-})
-
-// --------------------------------------
-// Copyright Date
-// --------------------------------------
-var date = new Date();
-var year = date.getFullYear();
-
-document.getElementById("date").innerHTML = year;
