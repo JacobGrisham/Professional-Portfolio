@@ -1,6 +1,6 @@
 .card {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem 0;
   padding: 2.4rem;
   border-radius: 5px;
@@ -8,11 +8,11 @@
   background-color: $white-2;
 
   @media only screen and (max-width: $bp-laptop-l){
-    grid-template-columns: repeat(3, 20vw);
+    grid-template-columns: repeat(2, 30vw);
   }
 
   @media only screen and (max-width: $bp-laptop){
-    grid-template-columns: repeat(3, 24vw);
+    grid-template-columns: repeat(2, 36vw);
   }
 
   &__heading {

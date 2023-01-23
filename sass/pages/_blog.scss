@@ -1,0 +1,17 @@
+.blog-body {
+  @include blog-and-project-formatting;
+
+  &__focus-container {
+    gap: 2.4rem 0;
+  }
+
+  &__sub-heading {
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+
+  &__image {
+    width: 75%;
+    height: 75%;
+  }
+}

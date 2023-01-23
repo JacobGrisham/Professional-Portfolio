@@ -4,28 +4,6 @@
   text-decoration: none;
   outline: none;
 
-  &--header {
-
-    &:link,
-    &:visited {
-      padding: 2rem 7rem;
-      border: 2px solid $gold-2;
-      color: $gold-2;
-
-        @media only screen and (max-width: $bp-laptop) {
-          padding: 1.5rem 6.5rem;
-        }
-    }
-
-    &:active,
-    &:hover,
-    &:focus {
-      // We add the selector btn:focus to this section otherwise the button in the Booking section has a blue box outline. By putting it here, we're saying that the focus state will look the same as the active state. We don't simply delete the focus state due to accessibility reasons //
-      background-image: linear-gradient(to right, $gold-1, $gold-3);
-      color: $navy-2;
-    }
-  }
-
   &--card {
     @include btn-styling; 
     padding: 1rem 6.4rem;
@@ -39,23 +17,6 @@
       @media only screen and (max-width: $bp-mobile-l) {
         padding: 1rem 25%;
       }
-    }
-  }
-
-  &--stack {
-    display: flex;
-
-    @include btn-styling; 
-    padding: 1.4rem 7rem;
-    // -webkit breaks the Aqua appearance on MacOS browsers
-    -webkit-appearance: button;
-
-    @media only screen and (max-width: $bp-tablet) {
-      padding: 1.4rem 30%;
-    }
-
-    @media only screen and (max-width: $bp-mobile-l) {
-      padding: 1.4rem 25%;
     }
   }
 

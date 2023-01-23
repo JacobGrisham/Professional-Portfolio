@@ -97,6 +97,10 @@
     &:active {
       color: $gold-2;
     }
+
+    &--no-decoration {
+      text-decoration: none;
+    }
   }
 }
 
