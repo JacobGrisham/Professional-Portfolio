@@ -1,45 +1,4 @@
 // --------------------------------------
-// Loading screen Animation
-// --------------------------------------
-setTimeout(function () {
-	document.getElementById("code-8").style.visibility = "visible";
-}, 0);
-setTimeout(function () {
-	document.getElementById("code-7").style.visibility = "visible";
-}, 500);
-setTimeout(function () {
-	document.getElementById("code-6").style.visibility = "visible";
-}, 1001);
-setTimeout(function () {
-	document.getElementById("code-5").style.visibility = "visible";
-}, 1500);
-setTimeout(function () {
-	document.getElementById("code-4").style.visibility = "visible";
-}, 2000);
-setTimeout(function () {
-	document.getElementById("code-3").style.visibility = "visible";
-}, 2500);
-setTimeout(function () {
-	document.getElementById("code-2").style.visibility = "visible";
-}, 3000);
-setTimeout(function () {
-	document.getElementById("code-1").style.visibility = "visible";
-}, 3500);
-
-// --------------------------------------
-// Loading screen logic
-// --------------------------------------
-document.onreadystatechange = () => { 
-  if (document.readyState !== "complete") { 
-      document.querySelector("body").style.visibility = "hidden"; 
-      document.querySelector(".loader").style.visibility = "visible"; 
-  } else { 
-      document.querySelector(".loader").style.display = "none"; 
-      document.querySelector("body").style.visibility = "visible"; 
-  } 
-};
-
-// --------------------------------------
 // Parallax with lax.js
 // --------------------------------------
 window.onload = function() {
@@ -83,19 +42,15 @@ $(window).scroll(() => {
 // --------------------------------------
 // Drop Down Button
 // --------------------------------------
-$(".btn--stack").click(function() {
-  $(this).next().slideToggle(150);
-});
 
 $(".btn--slideToggle").click(function() {
-  $(this).next().toggle(1000);
-});
-
-// --------------------------------------
-// Hide/Show Links
-// --------------------------------------
-$("#technologies-link").click(function() {
-  $("#technologies").toggle();
+  $(this).next().toggle({
+    duration: 1000,
+    start: function() {
+      jQuery(this).css('display','grid');
+      }
+    })
+  
 });
 
 // --------------------------------------
