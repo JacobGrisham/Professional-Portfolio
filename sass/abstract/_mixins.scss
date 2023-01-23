@@ -69,3 +69,48 @@
     }
   }
 }
+
+// BLOG AND PROJECTS BASE FORMATTING //
+@mixin blog-and-project-formatting {
+  background-color: $white-2;
+
+  &__focus-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, min-content);
+    margin: 10rem;
+    padding: 10rem;
+    border-radius: 5px;
+    background-color: $white;
+
+    @media only screen and (max-width: $bp-tablet) {
+      margin: 5rem;
+      padding: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile-l) {
+      margin: 0;
+      padding: 5rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 9px; 
+  }
+
+  &__heading {
+    margin-bottom: 1.2rem;
+    line-height: 3.2rem;
+  }
+
+  &__list {
+    margin-left: 1.6rem;
+  }
+
+  &__list li {
+    margin: 1.2rem 0 1.2rem 0;
+  }
+}
