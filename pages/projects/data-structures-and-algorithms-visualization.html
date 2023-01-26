@@ -213,6 +213,42 @@
             </li>
           </ul>
         </div>
+
+        <!-- DEVELOPMENT -->
+        <div class="skills-box__no-shadow">
+          <h4 class="skills-box__header">
+            <svg class="skills-box__header-icon">
+              <use xlink:href="../../img/sprite.svg#icon-cogs"></use>
+            </svg>
+            Development
+          </h4>
+          <ul class="skills-box__list">
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-codacy"></use>
+              </svg>
+              Git
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-github"></use>
+              </svg>
+              GitHub
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-codacy"></use>
+              </svg>
+              Codacy
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-codeclimate"></use>
+              </svg>
+              CodeClimate
+            </li>
+          </ul>
+        </div>
     
         <!-- PRODUCTION -->
         <div class="skills-box__no-shadow">
@@ -229,7 +265,34 @@
               </svg>
               Netlify
             </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-netlify"></use>
+              </svg>
+              Google Domains
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-netlify"></use>
+              </svg>
+              Google Analytics
+            </li>
           </ul>
+        </div>
+      </section>
+
+      <!-- UX/UI MOCKS AND GRAPHIC DESIGN -->
+      <section>
+        <h2 class="projects-body__heading">UX/UI Mocks and Graphic Design</h2>
+        <p>Below is an AdobeXD interactive wireframe mock for the mobile view. Start scrolling through and click on the screen to see hints where you should click next (highlighted in blue).</p>
+        <div class="adobexd">
+          <img src="../../img/iPhone.svg" alt="iPhone" class="adobexd--iphone">
+          <iframe src="https://xd.adobe.com/embed/7f4daf4a-42f4-4149-bb85-025696895860-2a1e/" frameborder="0" allowfullscreen class="adobexd--iphone--mock"></iframe>
+        </div>
+        <p>Below is an AdobeXD interactive wireframe mock for the desktop view. Start scrolling through and click on the screen to see hints where you should click next (highlighted in blue).</p>
+        <div class="adobexd">
+          <img src="../../img/MacBook-Pro.svg" alt="MacBook Pro" class="adobexd--macbook">
+          <iframe src="https://xd.adobe.com/embed/f1625089-b481-4bd9-ba1f-37153debea1c-a431/" frameborder="0" allowfullscreen class="adobexd--macbook--mock"></iframe>
         </div>
       </section>
 
@@ -237,11 +300,21 @@
       <section>
         <h2 class="projects-body__heading">Design and Architecture</h2>
           <ul class="projects-body__list">
+            <li><a href="https://xd.adobe.com/view/f1625089-b481-4bd9-ba1f-37153debea1c-a431/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Created prototype in AdobeXD</a> to prevent wasted engineering time, to practice UX/UI design, and to practice building from a UX/UI design specification.</li>
+            <li><a href="https://xd.adobe.com/view/7f4daf4a-42f4-4149-bb85-025696895860-2a1e/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Wireframed website with a Mobile-first design</a> as practice for implementing the industry-standard principle.</li>
             <li>D3 Library for data visualization because D3 is the ideal solution for data visualization problems and to challenge myself with learning a new framework.</li>
-            <li>Initially built this application with a backend server using the Python framework, Flask, which was primarily used for its <a href="https://jinja.palletsprojects.com/en/3.0.x/" class="curriculum__link">Jinja</a> templating capabilities. The application was hosted on the <a href="https://devcenter.heroku.com/articles/free-dyno-hours" class="curriculum__link">free tier plan on Heroku</a>, alongside two other application using the free tier plan. The main problem with this approach was that it was both heavy and expensive. It was heavy in that Jinja wasn't strictly neccessary to achieve templating. It was expensive in that the free tier plan on Heroku put the app to sleep after 30 minutes. Furthermore, using <a href="https://kaffeine.herokuapp.com/" class="curriculum__link">kaffeine</a> to circumvent sleeping caused the free dyno minutes to expire by the 24th of each month. Therefore, after learning about React and the <a href="https://jamstack.org/" class="curriculum__link">Jamstack</a>, I put the two together and refactored this application by migrating from a server-based architecture with Flask to a static website architecture with <a href="https://create-react-app.dev/docs/making-a-progressive-web-app/" class="curriculum__link">Create-React-App Typescript Progressive Web App (PWA)</a>, and by switching cloud-hosting providers from Heroku to Netlify. The code is more simple with React doing all the work and more secure with being statically typed with Typescript. The website has better performance, offline capability, and 100% uptime as a PWA.</li>
+            <li>Initially built this application with a backend server using the Python framework, Flask, which was primarily used for its <a href="https://jinja.palletsprojects.com/en/3.0.x/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Jinja</a> templating capabilities. The application was hosted on the <a href="https://devcenter.heroku.com/articles/free-dyno-hours" class="curriculum__link" target="_blank" rel="noopener noreferrer">free tier plan on Heroku</a>, alongside two other application using the free tier plan. The main problem with this approach was that it was both heavy and expensive. It was heavy in that Jinja wasn't strictly neccessary to achieve templating. It was expensive in that the free tier plan on Heroku put the app to sleep after 30 minutes. Furthermore, using <a href="https://kaffeine.herokuapp.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">kaffeine</a> to circumvent sleeping caused the free dyno minutes to expire by the 24th of each month. Therefore, after learning about React and the <a href="https://jamstack.org/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Jamstack</a>, I put the two together and refactored this application by migrating from a server-based architecture with Flask to a static website architecture with <a href="https://create-react-app.dev/docs/making-a-progressive-web-app/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Create-React-App Typescript Progressive Web App (PWA)</a>, and by switching cloud-hosting providers from Heroku to Netlify. The code is more simple with React doing all the work and more secure with being statically typed with Typescript. The website has better performance, offline capability, and 100% uptime as a PWA.</li>
             <li>Initially all the javascript for controlling 95% of the application was stored in one file. Refactoring the application with React opened the opporunity to use split the logic into modular chunks that live in their own files. Now React components only load the logic that they need and the code-splitting enables more organized code.</li>
-            <li>Initially syled with Bootstrap 4 to quickly style the application and to shift focus towards spending more time on the data visualization and underlying algorithms. After shipping the minimum viable product to production, went back and refactored the frontend with <a href="https://glenmaddern.com/articles/css-modules" class="curriculum__link">CSS Modules</a> and <a href="https://sass-lang.com/" class="curriculum__link">Sass</a> since the file size and load-time of Bootstrap was expensive relative to how much I was using it the website. I used less than 10 Boostrap classes. There are a number of benefits of using CSS Modules and Sass. Similar to the point above, CSS Modules allows React components to only load the resources, in this case styling, that they need, <em>and</em> CSS Modules promotes code-splitting enables more organized code. Sass, compared to vanilla CSS, allows nesting and variable definitions. Now the code is modular and more DRY. However, I noticed that CSS Modules isn't compatible with D3 since D3 doesn't have access to the hashed classnames generated by CSS Modules. Therefore, I included one vanilla CSS file referenced at the root of the application for D3 to have constant access to.</li>
+            <li>Initially syled with Bootstrap 4 to quickly style the application and to shift focus towards spending more time on the data visualization and underlying algorithms. After shipping the minimum viable product to production, went back and refactored the frontend with <a href="https://glenmaddern.com/articles/css-modules" class="curriculum__link" target="_blank" rel="noopener noreferrer">CSS Modules</a> and <a href="https://sass-lang.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Sass</a> since the file size and load-time of Bootstrap was expensive relative to how much I was using it the website. I used less than 10 Boostrap classes. There are a number of benefits of using CSS Modules and Sass. Similar to the point above, CSS Modules allows React components to only load the resources, in this case styling, that they need, <em>and</em> CSS Modules promotes code-splitting enables more organized code. Sass, compared to vanilla CSS, allows nesting and variable definitions. Now the code is modular and more DRY. However, I noticed that CSS Modules isn't compatible with D3 since D3 doesn't have access to the hashed classnames generated by CSS Modules. Therefore, I included one vanilla CSS file referenced at the root of the application for D3 to have constant access to.</li>
           </ul>
+      </section>
+
+      <!-- PRODUCTION -->
+      <section>
+        <h2 class="projects-body__heading">Production</h2>
+        <ul class="projects-body__list">
+          <li>180+ total website visits since launch</li>
+        </ul>
       </section>
 
       <!-- LESSONS LEARNED -->
@@ -250,19 +323,19 @@
         <ul class="projects-body__list">
           <li>Searching and Sorting Algorithms</li>
           <li>Asynchronous Javascript</li>
-          <li><a hre="https://d3js.org/" aria-label="D3" class="curriculum__link">D3.js</a> Data Visualization</li>
+          <li><a hre="https://d3js.org/" aria-label="D3" class="curriculum__link" target="_blank" rel="noopener noreferrer">D3.js</a> Data Visualization</li>
           <li>Before Refactor</li>
           <ul class="projects-body__list">
-            <li>Hosting <a href="https://flask.palletsprojects.com/en/2.0.x/" class="curriculum__link">Flask</a> backend server on <a href="https://www.heroku.com/" class="curriculum__link">Heroku</a></li>
-            <li>Continuous Integration and Continuous Deployment to Heroku with <a href="https://circleci.com/" class="curriculum__link">circleci</a></li>
+            <li>Hosting <a href="https://flask.palletsprojects.com/en/2.0.x/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Flask</a> backend server on <a href="https://www.heroku.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Heroku</a></li>
+            <li>Continuous Integration and Continuous Deployment to Heroku with <a href="https://circleci.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">circleci</a></li>
             <li>Bootstrap 4 for styling</li>
           </ul>
           <li>During Refactor</li>
           <ul class="projects-body__list">
-            <li>Refactored applciation as a <a href="https://create-react-app.dev/docs/making-a-progressive-web-app/" class="curriculum__link">Create-React-App Typescript Progressive Web App (PWA)</a></li>
+            <li>Refactored applciation as a <a href="https://create-react-app.dev/docs/making-a-progressive-web-app/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Create-React-App Typescript Progressive Web App (PWA)</a></li>
             <li>Integrating D3 with React</li>
-            <li>Refactored application with <a href="https://glenmaddern.com/articles/css-modules" class="curriculum__link">CSS Modules</a> and <a href="https://sass-lang.com/" class="curriculum__link">Sass</a> styling</li>
-            <li><a href="https://www.netlify.com/" class="curriculum__link">Netlify</a> to host a static <a href="https://jamstack.org/" class="curriculum__link">Jamstack</a> website</li>
+            <li>Refactored application with <a href="https://glenmaddern.com/articles/css-modules" class="curriculum__link" rel="noopener noreferrer">CSS Modules</a> and <a href="https://sass-lang.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Sass</a> styling</li>
+            <li><a href="https://www.netlify.com/" class="curriculum__link">Netlify</a> to host a static <a href="https://jamstack.org/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Jamstack</a> website</li>
           </ul>
         </ul>
       </section>

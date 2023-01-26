@@ -9,12 +9,18 @@
 // TECHNOLOGIES SECTION //
 .technologies {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, min-content);
   gap: 2rem 1vw;
 
+  @media only screen and (max-width: $bp-laptop-l) {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 2rem 1vw;
+  }
+
   @media only screen and (max-width: $bp-laptop) {
-    grid-template-columns: 1fr;
+    grid-template-columns: min-content;
     justify-content: center;
     gap: 2rem 0;
   }

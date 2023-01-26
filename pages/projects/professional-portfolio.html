@@ -205,6 +205,42 @@
             </li>
           </ul>
         </div>
+
+        <!-- DEVELOPMENT -->
+        <div class="skills-box__no-shadow">
+          <h4 class="skills-box__header">
+            <svg class="skills-box__header-icon">
+              <use xlink:href="../../img/sprite.svg#icon-cogs"></use>
+            </svg>
+            Development
+          </h4>
+          <ul class="skills-box__list">
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-git"></use>
+              </svg>
+              Git
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-github"></use>
+              </svg>
+              GitHub
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-codacy"></use>
+              </svg>
+              Codacy
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-codeclimate"></use>
+              </svg>
+              CodeClimate
+            </li>
+          </ul>
+        </div>
     
         <!-- PRODUCTION -->
         <div class="skills-box__no-shadow">
@@ -221,6 +257,18 @@
               </svg>
               Netlify
             </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-google-domains"></use>
+              </svg>
+              Google Domains
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-google-analytics"></use>
+              </svg>
+              Google Analytics
+            </li>
           </ul>
         </div>
       </section>
@@ -230,20 +278,35 @@
         <h2 class="projects-body__heading">Design and Architecture</h2>
           <ul class="projects-body__list">
             <li>Initially utilized a one-page layout to force creativity in front-end capabilities</li>
-            <li>Initially built this website with a backend server using [ExpressJS](https://expressjs.com/) as the Node.js application framework, which was primarily used for serving the single page and for setting HTTP headers and Content Security Policy. The website was hosted on the Hobby (paid) plan on Heroku. The main problem with this approach was that it was both heavy and expensive. It was heavy in that ExpressJS wasn't strictly neccessary just to serve a single page. It was expensive in that the Hobby plan was $7 per month. Therefore, after learning about the [Jamstack](https://jamstack.org/), refactored this application by migrating from a server-based architecture with ExpressJS to a static website architecture with simple HTML. I switched cloud-hosting providers from Heroku to Netlify. The code is more simple and efficient, the website has better performance, and the cloud-hosting provider is free.</li>
-            <li> Initially utilized a backend and chose [ExpressJS](https://expressjs.com/) as the Node.js application framework for its simple, lightweight functionality. At the time, I decided to use express because some companies still use it so I wanted to gain more experience with it. Since this application used to have a backend, I had to host it somewhere, so I chose to host it on [Heroku](https://www.heroku.com/) due to the simplicity of the website.</li>
+            <li>Initially built this website with a backend server using <a href="https://expressjs.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">ExpressJS</a> as the Node.js application framework, which was primarily used for serving the single page and for setting HTTP headers and Content Security Policy. The website was hosted on the Hobby (paid) plan on Heroku. The main problem with this approach was that it was both heavy and expensive. It was heavy in that ExpressJS wasn't strictly neccessary just to serve a single page. It was expensive in that the Hobby plan was $7 per month. Therefore, after learning about the <a href="https://jamstack.org/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Jamstack</a>, refactored this application by migrating from a server-based architecture with ExpressJS to a static website architecture with simple HTML. I switched cloud-hosting providers from Heroku to Netlify. The code is more simple and efficient, the website has better performance, and the cloud-hosting provider is free.</li>
+            <li> Initially utilized a backend and chose <a href="https://expressjs.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">ExpressJS</a> as the Node.js application framework for its simple, lightweight functionality. At the time, I decided to use express because some companies still use it so I wanted to gain more experience with it. Since this application used to have a backend, I had to host it somewhere, so I chose to host it on <a href="https://www.heroku.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Heroku</a> due to the simplicity of the website.</li>
             <li>Employed a combination of CSS float, flex, and grid properties</li>
             <li>Instead of using a CSS framework like Boostrap, I created all the CSS features from scratch for greater control and customization</li>
             <li>Sass as the CSS superscript to facilitate using BEM notation</li>
             <li>Built with responsive design and a desktop-first construction. Optimized responsive design for 8 screen sizes (desktop, tablet, and mobile) using Sass to implement floats, flexbox, grid, and media queries</li>
+            <li>Used open-souce SVG assets from <a href="https://simpleicons.org/" class="curriculum__link" target="_blank" rel="noopener noreferrer">simpleicons</a> and from <a href="https://icomoon.io/app/#/select" class="curriculum__link" target="_blank" rel="noopener noreferrer">icomoon</a> and placed them all in a <code>sprite.svg</code> file from the <code>symbol-defs.svg</code> file.</li>
+            <li>Increased Google Lighthouse performance score from 12 to 88 and decreased DOM Content Loaded time from 10s to 2s using intersection observer and lazy loading for images and video.</li>
+            <li>Then decreased first visit DOM Content Loaded time from 7s to 1s by refactoring the website from using an express.js server to a static site with no web server.</li>
+            <li>Optimized responsive design for 8 screen sizes (desktop, tablet, and mobile) using Sass to implement floats, flexbox, grid, and media queries</li>
           </ul>
+      </section>
+
+      <!-- PRODUCTION -->
+      <section>
+        <h2 class="projects-body__heading">Production</h2>
+        <ul class="projects-body__list">
+          <li>300+ total website visits since launch</li>
+          <li>Increased Mozilla Observatory security grade from ‘F’ to ‘B-’ using HTTP Headers, HSTS, and Content Security Policy</li>
+          <li>Increased cross-browser compatibility using LambdaTest</li>
+          <li>Increased SEO to achieve Google PageRank #1 for the search term “jacob grisham”</li>
+        </ul>
       </section>
 
       <!-- LESSONS LEARNED -->
       <section>
         <h2 class="projects-body__heading">Lessons Learned</h2>
         <ul class="projects-body__list">
-          <li>Performance, Security, Accessibility, and SEO optimization with [Lighthouse](https://developers.google.com/web/tools/lighthouse). Increased Google Lighthouse performance score from 12 to 88</li>
+          <li>Performance, Security, Accessibility, and SEO optimization with <a href="https://developers.google.com/web/tools/lighthouse" class="curriculum__link" target="_blank" rel="noopener noreferrer">Lighthouse</a>. Increased Google Lighthouse performance score from 12 to 88</li>
           <li>Decreased average DOM Content Loaded time from 10s to 2s using intersection observer and lazy loading for images and video. Further decreased first visit DOM Content Loaded time from 7s to 1s 	by refactoring website from using an express.js server to a static site with no web server</li>
           <li>Increased SEO to achieve Google PageRank #1 for the search term “jacob grisham”. Used Open Graph Meta Properties (og:image, etc.) to help increase ranking</li>
           <li>User Experience optimization with loading page SVG animation</li>

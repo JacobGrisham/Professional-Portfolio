@@ -265,6 +265,36 @@
             </li>
           </ul>
         </div>
+
+        <!-- DEVELOPMENT -->
+        <div class="skills-box__no-shadow">
+          <h4 class="skills-box__header">
+            <svg class="skills-box__header-icon">
+              <use xlink:href="../../img/sprite.svg#icon-cogs"></use>
+            </svg>
+            Development
+          </h4>
+          <ul class="skills-box__list">
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-codacy"></use>
+              </svg>
+              Git
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-github"></use>
+              </svg>
+              GitHub
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-codacy"></use>
+              </svg>
+              Codacy
+            </li>
+          </ul>
+        </div>
     
         <!-- PRODUCTION -->
         <div class="skills-box__no-shadow">
@@ -299,6 +329,24 @@
               </svg>
               Nginx
             </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-travisci"></use>
+              </svg>
+              TravisCI
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-google-domains"></use>
+              </svg>
+              Google Domains
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-google-analytics"></use>
+              </svg>
+              Google Analytics
+            </li>
           </ul>
         </div>
       </section>
@@ -307,10 +355,18 @@
       <section>
         <h2 class="projects-body__heading">Design and Architecture</h2>
           <ul class="projects-body__list">
-            <li>Initially hosted application on <a href="https://aws.amazon.com/elasticbeanstalk/" class="curriculum__link">AWS Elastic Beanstalk</a> for a gradual introduction to AWS. Prior to this, I had only used Heroku to host full-stack web applications, so I chose a similar Infrastructure as a Service (IaaS) offered by AWS. After numerous Elastic Beanstalk policy changes and disconnections, I decided to go to the next level down in AWS, which is hosting this application on an EC2 instance. This offered a lot of experience and opportunities for learning about web servers.</li>
+            <li>Initially hosted application on <a href="https://aws.amazon.com/elasticbeanstalk/" class="curriculum__link" target="_blank" rel="noopener noreferrer">AWS Elastic Beanstalk</a> for a gradual introduction to AWS. Prior to this, I had only used Heroku to host full-stack web applications, so I chose a similar Infrastructure as a Service (IaaS) offered by AWS. After numerous Elastic Beanstalk policy changes and disconnections, I decided to go to the next level down in AWS, which is hosting this application on an EC2 instance. This offered a lot of experience and opportunities for learning about web servers.</li>
             <li>I used Ubuntu as the OS on EC2 since it's the most popular operating system for web servers, Gunicorn as the WSGI since it's fast, and Nginx as the reverse proxy since it was made with this optimization in mind.</li>
-            <li>Initially stored user sessions in a <code>tmp</code> folder with <a href="https://docs.python.org/3/library/tempfile.html" class="curriculum__link">mkdtemp</a>, however Nginx had trouble accessing it in production. Therefore refactored application to store user sessions in a Redis database and hosted the Redis database on <a href="https://aws.amazon.com/elasticache/" class="curriculum__link">AWS Elasticache</a></li>
+            <li>Initially stored user sessions in a <code>tmp</code> folder with <a href="https://docs.python.org/3/library/tempfile.html" class="curriculum__link" target="_blank" rel="noopener noreferrer">mkdtemp</a>, however Nginx had trouble accessing it in production. Therefore refactored application to store user sessions in a Redis database and hosted the Redis database on <a href="https://aws.amazon.com/elasticache/" class="curriculum__link target="_blank" rel="noopener noreferrer"">AWS Elasticache</a></li>
           </ul>
+      </section>
+
+      <!-- PRODUCTION -->
+      <section>
+        <h2 class="projects-body__heading">Production</h2>
+        <ul class="projects-body__list">
+          <li>250+ total website visits since launch</li>
+        </ul>
       </section>
 
       <!-- LESSONS LEARNED -->
@@ -320,32 +376,32 @@
           <li>During Homework Assingment</li>
           <ul class="projects-body__list">
             <li>Database design and Create, Read, Update in SQL</li>
-            <li><a href="https://jinja.palletsprojects.com/en/2.11.x/" class="curriculum__link">Jinja</a> templating</li>
-            <li>Password hashing using <a href="https://werkzeug.palletsprojects.com/en/1.0.x/" class="curriculum__link">Werkzeug</a></li>
-            <li>Using <a href="https://flask.palletsprojects.com/en/1.1.x/" class="curriculum__link">Flask</a> as a server-side micro-framework for the first time</li>
+            <li><a href="https://jinja.palletsprojects.com/en/2.11.x/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Jinja</a> templating</li>
+            <li>Password hashing using <a href="https://werkzeug.palletsprojects.com/en/1.0.x/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Werkzeug</a></li>
+            <li>Using <a href="https://flask.palletsprojects.com/en/1.1.x/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Flask</a> as a server-side micro-framework for the first time</li>
             <li>Parsing data from API with python</li>
             <li>Parsing data from SQL queries with python</li>
             <li>Calculations using data from API and database</li>
           </ul>
           <li>Rewriting for First Version of Production System</li>
           <ul class="projects-body__list">
-            <li>Rewrote the entire application to use <a href="https://flask-sqlalchemy.palletsprojects.com/en/2.x/" class="curriculum__link">Flask SQL Alchemy</a>, an extension of <a href="https://www.sqlalchemy.org/" class="curriculum__link">SQL Alchemy</a></li>
-            <li>Developed MVP of application wit <a href="https://www.sqlite.org/index.html" class="curriculum__link">SQLite</a> locally and deployed with <a href="https://www.mysql.com/" class="curriculum__link">MySQL</a></li>
+            <li>Rewrote the entire application to use <a href="https://flask-sqlalchemy.palletsprojects.com/en/2.x/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Flask SQL Alchemy</a>, an extension of <a href="https://www.sqlalchemy.org/" class="curriculum__link" target="_blank" rel="noopener noreferrer">SQL Alchemy</a></li>
+            <li>Developed MVP of application wit <a href="https://www.sqlite.org/index.html" class="curriculum__link" target="_blank" rel="noopener noreferrer">SQLite</a> locally and deployed with <a href="https://www.mysql.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">MySQL</a></li>
             <li>Python Class/Models and Schemas</li>
           </ul>
           <li>Refactoring for Second Version of Production System</li>
           <ul class="projects-body__list">
-            <li>Hosting application on AWS with an <a href="https://aws.amazon.com/elasticbeanstalk/" class="curriculum__link">Elastic Beanstalk</a> instance</li>
-            <li>Hosting MySQL database on AWS with a <a href="https://aws.amazon.com/rds/" class="curriculum__link">RDS</a> instance</li>
-            <li>Hosting Redis cache on AWS with an <a href="https://aws.amazon.com/elasticache/" class="curriculum__link">Elasticache</a> instance</li>
+            <li>Hosting application on AWS with an <a href="https://aws.amazon.com/elasticbeanstalk/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Elastic Beanstalk</a> instance</li>
+            <li>Hosting MySQL database on AWS with a <a href="https://aws.amazon.com/rds/" class="curriculum__link" target="_blank" rel="noopener noreferrer">RDS</a> instance</li>
+            <li>Hosting Redis cache on AWS with an <a href="https://aws.amazon.com/elasticache/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Elasticache</a> instance</li>
           </ul>
           <li>Refactoring for Third Version of Production System</li>
           <ul class="projects-body__list">
-            <li>Hosting application on AWS with an <a href="https://aws.amazon.com/ec2/" class="curriculum__link">EC2</a> instance with an <a href="(https://ubuntu.com/" class="curriculum__link">Ubuntu</a> operating system, <a href="https://gunicorn.org/" class="curriculum__link">Gunicorn</a> WSGI HTTP server, and <a href="https://www.nginx.com/" class="curriculum__link">Nginx</a> front-end reverse proxy</li>
-            <li>Using <a href="(https://ubuntu.com/" class="curriculum__link">Ubuntu</a> as an operating system for the first time</li>
-            <li><a href="https://gunicorn.org/" class="curriculum__link">Gunicorn</a> configuration and error-logging</li>
-            <li><a href="https://www.nginx.com/" class="curriculum__link">Nginx</a> configuration and server security/performance optimization</li>
-            <li>Error logging with <a href="https://sentry.io/welcome/" class="curriculum__link">Sentry</a> for hosted application in production</li>
+            <li>Hosting application on AWS with an <a href="https://aws.amazon.com/ec2/" class="curriculum__link" target="_blank" rel="noopener noreferrer">EC2</a> instance with an <a href="(https://ubuntu.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Ubuntu</a> operating system, <a href="https://gunicorn.org/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Gunicorn</a> WSGI HTTP server, and <a href="https://www.nginx.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Nginx</a> front-end reverse proxy</li>
+            <li>Using <a href="(https://ubuntu.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Ubuntu</a> as an operating system for the first time</li>
+            <li><a href="https://gunicorn.org/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Gunicorn</a> configuration and error-logging</li>
+            <li><a href="https://www.nginx.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Nginx</a> configuration and server security/performance optimization</li>
+            <li>Error logging with <a href="https://sentry.io/welcome/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Sentry</a> for hosted application in production</li>
           </ul>
         </ul>
       </section>

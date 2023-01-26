@@ -143,7 +143,7 @@
       <!-- ABOUT -->
       <section>
         <h2 class="projects-body__heading">About</h2>
-        <p>Originally homework from CS50, where we were tasked to build a simple homepage using HTML, CSS, and JavaScript. I took this as an opportunity to go beyond this by practicing design and using advanced CSS methods. The first version of the website built was Flask is archived is this repo: <a href="https://github.com/JacobGrisham/Star-Wars-Front-End-Web-App-using-Flask" aria-label="link to archived Star Wars repo" class="curriculum__link">Star-Wars-Front-End-Web-App-using-Flask</a>. I later refactored it from Flask to Gatsby.js and Styled Components.</p>
+        <p>Originally homework from CS50, where we were tasked to build a simple homepage using HTML, CSS, and JavaScript. I took this as an opportunity to go beyond this by practicing design and using advanced CSS methods. The first version of the website built was Flask is archived is this repo: <a href="https://github.com/JacobGrisham/Star-Wars-Front-End-Web-App-using-Flask" aria-label="link to archived Star Wars repo" class="curriculum__link" target="_blank" rel="noopener noreferrer">Star-Wars-Front-End-Web-App-using-Flask</a>. I later refactored it from Flask to Gatsby.js and Styled Components.</p>
       </section>
   
       <!-- FEATURES -->
@@ -208,6 +208,36 @@
             </li>
           </ul>
         </div>
+
+        <!-- DEVELOPMENT -->
+        <div class="skills-box__no-shadow">
+          <h4 class="skills-box__header">
+            <svg class="skills-box__header-icon">
+              <use xlink:href="../../img/sprite.svg#icon-cogs"></use>
+            </svg>
+            Development
+          </h4>
+          <ul class="skills-box__list">
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-codacy"></use>
+              </svg>
+              Git
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-github"></use>
+              </svg>
+              GitHub
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-codacy"></use>
+              </svg>
+              Codacy
+            </li>
+          </ul>
+        </div>
     
         <!-- PRODUCTION -->
         <div class="skills-box__no-shadow">
@@ -224,7 +254,34 @@
               </svg>
               Netlify
             </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-google-domains"></use>
+              </svg>
+              Google Domains
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-google-analytics"></use>
+              </svg>
+              Google Analytics
+            </li>
           </ul>
+        </div>
+      </section>
+
+      <!-- UX/UI MOCKS AND GRAPHIC DESIGN -->
+      <section>
+        <h2 class="projects-body__heading">UX/UI Mocks and Graphic Design</h2>
+        <p>Below is an AdobeXD interactive prototype mock for the mobile view. Start clicking on the screen to see hints where you should click next (highlighted in blue).</p>
+        <div class="adobexd">
+          <img src="../../img/iPhone.svg" alt="iPhone" class="adobexd--iphone">
+          <iframe src="hhttps://xd.adobe.com/embed/7a47b313-e7c4-4e8b-a5ef-d096e883699b-2f14/" frameborder="0" allowfullscreen class="adobexd--iphone--mock"></iframe>
+        </div>
+        <p>Below is an AdobeXD interactive prototype mock for the desktop view. Start clicking on the screen to see hints where you should click next (highlighted in blue).</p>
+        <div class="adobexd">
+          <img src="../../img/MacBook-Pro.svg" alt="MacBook Pro" class="adobexd--macbook">
+          <iframe src="https://xd.adobe.com/embed/30388c86-a547-4b6b-9b93-a1ee3e1deb1d-656b/" frameborder="0" allowfullscreen class="adobexd--macbook--mock"></iframe>
         </div>
       </section>
 
@@ -234,10 +291,18 @@
           <ul class="projects-body__list">
             <li>Initially built this website with a backend server using the Python framework, Flask, which was primarily used for its templating capabilities offered by Jinja 2.0. The website was hosted on the free tier plan on Heroku, alongside two other websites using the free tier plan. The main problem with this approach was that it was both heavy and expensive. It was heavy in that Flask wasn't strictly neccessary to achieve templating. It was expensive in that the free tier plan on Heroku put the app to sleep after 30 minutes. Furthermore, the free dyno minutes would often expire by the 24th of each month, which effectively took down the website until the start of the next month. Therefore, after learning about React and the Jamstack, I put the two together and refactored this application by migrating from a server-based architecture with Flask to a static website architecture with Gatsby.js, and by switching cloud-hosting providers from Heroku to Netlify. The code is more simple, DRY, and modular with React. The website has better performance when loading pages with Gatsby and even supports offline capability with Progressive Web App service workers.</li>
             <li>Refactored plain CSS with Styled Components as a CSS alternative for better code organization, to practice working with CSS-in-JS, and to practice working with a new technology by only reading documentaton. Furthermore, Styled Components are the combination of the element and the rules that style it, so it's also less verbose than something like CSSModules.</li>
-            <li>Created prototype in AdobeXD to prevent wasted engineering time, to practice UX/UI design, and to practice building from a UX/UI design specification.</li>
-            <li>Protoyped website with a Mobile-first design as practice for implementing the industry-standard principle.
-            Heavily relied on open-source assests to make use of the high quality material created or curated by the open-source community.</li>
+            <li><a href="https://xd.adobe.com/view/30388c86-a547-4b6b-9b93-a1ee3e1deb1d-656b/" target="_blank" rel="noopener noreferrer">Created prototype in AdobeXD</a> to prevent wasted engineering time, to practice UX/UI design, and to practice building from a UX/UI design specification.</li>
+            <li><a href="https://xd.adobe.com/view/7a47b313-e7c4-4e8b-a5ef-d096e883699b-2f14/" target="_blank" rel="noopener noreferrer">Protoyped website with a Mobile-first design</a> as practice for implementing the industry-standard principle.</li>
+            <li>Heavily relied on open-source assests to make use of the high quality material created or curated by the open-source community.</li>
           </ul>
+      </section>
+
+      <!-- PRODUCTION -->
+      <section>
+        <h2 class="projects-body__heading">Production</h2>
+        <ul class="projects-body__list">
+          <li>100+ total website visits since launch</li>
+        </ul>
       </section>
 
       <!-- LESSONS LEARNED -->

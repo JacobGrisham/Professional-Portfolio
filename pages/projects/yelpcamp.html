@@ -256,6 +256,42 @@
             </li>
           </ul>
         </div>
+
+        <!-- DEVELOPMENT -->
+        <div class="skills-box__no-shadow">
+          <h4 class="skills-box__header">
+            <svg class="skills-box__header-icon">
+              <use xlink:href="../../img/sprite.svg#icon-cogs"></use>
+            </svg>
+            Development
+          </h4>
+          <ul class="skills-box__list">
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-codacy"></use>
+              </svg>
+              Git
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-github"></use>
+              </svg>
+              GitHub
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-codacy"></use>
+              </svg>
+              Codacy
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-codeclimate"></use>
+              </svg>
+              CodeClimate
+            </li>
+          </ul>
+        </div>
     
         <!-- PRODUCTION -->
         <div class="skills-box__no-shadow">
@@ -290,6 +326,30 @@
               </svg>
               Sentry
             </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-circleci"></use>
+              </svg>
+              CircleCI
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-google-domains"></use>
+              </svg>
+              Google Domains
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-google-analytics"></use>
+              </svg>
+              Google Analytics
+            </li>
+            <li class="skills-box__item">
+              <svg class="skills-box__icon">
+                <use xlink:href="../../img/sprite.svg#icon-google-ads"></use>
+              </svg>
+              Google Ads
+            </li>
           </ul>
         </div>
       </section>
@@ -308,8 +368,22 @@
             <li>Heroku as the cloud hosting provider to gain experience with PaaS. Since I'm using the free tier, which normally causes the application to sleep after 30 minutes of inactivity, the application is kept awake from 6:00 a.m. to 11:59 p.m. PST with Kaffeine.</li>
             <li>Cloudflare as the Content Delivery Network to serve users outside of the U.S. with faster load times and for the free SSL certificate, which is needed for domain forwarding to https://www.yelpcamp.app. Cloudflare also offers improved security and performance over the defaults in Google Domains.</li>
             <li>Inkscape to create SVG illustrations from scratch to gain a deeper understanding of SVG. I don't plan on creating SVG graphics from scratch often, but now that I know how to do it, I can easily edit existing SVGs. If I'm unable to find an open-source SVG, now I can always create one exactly as needed.</li>
-            <li>The integration tests using [Jest](https://jestjs.io/) test the creation of data, the functionality of the schema, and the functionality of the validation. The tests are iterated over each of the models: campgrounds, comments, reviews, users.</li>
+            <li>The integration tests using <a href="https://jestjs.io/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Jest</a>. The test suite checks for the creation of data, the functionality of the schema, and the functionality of the validation. The tests are iterated over each of the models: campgrounds, comments, reviews, users. Integration-tests achieved 94% test coverage</li>
+            <li>Refactored code using automated code review tools such as Code Climate and Codacy to increase code quality grade from a ‘D’ to a ‘B’</li>
+            <li>Used CircleCI for Continuous Delivery and Deploymemnt and reduced the runtime by 50% through caching optimzations</li>
+            <li>Optimized performance, security, and accessibility using Google Lighthouse to increase score from 80 to 100</li>
           </ul>
+      </section>
+
+      <!-- PRODUCTION -->
+      <section>
+        <h2 class="projects-body__heading">Production</h2>
+        <ul class="projects-body__list">
+          <li>800+ total website visits and 5000+ total pageviews since launch</li>
+          <li>Approximately 100 monthly active users (MAU) and 93 accounts created worldwide</li>
+          <li>Increased peak MAU by 400% and median MAU by 100%</li>
+          <li>Increased SEO to achieve Google PageRank #8 for the search term “yelpcamp”</li>
+        </ul>
       </section>
 
       <!-- LESSONS LEARNED -->
