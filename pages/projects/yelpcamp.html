@@ -123,7 +123,8 @@
     <div class="projects-body__focus-container">
       <!-- HEADER -->
       <section>
-        <h1 class="projects-body__heading">YelpCamp Project Walkthrough</h1>
+        <h1 class="projects-body__main-heading">YelpCamp Project Walkthrough</h1>
+        <h2 class="blog-body__sub-heading">March - June 2020</h2>
     
         <h2 class="projects-body__heading">Source Code
           <span>
@@ -143,19 +144,19 @@
       <!-- ABOUT -->
       <section>
         <h2 class="projects-body__heading">About</h2>
-        <p>First full-stack web application. Fundamentally, it's review website for campsites. The main features are login, sign-up, Admin role, Google Maps API, and Create, Edit, Update, Delete (CRUD) for campgrounds, comments, and reviews. Create routes have authentication. Edit, Update, and Delete routes have authentication and authorization. The basic foundation was built in the capstone project from the Udemy course <i>The Web Developer Bootcamp</i>.</p>
+        <p>First full-stack web application. Fundamentally, it's review website for campsites. The main features are login, sign-up, Admin role, Google Maps API, and Create, Edit, Update, Delete (CRUD) for campgrounds, comments, and reviews. Create routes have authentication. Edit, Update, and Delete routes have authentication and authorization. The basic foundation was built in the capstone project from the Udemy course <i>The Web Developer Bootcamp</i>. The core of the application was built from March - June 2020, with sporadic updates up until April 2022.</p>
       </section>
   
-      <!-- FEATURES -->
+      <!-- PRODUCT FEATURES AND SPECIFICATIONS -->
       <section>
-        <h2 class="projects-body__heading">Features</h2>
+        <h2 class="projects-body__heading">Product Features and Specifications</h2>
         <ul class="projects-body__list">
-          <li>Login, sign-up, Admin role</li>
-          <li>RESTful routes (Create, Read, Update, Delete) for campgrounds, comments, and reviews</li>
-          <li>Create and Update forms have both client-side and server-side validation</li>
-          <li>Create routes have authentication</li>
-          <li>Update, and Delete routes have authentication and authorization</li>
-          <li>Google Maps API</li>
+          <li>Account creation, including a secret Admin role</li>
+          <li>Users can upload data on campgrounds, edit the data they uploaded, but only the data they uploaded and no one elses.</li>
+          <li>Users can leave as many comments as they want in the comment section on each campground page</li>
+          <li>Each user can leave up to one review for each campground between 1 and 5 stars</li>
+          <li>Google Maps embedded on each campground page</li>
+          <li>Google Ads on each campground page to pay for the Google Maps</li>
         </ul>
       </section>
   
@@ -268,7 +269,7 @@
           <ul class="skills-box__list">
             <li class="skills-box__item">
               <svg class="skills-box__icon">
-                <use xlink:href="../../img/sprite.svg#icon-codacy"></use>
+                <use xlink:href="../../img/sprite.svg#icon-git"></use>
               </svg>
               Git
             </li>
@@ -354,35 +355,62 @@
         </div>
       </section>
 
+      <!-- UX/UI MOCKS AND GRAPHIC DESIGN -->
+      <section>
+        <h2 class="projects-body__heading">UX/UI Mocks and Graphic Design</h2>
+        <p class="projects-body__paragraph-spacing-below">Create and Update forms have both client-side and server-side validation for a better user experience</p>
+
+        <p class="projects-body__paragraph-spacing-below">Leveraged the Boostrap Design System</p>
+
+        <p>Used Inkscape to create SVG illustrations from scratch to gain a deeper understanding of SVG. I don't plan on creating SVG graphics from scratch often, but now that I know how to do it, I can easily edit existing SVGs. If I'm unable to find an open-source SVG, now I can always create one exactly as needed. When I was younger, I used to draw all the time, so creating my own SVGs in Inkscape was actually pretty fun to explore. I had some formal training in both private institutions and in public education, specifically in high school, and it was fun to see how the same principles applied to a medium I never tried before: graphic design.</p>
+      </section>
+
       <!-- DESIGN AND ARCHITECTURE -->
       <section>
         <h2 class="projects-body__heading">Design and Architecture</h2>
-          <ul class="projects-body__list">
-            <li>Used a Model-View-Controller (MVC) Monolithic Architecture since it's the most simple architecture to gain an introduction to full-stack web development. Building a MVC Monolith allows one to gain a perspective on the range of achitectures, particularly the lower-end of the range. The Monolith Architecture falls short in scalability and separation of front-end and back-end. The MVC Architecture falls short when the application begins to grow in complexity with the addition of services that could stand on thier own. The MVC Architecture is perhaps best used for simple proof-of-concept projects, like this one.</li>
-            <li>Initially developed the app in GoormIDE to gain exposure to a cloud-based IDE.</li>
-            <li>Bootstrap 5 as the CSS framework to keep the UI simple and quick to build. Since the website takes a performance hit for loading Bootstrap, took full advantage of advanced Bootstrap features such as custom validation for all forms and animated form input for the login and register pages.</li>
-            <li>Express.js as the Node.js application framework since it's a lightweight framework, which is ideal for gaining an understanding of how to build the backend from scratch. Compared to a framework like Nest.js or even Django, Express.js doesn't have many features out of the box.</li>
-            <li>PassportJs for the authentication and authorization since it's a common out-of-the-box solution</li>
-            <li>NoSQL database for the flexibility compared to a SQL database, MongoDB in particular because of its prevalence in the industry.</li>
-            <li>Embedded Javascript Templates (EJS) as the front-end templating language for more DRY code compared to plain HTML and for dynamic user-experiences. This is a simple templating language, similar to Jinja for Python. Both however fall short on front-end scalability, modularity, and performance compared to a framework like React. Working with simple templating languges helps to remind me the benefits of working with a framework like React.</li>
-            <li>Heroku as the cloud hosting provider to gain experience with PaaS. Since I'm using the free tier, which normally causes the application to sleep after 30 minutes of inactivity, the application is kept awake from 6:00 a.m. to 11:59 p.m. PST with Kaffeine.</li>
-            <li>Cloudflare as the Content Delivery Network to serve users outside of the U.S. with faster load times and for the free SSL certificate, which is needed for domain forwarding to https://www.yelpcamp.app. Cloudflare also offers improved security and performance over the defaults in Google Domains.</li>
-            <li>Inkscape to create SVG illustrations from scratch to gain a deeper understanding of SVG. I don't plan on creating SVG graphics from scratch often, but now that I know how to do it, I can easily edit existing SVGs. If I'm unable to find an open-source SVG, now I can always create one exactly as needed.</li>
-            <li>The integration tests using <a href="https://jestjs.io/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Jest</a>. The test suite checks for the creation of data, the functionality of the schema, and the functionality of the validation. The tests are iterated over each of the models: campgrounds, comments, reviews, users. Integration-tests achieved 94% test coverage</li>
-            <li>Refactored code using automated code review tools such as Code Climate and Codacy to increase code quality grade from a ‘D’ to a ‘B’</li>
-            <li>Used CircleCI for Continuous Delivery and Deploymemnt and reduced the runtime by 50% through caching optimzations</li>
-            <li>Optimized performance, security, and accessibility using Google Lighthouse to increase score from 80 to 100</li>
-          </ul>
+        <h3>Code Architecture</h3>
+        <p class="projects-body__paragraph-spacing-below">Used a Model-View-Controller (MVC) Monolithic Architecture since it's the most simple architecture to gain an introduction to full-stack web development. Building a MVC Monolith allows one to gain a perspective on the range of achitectures, particularly the lower-end of the range. The Monolith Architecture falls short in scalability and separation of front-end and back-end. The MVC Architecture falls short when the application begins to grow in complexity with the addition of services that could stand on thier own. The MVC Architecture is perhaps best used for simple proof-of-concept projects, like this one. However, for any projects that serve real business needs, I would opt to use an event-driven serverless architecture.</p>
+
+        <div>
+          <img src="../../img/YelpCamp-Code-Architecture.drawio.svg" alt="YelpCamp Code Architecture Diagram" class="projects-body__image projects-body__paragraph-spacing-below lax"></img>
+        </div>
+
+        <p class="projects-body__paragraph-spacing-below"><span class="projects-body__bold-text">Model</span>: NoSQL database for the flexibility compared to a SQL database, MongoDB in particular because of its prevalence in the industry.</p>
+
+        <p class="projects-body__paragraph-spacing-below"><span class="projects-body__bold-text">View</span>: Chose Embedded Javascript Templates (EJS) as the front-end templating language for more DRY code compared to plain HTML and for dynamic user-experiences. This is a simple templating language, similar to Jinja for Python. Both however fall short on front-end scalability, modularity, and performance compared to a framework like React. Working with simple templating languges helps to remind me the benefits of working with a framework like React.Chose Bootstrap 5 as the CSS framework to keep the UI simple and quick to build. Since the website takes a performance hit for loading Bootstrap, took full advantage of advanced Bootstrap features such as custom validation for all forms and animated form input for the login and register pages.</p>
+
+        <p class="projects-body__paragraph-spacing-below"><span class="projects-body__bold-text">Controller</span>: Chose Node.js as the backend programming language for its rich ecosystem and community support. For example,leveraged PassportJs for the authentication and authorization since it's a common out-of-the-box solution. Create routes have authentication. Update, and Delete routes have authentication and authorization. Chose Express.js as the Node.js application framework since it's a lightweight framework, which is ideal for gaining an understanding of how to build the backend from scratch. Compared to a framework like Nest.js or even Django, Express.js doesn't have many features out of the box.</p>
+
+        <h3>Database Schema</h3>
+        <div>
+          <img src="../../img/YelpCamp-Database-Schema.drawio.svg" alt="YelpCamp Database Schema" class="projects-body__image--smaller projects-body__paragraph-spacing-below lax"></img>
+        </div>
+
+        <h3>Tests</h3>
+        <p class="projects-body__paragraph-spacing-below">The integration tests using <a href="https://jestjs.io/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Jest</a>. The test suite checks for the creation of data, the functionality of the schema, and the functionality of the validation. The tests are iterated over each of the models: campgrounds, comments, reviews, users. Integration-tests achieved 94% test coverage. Refactored code using automated code review tools such as Code Climate and Codacy to increase code quality grade from a ‘D’ to a ‘B’. Optimized performance, security, and accessibility using Google Lighthouse to increase score from 80 to 100</p>
+
+        <h3>Production Architecture</h3>
+        <p class="projects-body__paragraph-spacing-below">Heroku as the cloud hosting provider to gain experience with PaaS. Since I'm using the free tier, which normally causes the application to sleep after 30 minutes of inactivity, the application is kept awake from 6:00 a.m. to 11:59 p.m. PST with Kaffeine. Cloudflare as the Content Delivery Network to serve users outside of the U.S. with faster load times and for the free SSL certificate, which is needed for domain forwarding to https://www.yelpcamp.app. Cloudflare also offers improved security and performance over the defaults in Google Domains. Used CircleCI for Continuous Delivery and Deploymemnt and reduced the runtime by 50% through caching optimzations</p>
+
+        <div>
+          <img src="../../img/YelpCamp-Production-Architecture.drawio.svg" alt="YelpCamp Production Architecture Diagram" class="projects-body__image projects-body__paragraph-spacing-below lax"></img>
+        </div>
+
+        <h3>Production Scalability and Load limitations</h3>
+        <p></p>
       </section>
 
       <!-- PRODUCTION -->
       <section>
         <h2 class="projects-body__heading">Production</h2>
         <ul class="projects-body__list">
-          <li>800+ total website visits and 5000+ total pageviews since launch</li>
-          <li>Approximately 100 monthly active users (MAU) and 93 accounts created worldwide</li>
-          <li>Increased peak MAU by 400% and median MAU by 100%</li>
-          <li>Increased SEO to achieve Google PageRank #8 for the search term “yelpcamp”</li>
+          <li><span class="projects-body__bold-text">Traffic</span>: 800+ total website visits and 5000+ total pageviews since launch. Approximately 100 monthly active users (MAU) and 93 accounts created worldwide. Increased peak MAU by 400% and median MAU by 100%.</li>
+          <li><span class="projects-body__bold-text">Search Engine Optimization (SEO)</span>: Achieved Google PageRank #8 for the search term “yelpcamp”</li>
+          <li><span class="projects-body__bold-text">Site Reliability</span>: 70% uptime service-level indicator (SLI)</li>
+          <li><span class="projects-body__bold-text">Security</span>: Mozzila Observatory</li>
+          <li><span class="projects-body__bold-text">Performance</span>: from Google Lighthouse</li>
+          <li><span class="projects-body__bold-text">Accessibility</span>: from Google Lighthouse</li>
+          <li><span class="projects-body__bold-text">Cross-Browser Compatibility</span>: from LambdaTest</li>
         </ul>
       </section>
 

@@ -23,11 +23,6 @@
     padding-bottom: 2.4rem;
   }
 
-  &__header {
-    grid-column: 1 / -1;
-    @include home-header-formatting;
-  }
-
   &__img {
     grid-column: 1 / 2;
     max-height: 25rem;
@@ -106,13 +101,6 @@
     padding-top: 2.4rem;
     padding-bottom: 2.4rem;
   }
-
-  &__header {
-    @include home-header-formatting;
-    grid-row: 1 / 2;
-    grid-column: 1 / -1;
-    justify-self: center;
-  }
 }
 
 // PROJECT SECTION //
@@ -140,12 +128,6 @@
   @media only screen and (max-width: $bp-mobile-l){
     padding-top: 2.4rem;
     padding-bottom: 2.4rem;
-  }
-
-  &__header {
-    @include home-header-formatting;
-    grid-row: 1 / 2;
-    grid-column: 1 / -1;
   }
 
   &__extras {
@@ -190,11 +172,6 @@
   @media only screen and (max-width: $bp-mobile-l){
     padding-top: 2.4rem;
     padding-bottom: 2.4rem;
-  }
-
-  &__header {
-    grid-column: 1 / -1;
-    @include home-header-formatting;
   }
 }
 

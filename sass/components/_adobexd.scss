@@ -24,7 +24,7 @@
       left: 19.7%;
       width: 22%;
       height: 73%;
-      border-radius: 5px;
+      border-radius: 40px;
     }
   }
 
@@ -35,6 +35,15 @@
     &--mock {
       position: absolute;
       top: 5%;
+      left: 10%;
+      width: 80%;
+      height: 90%;
+      border-radius: 5px;
+    }
+
+    &--star-wars {
+      position: absolute;
+      top: 15%;
       left: 10%;
       width: 80%;
       height: 90%;

@@ -1,12 +1,3 @@
-// MAIN HEADER FORMATTING FOR HOME PAGE //
-@mixin home-header-formatting {
-  padding: 1rem 4rem;
-  border: 2px solid $navy-2;
-  font-family: 'Montserrat', sans-serif;
-  font-size: $home-header-font-size;
-  color: $navy-2;
-}
-
 // SUB-HEADER FORMATTING FOR HOME PAGE //
 @mixin home-sub-header-formatting {
   font-family: 'Montserrat', sans-serif;
@@ -98,7 +89,22 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 9px; 
+    border-radius: 9px;
+
+    &--smaller {
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  &__main-heading {
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+  }
+
+  &__sub-heading {
+    font-weight: 400;
+    font-size: 1.6rem;
   }
 
   &__heading {

@@ -123,7 +123,8 @@
     <div class="projects-body__focus-container">
       <!-- HEADER -->
       <section>
-        <h1 class="projects-body__heading">Professional Portfolio Project Walkthrough</h1>
+        <h1 class="projects-body__main-heading">Professional Portfolio Project Walkthrough</h1>
+        <h2 class="blog-body__sub-heading">July - September 2020</h2>
     
         <h2 class="projects-body__heading">Source Code
           <span>
@@ -139,14 +140,16 @@
       <!-- ABOUT -->
       <section>
         <h2 class="projects-body__heading">About</h2>
-        <p>My portfolio fundamentally revolves around my other projects. Focused on showcasing a select few with high-quality standards.</p>
+        <p>My portfolio fundamentally revolves around my other projects. Focused on showcasing a select few with high-quality standards. The core of the application was built from December 2020 - January 2021, with sporadic updates up until January 2023.</p>
       </section>
   
-      <!-- FEATURES -->
+      <!-- PRODUCT FEATURES AND SPECIFICATIONS -->
       <section>
-        <h2 class="projects-body__heading">Features</h2>
+        <h2 class="projects-body__heading">Product Features and Specifications</h2>
         <ul class="projects-body__list">
-          <li>Custom loading page animation for home page</li>
+          <li>Custom loading page animation for home page and project pages. Animation is supposed to simulate a developer writing code in an Integrated Development Environment on a MacBook Pro. Art style is a cross between graphic design and illustration to abstract away unnecessary details.</li>
+          <li>For projects that leveraged AdobeXD for wireframing or prototyping, embedded an interactive AdobeXD on the webpage. Furthermore, positioned the iframe over a hyper-realistic SVG image of an iPhone and MacBook Pro to further simulate the experience of interacting with the content in its native device.</li>
+          <li>For full-stack projects, created an architecture diagrams with <a href="https://www.draw.io/" class="curriculum__link" target="_blank" rel="noopener noreferrer">draw.io</a>.</li>
         </ul>
       </section>
   
@@ -273,33 +276,35 @@
         </div>
       </section>
 
+      <!-- UX/UI MOCKS AND GRAPHIC DESIGN -->
+      <section>
+        <h2 class="projects-body__heading">UX/UI Mocks and Graphic Design</h2>
+        <p class="projects-body__paragraph-spacing-below">Used open-souce SVG assets from <a href="https://simpleicons.org/" class="curriculum__link" target="_blank" rel="noopener noreferrer">simpleicons</a> and from <a href="https://icomoon.io/app/#/select" class="curriculum__link" target="_blank" rel="noopener noreferrer">icomoon</a> and placed them all in a <code>sprite.svg</code> file from the <code>symbol-defs.svg</code> file.</p>
+
+        <p>Admittedly, I initially mocked this website in a physical notebook. Looking back, given how simple the initial design was, I think this is still appropriate, especially considering that I didn't have to share the mock with any teammates. At this point, it's quaint and nostalgic to think of mocking a website on the proverbial backside of a napkin.</p>
+      </section>
+
       <!-- DESIGN AND ARCHITECTURE -->
       <section>
         <h2 class="projects-body__heading">Design and Architecture</h2>
-        <iframe width="414" height="736" src="https://xd.adobe.com/embed/7a47b313-e7c4-4e8b-a5ef-d096e883699b-2f14/" frameborder="0" allowfullscreen></iframe>
-          <ul class="projects-body__list">
-            <li>Initially utilized a one-page layout to force creativity in front-end capabilities</li>
-            <li>Initially built this website with a backend server using <a href="https://expressjs.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">ExpressJS</a> as the Node.js application framework, which was primarily used for serving the single page and for setting HTTP headers and Content Security Policy. The website was hosted on the Hobby (paid) plan on Heroku. The main problem with this approach was that it was both heavy and expensive. It was heavy in that ExpressJS wasn't strictly neccessary just to serve a single page. It was expensive in that the Hobby plan was $7 per month. Therefore, after learning about the <a href="https://jamstack.org/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Jamstack</a>, refactored this application by migrating from a server-based architecture with ExpressJS to a static website architecture with simple HTML. I switched cloud-hosting providers from Heroku to Netlify. The code is more simple and efficient, the website has better performance, and the cloud-hosting provider is free.</li>
-            <li> Initially utilized a backend and chose <a href="https://expressjs.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">ExpressJS</a> as the Node.js application framework for its simple, lightweight functionality. At the time, I decided to use express because some companies still use it so I wanted to gain more experience with it. Since this application used to have a backend, I had to host it somewhere, so I chose to host it on <a href="https://www.heroku.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Heroku</a> due to the simplicity of the website.</li>
-            <li>Employed a combination of CSS float, flex, and grid properties</li>
-            <li>Instead of using a CSS framework like Boostrap, I created all the CSS features from scratch for greater control and customization</li>
-            <li>Sass as the CSS superscript to facilitate using BEM notation</li>
-            <li>Built with responsive design and a desktop-first construction. Optimized responsive design for 8 screen sizes (desktop, tablet, and mobile) using Sass to implement floats, flexbox, grid, and media queries</li>
-            <li>Used open-souce SVG assets from <a href="https://simpleicons.org/" class="curriculum__link" target="_blank" rel="noopener noreferrer">simpleicons</a> and from <a href="https://icomoon.io/app/#/select" class="curriculum__link" target="_blank" rel="noopener noreferrer">icomoon</a> and placed them all in a <code>sprite.svg</code> file from the <code>symbol-defs.svg</code> file.</li>
-            <li>Increased Google Lighthouse performance score from 12 to 88 and decreased DOM Content Loaded time from 10s to 2s using intersection observer and lazy loading for images and video.</li>
-            <li>Then decreased first visit DOM Content Loaded time from 7s to 1s by refactoring the website from using an express.js server to a static site with no web server.</li>
-            <li>Optimized responsive design for 8 screen sizes (desktop, tablet, and mobile) using Sass to implement floats, flexbox, grid, and media queries</li>
-          </ul>
+        <p class="projects-body__paragraph-spacing-below">Initially built this website with a backend server using <a href="https://expressjs.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">ExpressJS</a> as the Node.js application framework, which was primarily used for serving the single page and for setting HTTP headers and Content Security Policy. I chose ExpressJS as the Node.js application framework for its simple, lightweight functionality. Furthermore I chose to use it to gain more practice because some companies still use it. When this application had a backend, I had to host it somewhere, so I chose to host it on <a href="https://www.heroku.com/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Heroku</a> due to the simplicity of Heroku as a Platform as a Service (PaaS) solution. At one point, the website was hosted on the Hobby (paid) plan on Heroku to guarantee site reliability uptime. The main problem with this overall approach was that it was both heavy and expensive. It was heavy in that ExpressJS wasn't strictly neccessary just to serve a single page. It was expensive in that the Hobby plan was $7 per month. Therefore, after learning about the <a href="https://jamstack.org/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Jamstack</a>, I refactored this application by migrating from a server-based architecture with ExpressJS to a static website architecture with simple HTML. I switched cloud-hosting providers from Heroku to Netlify. The code is more simple and efficient, the website has better performance, and the cloud-hosting provider is free.</p>
+
+        <p class="projects-body__paragraph-spacing-below">Initially utilized a one-page layout to force creativity in front-end capabilities. In particular, the information in the project pages used to be available only through a modal popup. This certainly forced some implementation creativity for the front-end. However, when I had ideas for making the project pages more content-rich and even interactive, the little modal window started to prove to be a bottleneck. Furthermore, the Google web crawler was not able to index the crucial information in the modal because in the implementation, I had to set the <code>display</code> to <code>none</code> in order to hide it until a user clicked on a button to show it.</p>
+        
+        <p class="projects-body__paragraph-spacing-below">Instead of using a CSS framework like Boostrap, I created all the CSS features from scratch for greater control and customization. I chose to use Sass as the CSS superscript for a few reasons. One was to facilitate using BEM notation. More importantly though, using Sass has a few more useful features than plain CSS, such as the ability to use a <code>@mixin</code>. I also chose Sass because at the time I was unaware of native CSS variables. Regarding the display, I employed a combination of CSS float, flex, and grid properties to gain practice with using each of these approaches. I ensured that the entire website was responsive and used a desktop-first construction methodology. Looking back, I would use a mobile-first construction methodology instead to slightly decrease load time. Optimized responsive design for 8 screen sizes largely following the Google Chrome default screen size breakpoints (4K, LaptopL, Laptop, Tablet, Mobile L, Mobile M, Mobile S). At the time I wasn't aware of other options for choosing screen size breakpoints, so I just went with what Google Chrome provides in the Developer Tools. Implemented responsive design with <code>media queries</code>.</p>
+
+        <p class="projects-body__paragraph-spacing-below">Increased Google Lighthouse performance score from 12 to 88 and decreased DOM Content Loaded time from 10s to 2s using intersection observer and lazy loading for images and video. Then decreased first visit DOM Content Loaded time from 7s to 1s by refactoring the website from using an express.js server to a static site with no web server.</p>
       </section>
 
       <!-- PRODUCTION -->
       <section>
         <h2 class="projects-body__heading">Production</h2>
         <ul class="projects-body__list">
-          <li>300+ total website visits since launch</li>
-          <li>Increased Mozilla Observatory security grade from ‘F’ to ‘B-’ using HTTP Headers, HSTS, and Content Security Policy</li>
-          <li>Increased cross-browser compatibility using LambdaTest</li>
-          <li>Increased SEO to achieve Google PageRank #1 for the search term “jacob grisham”</li>
+          <li><span class="projects-body__bold-text">Traffic</span>: 300+ total website visits since launch</li>
+          <li><span class="projects-body__bold-text">Search Engine Optimization (SEO)</span>: achieved Google PageRank #1 for the search term “jacob grisham”</li>
+          <li><span class="projects-body__bold-text">Site Reliability</span>: 100% uptime service-level indicator (SLI)</li>
+          <li><span class="projects-body__bold-text">Security</span>: Increased Mozilla Observatory security grade from ‘F’ to ‘B-’ using HTTP Headers, HSTS, and Content Security Policy</li>
+          <li><span class="projects-body__bold-text">Cross-Browser Compatibility</span>: used LambdaTest to automatically test this website on different browsers (Chrome, Firefox, Sarfari, and Microsoft Edge) and for different versions of those browsers</li>
         </ul>
       </section>
 
