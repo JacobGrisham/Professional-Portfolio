@@ -1,61 +1,442 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.375 79.375" height="300" width="300">
-  <g transform="translate(-2.22 3.222)">
-    <g transform="translate(-335.788 -22.347) scale(.39771)">
-      <rect fill="#b3b3b3" width="137.583" height="89.958" x="880.884" y="99.204" ry="2.022"/>
-      <rect y="100.527" x="882.207" height="87.313" width="134.938" ry="2.134" rx="0"/>
-      <path d="M886.175 104.496h127v79.375h-127z" fill="#4d4d4d"/>
-      <rect fill="#333" width="29.788" height="70.68" x="891.36" y="113.22" ry="0" rx="0"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   inkscape:export-ydpi="600"
+   inkscape:export-xdpi="600"
+   inkscape:export-filename="/Users/jacobdavidgrisham/Downloads/jacob-grisham-logo.png"
+   sodipodi:docname="laptop.svg"
+   id="svg943"
+   version="1.1"
+   width="300"
+   height="300"
+   viewBox="0 0 79.375 79.375">
+  <metadata
+     id="metadata949">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs947" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg943"
+     inkscape:window-maximized="1"
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:cy="150"
+     inkscape:cx="150"
+     inkscape:zoom="2.1666667"
+     showgrid="false"
+     id="namedview945"
+     inkscape:window-height="872"
+     inkscape:window-width="1440"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <g
+     id="g941"
+     transform="translate(-2.22 3.222)">
+    <g
+       id="g841"
+       transform="translate(-335.788 -22.347) scale(.39771)">
+      <rect
+         id="rect833"
+         ry="2.022"
+         y="99.204"
+         x="880.884"
+         height="89.958"
+         width="137.583"
+         fill="#b3b3b3" />
+      <rect
+         id="rect835"
+         rx="0"
+         ry="2.134"
+         width="134.938"
+         height="87.313"
+         x="882.207"
+         y="100.527" />
+      <path
+         id="path837"
+         fill="#4d4d4d"
+         d="M886.175 104.496h127v79.375h-127z" />
+      <rect
+         id="rect839"
+         rx="0"
+         ry="0"
+         y="113.22"
+         x="891.36"
+         height="70.68"
+         width="29.788"
+         fill="#333" />
     </g>
-    <path d="M16.674 20.813h50.597v.317H16.674zM30.53 24.5h36.617v15.488H30.529zm0-1.555h9.184V24.5H30.53z" fill="#1a1a1a"/>
-    <path d="M30.53 22.69h9.183v.255H30.53z" fill="#003380"/>
-    <rect fill="#2c5aa0" width="6.399" height=".455" x="32.113" y="23.546" ry=".227"/>
-    <path d="M30.534 41.82h36.645v8.972H30.534zm-.005-1.557h9.184v1.555H30.53z" fill="#1a1a1a"/>
-    <path d="M30.53 40.007h9.183v.256H30.53z" fill="#003380"/>
-    <rect fill="#2c5aa0" ry=".227" y="40.793" x="32.089" height=".455" width="6.399"/>
-    <g transform="translate(-19.725 -1.116) scale(.39771)" fill="#ccc">
-      <rect ry=".767" y="62.346" x="99.493" height="1.535" width="14.902"/>
-      <rect width="14.902" height="1.535" x="103.298" y="65.818" ry=".767"/>
-      <rect width="16.379" height="1.535" x="106.895" y="69.291" ry=".767"/>
-      <rect width="11.497" height="1.535" x="106.959" y="72.763" ry=".767"/>
-      <rect ry=".767" y="76.235" x="107.055" height="1.535" width="11.497"/>
-      <rect ry=".767" y="79.707" x="106.927" height="1.535" width="11.497"/>
-      <rect ry=".767" y="83.179" x="102.833" height="1.535" width="16.379"/>
-      <rect ry=".767" y="86.651" x="102.746" height="1.535" width="13.001"/>
-      <rect ry=".767" y="90.123" x="106.991" height="1.535" width="16.379"/>
-      <rect ry=".767" y="93.595" x="107.338" height="1.535" width="9.882"/>
-      <rect ry=".767" y="97.067" x="100.024" height="1.535" width="16.379"/>
-      <rect ry=".767" y="100.539" x="100.196" height="1.535" width="12.74"/>
-      <rect ry=".767" y="104.011" x="100.379" height="1.535" width="12.44"/>
+    <path
+       id="path843"
+       fill="#1a1a1a"
+       d="M16.674 20.813h50.597v.317H16.674zM30.53 24.5h36.617v15.488H30.529zm0-1.555h9.184V24.5H30.53z" />
+    <path
+       id="path845"
+       fill="#003380"
+       d="M30.53 22.69h9.183v.255H30.53z" />
+    <rect
+       id="rect847"
+       ry=".227"
+       y="23.546"
+       x="32.113"
+       height=".455"
+       width="6.399"
+       fill="#2c5aa0" />
+    <path
+       id="path849"
+       fill="#1a1a1a"
+       d="M30.534 41.82h36.645v8.972H30.534zm-.005-1.557h9.184v1.555H30.53z" />
+    <path
+       id="path851"
+       fill="#003380"
+       d="M30.53 40.007h9.183v.256H30.53z" />
+    <rect
+       id="rect853"
+       width="6.399"
+       height=".455"
+       x="32.089"
+       y="40.793"
+       ry=".227"
+       fill="#2c5aa0" />
+    <g
+       id="g881"
+       fill="#ccc"
+       transform="translate(-19.725 -1.116) scale(.39771)">
+      <rect
+         id="rect855"
+         width="14.902"
+         height="1.535"
+         x="99.493"
+         y="62.346"
+         ry=".767" />
+      <rect
+         id="rect857"
+         ry=".767"
+         y="65.818"
+         x="103.298"
+         height="1.535"
+         width="14.902" />
+      <rect
+         id="rect859"
+         ry=".767"
+         y="69.291"
+         x="106.895"
+         height="1.535"
+         width="16.379" />
+      <rect
+         id="rect861"
+         ry=".767"
+         y="72.763"
+         x="106.959"
+         height="1.535"
+         width="11.497" />
+      <rect
+         id="rect863"
+         width="11.497"
+         height="1.535"
+         x="107.055"
+         y="76.235"
+         ry=".767" />
+      <rect
+         id="rect865"
+         width="11.497"
+         height="1.535"
+         x="106.927"
+         y="79.707"
+         ry=".767" />
+      <rect
+         id="rect867"
+         width="16.379"
+         height="1.535"
+         x="102.833"
+         y="83.179"
+         ry=".767" />
+      <rect
+         id="rect869"
+         width="13.001"
+         height="1.535"
+         x="102.746"
+         y="86.651"
+         ry=".767" />
+      <rect
+         id="rect871"
+         width="16.379"
+         height="1.535"
+         x="106.991"
+         y="90.123"
+         ry=".767" />
+      <rect
+         id="rect873"
+         width="9.882"
+         height="1.535"
+         x="107.338"
+         y="93.595"
+         ry=".767" />
+      <rect
+         id="rect875"
+         width="16.379"
+         height="1.535"
+         x="100.024"
+         y="97.067"
+         ry=".767" />
+      <rect
+         id="rect877"
+         width="12.74"
+         height="1.535"
+         x="100.196"
+         y="100.539"
+         ry=".767" />
+      <rect
+         id="rect879"
+         width="12.44"
+         height="1.535"
+         x="100.379"
+         y="104.011"
+         ry=".767" />
     </g>
-    <g transform="translate(-411.355 -23.965) scale(.39771)">
-      <rect fill="#ccc" ry=".887" y="193.745" x="1056.522" height="4.151" width="166.317"/>
-      <path fill="#999" d="M1222.19 197.896h-165.048l4.029 2.723h156.468z"/>
+    <g
+       id="g887"
+       transform="translate(-411.355 -23.965) scale(.39771)">
+      <rect
+         id="rect883"
+         width="166.317"
+         height="4.151"
+         x="1056.522"
+         y="193.745"
+         ry=".887"
+         fill="#ccc" />
+      <path
+         id="path885"
+         d="M1222.19 197.896h-165.048l4.029 2.723h156.468z"
+         fill="#999" />
     </g>
-    <rect fill="#b3b3b3" ry=".4" y="53.067" x="38.233" height=".801" width="7.35"/>
-    <rect fill="#999" ry=".4" y="43.091" x="31.651" height=".801" width="10.779"/>
-    <rect fill="#999" width="10.779" height=".801" x="31.651" y="45.052" ry=".4"/>
-    <rect fill="#999" width="10.779" height=".801" x="31.651" y="47.013" ry=".4"/>
-    <rect fill="#999" width="10.779" height=".801" x="31.651" y="48.975" ry=".4"/>
-    <rect fill="#999" ry=".051" y="49.718" x="43.875" height=".103" width="1.511"/>
-    <rect fill="#999" width="5.07" height=".801" x="43.661" y="43.181" ry=".4"/>
-    <rect fill="#999" width="13.784" height=".801" x="43.683" y="45.152" ry=".4"/>
-    <rect fill="#999" width="10.779" height=".801" x="43.703" y="46.958" ry=".4"/>
-    <rect fill="#c83737" width="4.572" height=".61" x="31.725" y="25.832" ry=".305"/>
-    <rect fill="#fd5" width="8.157" height=".61" x="37.883" y="25.823" ry=".305"/>
-    <rect fill="#fd5" ry=".305" y="27.46" x="37.922" height=".61" width="10.535"/>
-    <rect fill="#fd5" ry=".305" y="29.214" x="37.922" height=".61" width="6.053"/>
-    <rect fill="#999" width="10.779" height=".801" x="31.751" y="30.95" ry=".4"/>
-    <rect fill="#ccc" ry=".325" y="32.771" x="31.771" height=".649" width="3.93"/>
-    <rect fill="#c83737" ry=".305" y="32.771" x="36.627" height=".61" width="4.572"/>
-    <rect fill="#5fbcd3" width="6.053" height=".61" x="42.045" y="32.731" ry=".305"/>
-    <rect fill="#ccc" width="3.93" height=".649" x="48.951" y="32.672" ry=".325"/>
-    <rect fill="#fd5" width="6.053" height=".61" x="35.771" y="34.449" ry=".305"/>
-    <rect fill="#5fbcd3" ry=".305" y="34.5" x="42.27" height=".61" width="9.509"/>
-    <rect fill="#ccc" ry=".325" y="36.08" x="38.948" height=".649" width="3.93"/>
-    <rect fill="#37c871" ry=".325" y="36.08" x="44.106" height=".649" width="2.847"/>
-    <rect fill="#37c871" ry=".325" y="36.131" x="47.923" height=".649" width="2.692"/>
-    <rect fill="#5fbcd3" ry=".325" y="36.131" x="51.585" height=".649" width="6.097"/>
-    <rect fill="#ccc" width="3.93" height=".649" x="35.904" y="37.834" ry=".325"/>
-    <rect fill="#c83737" width="7.203" height=".61" x="41.102" y="37.905" ry=".305"/>
+    <rect
+       id="rect889"
+       width="7.35"
+       height=".801"
+       x="38.233"
+       y="53.067"
+       ry=".4"
+       fill="#b3b3b3" />
+    <rect
+       id="rect891"
+       width="10.779"
+       height=".801"
+       x="31.651"
+       y="43.091"
+       ry=".4"
+       fill="#999" />
+    <rect
+       id="rect893"
+       ry=".4"
+       y="45.052"
+       x="31.651"
+       height=".801"
+       width="10.779"
+       fill="#999" />
+    <rect
+       id="rect895"
+       ry=".4"
+       y="47.013"
+       x="31.651"
+       height=".801"
+       width="10.779"
+       fill="#999" />
+    <rect
+       id="rect897"
+       ry=".4"
+       y="48.975"
+       x="31.651"
+       height=".801"
+       width="10.779"
+       fill="#999" />
+    <rect
+       id="rect899"
+       width="1.511"
+       height=".103"
+       x="43.875"
+       y="49.718"
+       ry=".051"
+       fill="#999" />
+    <rect
+       id="rect901"
+       ry=".4"
+       y="43.181"
+       x="43.661"
+       height=".801"
+       width="5.07"
+       fill="#999" />
+    <rect
+       id="rect903"
+       ry=".4"
+       y="45.152"
+       x="43.683"
+       height=".801"
+       width="13.784"
+       fill="#999" />
+    <rect
+       id="rect905"
+       ry=".4"
+       y="46.958"
+       x="43.703"
+       height=".801"
+       width="10.779"
+       fill="#999" />
+    <rect
+       id="rect907"
+       ry=".305"
+       y="25.832"
+       x="31.725"
+       height=".61"
+       width="4.572"
+       fill="#c83737" />
+    <rect
+       id="rect909"
+       ry=".305"
+       y="25.823"
+       x="37.883"
+       height=".61"
+       width="8.157"
+       fill="#fd5" />
+    <rect
+       id="rect911"
+       width="10.535"
+       height=".61"
+       x="37.922"
+       y="27.46"
+       ry=".305"
+       fill="#fd5" />
+    <rect
+       id="rect913"
+       width="6.053"
+       height=".61"
+       x="37.922"
+       y="29.214"
+       ry=".305"
+       fill="#fd5" />
+    <rect
+       id="rect915"
+       ry=".4"
+       y="30.95"
+       x="31.751"
+       height=".801"
+       width="10.779"
+       fill="#999" />
+    <rect
+       id="rect917"
+       width="3.93"
+       height=".649"
+       x="31.771"
+       y="32.771"
+       ry=".325"
+       fill="#ccc" />
+    <rect
+       id="rect919"
+       width="4.572"
+       height=".61"
+       x="36.627"
+       y="32.771"
+       ry=".305"
+       fill="#c83737" />
+    <rect
+       id="rect921"
+       ry=".305"
+       y="32.731"
+       x="42.045"
+       height=".61"
+       width="6.053"
+       fill="#5fbcd3" />
+    <rect
+       id="rect923"
+       ry=".325"
+       y="32.672"
+       x="48.951"
+       height=".649"
+       width="3.93"
+       fill="#ccc" />
+    <rect
+       id="rect925"
+       ry=".305"
+       y="34.449"
+       x="35.771"
+       height=".61"
+       width="6.053"
+       fill="#fd5" />
+    <rect
+       id="rect927"
+       width="9.509"
+       height=".61"
+       x="42.27"
+       y="34.5"
+       ry=".305"
+       fill="#5fbcd3" />
+    <rect
+       id="rect929"
+       width="3.93"
+       height=".649"
+       x="38.948"
+       y="36.08"
+       ry=".325"
+       fill="#ccc" />
+    <rect
+       id="rect931"
+       width="2.847"
+       height=".649"
+       x="44.106"
+       y="36.08"
+       ry=".325"
+       fill="#37c871" />
+    <rect
+       id="rect933"
+       width="2.692"
+       height=".649"
+       x="47.923"
+       y="36.131"
+       ry=".325"
+       fill="#37c871" />
+    <rect
+       id="rect935"
+       width="6.097"
+       height=".649"
+       x="51.585"
+       y="36.131"
+       ry=".325"
+       fill="#5fbcd3" />
+    <rect
+       id="rect937"
+       ry=".325"
+       y="37.834"
+       x="35.904"
+       height=".649"
+       width="3.93"
+       fill="#ccc" />
+    <rect
+       id="rect939"
+       ry=".305"
+       y="37.905"
+       x="41.102"
+       height=".61"
+       width="7.203"
+       fill="#c83737" />
   </g>
 </svg>
