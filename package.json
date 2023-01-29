@@ -22,8 +22,8 @@
     "compile:sass": "node-sass sass/main.scss css/style.compile.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.compile.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "sass-dev": "npm-run-all --parallel watch:sass",
-    "sass-build": "npm-run-all compile:sass prefix:css compress:css"
+    "dev": "npm-run-all --parallel watch:sass",
+    "build": "npm-run-all compile:sass prefix:css compress:css"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.8",
