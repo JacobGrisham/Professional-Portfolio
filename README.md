@@ -17,7 +17,7 @@ $ npm install
 ```
 Run node-sass in watch mode for hot reloading
 ```
-$ npm run dev
+$ npm run sass-dev
 ```
 Finally, copy the path for the index.html file and paste it in the browser. For example
 ```
@@ -25,7 +25,7 @@ Finally, copy the path for the index.html file and paste it in the browser. For 
 ```
 before pushing to production, run node-sass in production mode
 ```
-$ npm run build
+$ npm run sass-build
 ```
 
 ## 🔒 License
