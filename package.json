@@ -1,15 +1,14 @@
 {
-  "name": "project_portfolio",
   "version": "2.0.0",
-  "description": "Portfolio of web development projects",
-  "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "compile:sass": "node-sass sass/main.scss css/style.compile.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.compile.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "dev": "npm-run-all --parallel watch:sass",
-    "build": "npm-run-all compile:sass prefix:css compress:css"
-  },
+  "name": "project_portfolio",
+  "description": "Portfolio of Jacob Grisham's web development projects and blog.",
+  "keywords": [
+    "Jacob",
+    "Grisham",
+    "software",
+    "engineer",
+    "portfolio"
+  ],
   "author": "Jacob Grisham",
   "license": "UNLICENSED",
   "repository": {
@@ -17,11 +16,19 @@
     "url": "https://github.com/JacobGrisham/Professional-Portfolio.git"
   },
   "private": true,
+  "homepage": "https://jacobgrisham.com",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.compile.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.compile.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "sass-dev": "npm-run-all --parallel watch:sass",
+    "sass-build": "npm-run-all compile:sass prefix:css compress:css"
+  },
   "devDependencies": {
     "autoprefixer": "^9.8.8",
-    "node-sass": "^7.0.1",
+    "node-sass": "^8.0.0",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.2",
     "trim-newlines": "^4.0.2"
   },
   "dependencies": {
