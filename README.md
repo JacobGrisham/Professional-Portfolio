@@ -29,4 +29,4 @@ $ npm run build
 ```
 
 ## 🔒 License
-Copyright Notice and Statement: currently not offering any license. Permission only to view and download.
+Copyright Notice and Statement: currently [**not** offering any license](https://choosealicense.com/no-permission/). Permission only to view.
