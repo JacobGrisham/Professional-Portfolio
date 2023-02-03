@@ -385,6 +385,10 @@
         <h3>Production Architecture</h3>
         <p class="projects-body__paragraph-spacing-below">I used Ubuntu as the OS on EC2 since it's the most popular operating system for web servers, Gunicorn as the WSGI since it's fast, and Nginx as the reverse proxy since it was made with this optimization in mind.</p>
 
+        <div>
+          <img src="../img/Robynhood-EC2-Server-Architecture.drawio.svg" alt="Robynhood EC2 Server Architecture" class="projects-body__image projects-body__paragraph-spacing-below lax"></img>
+        </div>
+
         <p class="projects-body__paragraph-spacing-below">Initially hosted application on <a href="https://aws.amazon.com/elasticbeanstalk/" class="curriculum__link" target="_blank" rel="noopener noreferrer">AWS Elastic Beanstalk</a> for a gradual introduction to AWS. Prior to this, I had only used Heroku to host full-stack web applications, so I chose a similar Infrastructure as a Service (IaaS) offered by AWS. After numerous Elastic Beanstalk policy changes and disconnections, I decided to go to the next level down in AWS, which is hosting this application on an EC2 instance. This offered a lot of experience and opportunities for learning about web servers.</p>
         <p class="projects-body__paragraph-spacing-below">Initially stored user sessions in a <code>tmp</code> folder with <a href="https://docs.python.org/3/library/tempfile.html" class="curriculum__link" target="_blank" rel="noopener noreferrer">mkdtemp</a>, however Nginx had trouble accessing it in production. Therefore refactored application to store user sessions in a Redis database and hosted the Redis database on <a href="https://aws.amazon.com/elasticache/" class="curriculum__link" target="_blank" rel="noopener noreferrer">AWS Elasticache</a></p>
 
