@@ -397,20 +397,19 @@
         </div>
 
         <h3>Production Scalability and Load limitations</h3>
-        <p class="projects-body__paragraph-spacing-below">The production server is hosted on Heroku Basic Dyno Tier, which has a limit of 512MB of RAM, no horizontal scaling, no autoscaling, and the server is not dedicated. If I needed to scale up due to an overloaded server, I would have to upgrade a Standard 1x Dyno for horizontal scaling. However, the web traffic has yet to reach a sustained usage of 50% server capacity. The production database is hosted on MongoDB Atlas Shared Plan M0 Cluster Tier, which has a limit of 512MB of storage. Considering that the current usage as of February 2023 is only 400KB, the website could expand up to 1280 times its current size. Given that the site went live in June of 2020, the current rate of data storage is 12.5KB/month. The database is the least likely bottleneck in this production system.</p>
+        <p>The production server is hosted on Heroku Basic Dyno Tier, which has a limit of 512MB of RAM, no horizontal scaling, no autoscaling, and the server is not dedicated. If I needed to scale up due to an overloaded server, I would have to upgrade a Standard 1x Dyno for horizontal scaling. However, the web traffic has yet to reach a sustained usage of 50% server capacity. The production database is hosted on MongoDB Atlas Shared Plan M0 Cluster Tier, which has a limit of 512MB of storage. Considering that the current usage as of February 2023 is only 400KB, the website could expand up to 1280 times its current size. Given that the site went live in June of 2020, the current rate of data storage is 12.5KB/month. The database is the least likely bottleneck in this production system.</p>
+      </section>
 
-        <h3>Production System Cost</h3>
+      <!-- PRODUCTION -->
+      <section>
+        <h2>Production System Cost</h2>
         <ul class="projects-body__list">
           <li>Heroku Basic Dyno Tier: $7/month</li>
           <li>MongoDB Atlas Shared Plan M0 Cluster Tier: free</li>
           <li>Cloudflare Free Tier: free</li>
           <li>Google Domain for yelpcamp.app: $14/year</li>
         </ul>
-      </section>
-
-      <!-- PRODUCTION -->
-      <section>
-        <h2 class="projects-body__heading">Production</h2>
+        <h2 class="projects-body__heading">Production Metrics</h2>
         <ul class="projects-body__list">
           <li><span class="projects-body__bold-text">Traffic</span>: 800+ total website visits and 5000+ total pageviews since launch. Approximately 100 monthly active users (MAU) and 93 accounts created worldwide. Increased peak MAU by 400% and median MAU by 100%.</li>
           <li><span class="projects-body__bold-text">Search Engine Optimization (SEO)</span>: Achieved Google PageRank #8 for the search term “yelpcamp”</li>
