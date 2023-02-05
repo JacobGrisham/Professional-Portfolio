@@ -382,7 +382,7 @@
         <h3>Tests</h3>
         <p class="projects-body__paragraph-spacing-below"></p>
 
-        <h3>Production Architecture</h3>
+        <h3>Production System Architecture</h3>
         <p class="projects-body__paragraph-spacing-below">I used Ubuntu as the OS on EC2 since it's the most popular operating system for web servers, Gunicorn as the WSGI since it's fast, and Nginx as the reverse proxy since it was made with this optimization in mind.</p>
 
         <div>
@@ -393,11 +393,19 @@
         <p class="projects-body__paragraph-spacing-below">Initially stored user sessions in a <code>tmp</code> folder with <a href="https://docs.python.org/3/library/tempfile.html" class="curriculum__link" target="_blank" rel="noopener noreferrer">mkdtemp</a>, however Nginx had trouble accessing it in production. Therefore refactored application to store user sessions in a Redis database and hosted the Redis database on <a href="https://aws.amazon.com/elasticache/" class="curriculum__link" target="_blank" rel="noopener noreferrer">AWS Elasticache</a></p>
 
         <div>
-          <img src="../img/Wall-Street-Trader-Production-Architecture.drawio.svg" alt="Wall Street Trader Production Architecture Diagram" class="projects-body__image projects-body__paragraph-spacing-below lax"></img>
+          <img src="../img/Wall-Street-Trader-Production-Architecture.drawio.svg" alt="Wall Street Trader Production System Architecture Diagram" class="projects-body__image projects-body__paragraph-spacing-below lax"></img>
         </div>
 
         <h3>Production Scalability and Load limitations</h3>
-        <p></p>
+        <p class="projects-body__paragraph-spacing-below">The production server is hosted on an AWS EC2 server on the t2.small tier, which has a limit of 1 vCPU and 2 GB of RAM. If I needed to scale up due to an overloaded server, I could scale horizontally and add an elastic load balancer or I have the option to scale vertically by upgrading the server to the next tier, t2.medium, which would double the vCPU and RAM.</p>
+
+        <h3>Production System Cost</h3>
+        <ul class="projects-body__list">
+          <li>AWS EC2 t2.small on-demand: $13.99/month</li>
+          <li>Google Domain for wallstreettrader.app: $14/year</li>
+          <li>[REMOVED] AWS RDS: $19.19/month</li>
+          <li>[REMOVED] AWS Elasticache: $16.37/month</li>
+        </ul>
       </section>
 
       <!-- PRODUCTION -->
