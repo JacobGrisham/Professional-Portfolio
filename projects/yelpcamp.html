@@ -400,7 +400,7 @@
         <p>The production server is hosted on Heroku Basic Dyno Tier, which has a limit of 512MB of RAM, no horizontal scaling, no autoscaling, and the server is not dedicated. If I needed to scale up due to an overloaded server, I would have to upgrade a Standard 1x Dyno for horizontal scaling. However, the web traffic has yet to reach a sustained usage of 50% server capacity. The production database is hosted on MongoDB Atlas Shared Plan M0 Cluster Tier, which has a limit of 512MB of storage. Considering that the current usage as of February 2023 is only 400KB, the website could expand up to 1280 times its current size. Given that the site went live in June of 2020, the current rate of data storage is 12.5KB/month. The database is the least likely bottleneck in this production system.</p>
       </section>
 
-      <!-- PRODUCTION -->
+      <!-- PRODUCTION METRICS -->
       <section>
         <h2>Production System Cost</h2>
         <ul class="projects-body__list">
@@ -408,6 +408,7 @@
           <li>MongoDB Atlas Shared Plan M0 Cluster Tier: free</li>
           <li>Cloudflare Free Tier: free</li>
           <li>Google Domain for yelpcamp.app: $14/year</li>
+          <li>GitHub Free Tier: free</li>
         </ul>
         <h2 class="projects-body__heading">Production Metrics</h2>
         <ul class="projects-body__list">
